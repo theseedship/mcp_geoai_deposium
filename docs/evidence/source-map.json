@@ -1,0 +1,390 @@
+{
+  "evidence_source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+  "report_source_commit": "fe21e58b8ee5baaa800e41601248563310825fa5",
+  "policy": "Only directly cited technical extracts and bounded receipts; no recursive private-document export.",
+  "sources": [
+    {
+      "id": "proof-01",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-01.md",
+      "source_path": "README.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "1d6ad255d05edec83cb44ad178731437ea43294d2a486ff2d6dc482572d9598d",
+      "extract_sha256": "162163eb8104674eaf3b6393ee08fe41575fd48f33a3ab186a96d5dae9d33b4c",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-02",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-02.md",
+      "source_path": "docs/FIERCE_ALIGNMENT.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "9f6d16b858d91954d99d5fc7d736eb84498269ef974da98dddd931909cd021e3",
+      "extract_sha256": "f4421c8f8930b64466b3f67b4c12a0e8ed315599ac88160febcb58f0b6e1f452",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-03",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-03.md",
+      "source_path": "docs/demo/b3-ndvi-shipped-code-proof-2026-09-04.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "88d0bf4b8b84b3c831bc69329ab9e8186a8775979068cbf30ae0b59772320fb0",
+      "extract_sha256": "242a0a8514decf0809a5ab07b3d3c25a485937d8a626013fdbca1ae30f4788f2",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-04",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-04.md",
+      "source_path": "docs/demo/b4-local-offline-pilot-2026-09-29.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "0bbba6f1c641dfc9981b6dd64d04f57fe14c6bce596b73457c144aadc3af039a",
+      "extract_sha256": "5a27306b888bcf0616d027e60165d10fcb4cdfd85cce3a87732f7b88a665836a",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-05",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-05.md",
+      "source_path": "docs/demo/b5a-forecast-collection-review-2026-10-15.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "cee0cb0639aa3316cae32ae66529be8e9c4a4b05aa348d0d45cda1db6736c0c8",
+      "extract_sha256": "d64f58966ac7c2fdc984dcc0e10a2fa9ad59e1d87af7aad7b4b0dab9641ace01",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-06",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-06.md",
+      "source_path": "docs/demo/b6-historical-reception-2026-10-27.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "e133ee2b71465794be8e46ff58a3b2d81a5b0cdd10b545c6fd29a622c5363eda",
+      "extract_sha256": "75bc6c3cdba9e667196d1813cf49bcd4cdf9fb51cedf11a840891deff90aca03",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-07",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-07.md",
+      "source_path": "docs/demo/canonical-full-panel-rustfs-2026-06-26.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "491320ee2060a69e050ef9b0768c1f8ae111b5e1ccb1b0c8f1d5d4f1cea7fdaa",
+      "extract_sha256": "12bd0b14f0097a9d3782b981d125e0c2562089dedc411dc412686df6c25699b3",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-08",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-08.md",
+      "source_path": "docs/demo/fierce-status-checkpoint-2026-10-27.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "db41509dc856d2a78af01e8843b1555ea3d50f28a5f4d9c8edd4b1e315f302b5",
+      "extract_sha256": "506e3b88ca59c8a5821c2c4d5bf11958e2345a1788be42a7bdf7fa6d34805814",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-09",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-09.md",
+      "source_path": "docs/demo/full-panel-baseline-validation-2026-06-23.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "34cd39708320be34a656550a22ebb20739ea96c2b6d553b3b525bffd0c60b4da",
+      "extract_sha256": "c278db11a9235342783ea9ec5b7dda242cec30c2d4ecc125a404efa343efcb43",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-10",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-10.md",
+      "source_path": "docs/demo/geoai-bulletin-readiness-2026-10-06.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "3b6b426638220aa26c135a87391d766501ae5f0aacb323bccdac910b043d824d",
+      "extract_sha256": "9432c4c044dedd4632d86d732d25437b7b8096f89d783e2ec55b3609701114a0",
+      "qualification": "documented historical evidence; not newly reproduced",
+      "transformation_note": "Curated dated evidence, with later inbox addendum or explanatory-index correction and manual-run scope made explicit; no new experiment."
+    },
+    {
+      "id": "proof-11",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-11.md",
+      "source_path": "docs/demo/geoai-n1-chat-qualification-2026-10-14.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "43121fd6e513ba171a310a1f71977c5835bea59872c7e93846275492573ea538",
+      "extract_sha256": "8a18eefbf60e5d00b945a98b07f40adc8e25ed6ce052a885177bfc27922a9182",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-12",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-12.md",
+      "source_path": "docs/demo/o3-q3-cross-zone-validation-mesh-rustfs-2026-06-27.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "0a083111011b5089f6f5ba08258ff78b5213d63af17b035694f305ddb7aeec0e",
+      "extract_sha256": "47cad0fc19d6c88872882495a0f8b81930ee5686a4c8f03359d36f1e3612889b",
+      "qualification": "documented historical evidence; not newly reproduced",
+      "transformation_note": "Curated dated evidence, with later inbox addendum or explanatory-index correction and manual-run scope made explicit; no new experiment."
+    },
+    {
+      "id": "proof-13",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-13.md",
+      "source_path": "docs/demo/site-watch-manual-staging-2026-10-04.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "2c61b42ff2a3d97215c484758237b870cd0517b4f15011a30ac90652bdeb845e",
+      "extract_sha256": "50709194fa43ff41777c773183236fe43f16960992d7471f623f66ee3433a791",
+      "qualification": "documented historical evidence; not newly reproduced",
+      "transformation_note": "Curated dated evidence, with later inbox addendum or explanatory-index correction and manual-run scope made explicit; no new experiment."
+    },
+    {
+      "id": "proof-14",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-14.md",
+      "source_path": "docs/design/deposium-mcps-geoai-handoff.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "2c96b4962daf1a2b13d6515e9e2bd76a716d5b22a9343dbd643909f4a9a7e8d3",
+      "extract_sha256": "658c87965edcd4e7fdfbe5a197074557b49947dae324d78c58fc3e4283653c3e",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-15",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-15.md",
+      "source_path": "docs/design/fierce-o2-historical-catalogue-amendment-2026-10-27.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "e2b144de28edcc05635c49ef2c7002f9ee7fa9f33a63eca9ab06dcd6dd798c44",
+      "extract_sha256": "0bf1c4e18ac2ce302fc6a5cd30d3839145c3e236038bd24f7fdb49d73ac47718",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-16",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-16.md",
+      "source_path": "docs/design/geoai-bulletin-chat-publication.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "d2e3e11f946f6d813204528acfcea3b72a4bde3efbbbaa5e18ae13d0adea24f6",
+      "extract_sha256": "215b7570608397424ca944af8e72ac5b66d28f93fd4dd87fc8fc8e5ba682ad8c",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-17",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-17.md",
+      "source_path": "docs/design/geoai-bulletin-surveillance.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "db8e7dcdde28956f3d8766c7274d50f81b7a93ba8c465630b95b5678cb1dee41",
+      "extract_sha256": "294354312c93033ba361237f4b48fcab8bd11e253c0cebb5510052ee69f9b44e",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-18",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-18.md",
+      "source_path": "docs/design/geoai-guided-analysis-spec-2026-10-27.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "1c1c2e17c9a94f52a78fc2a3a70e7b080926ac4d4afc257f72855d551ce6ed2e",
+      "extract_sha256": "c48b43364d9230af1077f010bd5341679508e1e3ab8346b980e09fa91c73a578",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-19",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-19.md",
+      "source_path": "docs/design/rustfs-storage-contract.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "9ea4ac67b87ea124a9ed27cdb54b9630409bb8b38ed143eeafdeb21d56ada8c4",
+      "extract_sha256": "e71b8d4ee59cf0a80d72659ce20a4e463e03d47e4d250a1f103a30ffb4271f14",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-20",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-20.md",
+      "source_path": "docs/handoffs/2026-10-14-fierce-minimum-technical-delivery.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "68adafb70b90c4bdede8d00e72e5b8dd2035d0b78afa10355352bae832e8113d",
+      "extract_sha256": "9ff2fa1f5336a1fd92adc7e9111992bdf4b6a7cdd5914f74bfb5017de4d3fd75",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-21",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-21.md",
+      "source_path": "docs/research/ndvi-predictive-ablation-2026-10-25/README.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "393071b68411832bd704bddfca9e0899f792c0e2af9b000216f553533ca5c5a3",
+      "extract_sha256": "876ac642175629f4596b39bcd4881e034ba0e15ab1f10c4946afa571e28bfec0",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-22",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-22.md",
+      "source_path": "docs/research/offline-heldout-validation.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "1b7189bddf944d3f2d4f0994898fbf85a0d74c13dc6efcbbc41d1f2e087175e1",
+      "extract_sha256": "fafdf53dd5ebb5910c7361b6c9287eabedd3b2ebf0a2f5cbfe21a239b1b8a996",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-23",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-23.md",
+      "source_path": "docs/research/pattern-library-2026-10-15/README.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "1c136f57babb9e69e007ad781139539d58ee39beac3eb05ffa9c086d1b3069a0",
+      "extract_sha256": "e301e523b8e92ec4ee551d911055df55eb89f1c0aa45a2eb560ae93595c83cc8",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-24",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-24.md",
+      "source_path": "docs/research/pattern-qualification-2026-10-16/README.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "28ca85178a2d22ee3677571bc8adf416ba0f861b498251a1f05ae7f0d9cc2290",
+      "extract_sha256": "7e544769c0666c14c4cd5eb28c20f0cf38c3bf0f6fd6394725b059499fd3f4e3",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-25",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-25.md",
+      "source_path": "docs/research/so4gp-upstream-trace-2026-10-17/README.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "03a7f121a758ec24066371645cfc68ef472cd79a96ecfc36b68394b5c7ac76a8",
+      "extract_sha256": "bc81d9b07f069bd47ef5558b9b9f3dd25404d50ca33dd03f1f3786a4547864c1",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "proof-26",
+      "kind": "technical-extract",
+      "path": "docs/evidence/proofs/proof-26.md",
+      "source_path": "docs/research/wp0-copernicus-2026-10-27/README.md",
+      "source_commit": "d4bea08f41b20b337ee8152704c7ed5231876072",
+      "source_sha256": "7f4a992f937757717c9d10355007c4c8cd808978864244747f0a3e4e51d52c0c",
+      "extract_sha256": "0cd8bd52ea15f3542bfba9f905076b3bec3e52b981e32c6817e90393a1fecf1a",
+      "qualification": "documented historical evidence; not newly reproduced"
+    },
+    {
+      "id": "record-01",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-01.md",
+      "source_sha256": "831f2b27d2328abd5296a243b3a11bd275985edde10ce067af3058586272de9f",
+      "extract_sha256": "e6e3b2a918a62ac253df29669673ccf1bd47c97e0c28b188c0685bbb038aec28",
+      "record_date": "2026-10-27T18:03:39Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-02",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-02.md",
+      "source_sha256": "51438c5f03921dc0cca6ed5362933ba3a8bf69e47996432451ad075c863250aa",
+      "extract_sha256": "1cc178a4e4ea40f04be58ab12abd86455af726ba19de69598b5f48c82df9df9d",
+      "record_date": "2026-10-27T21:25:39Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-03",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-03.md",
+      "source_sha256": "a66b5009183b85254a60e1e7a7f0c9b8cb3d5632ebb28cee6fd0cbcf33434566",
+      "extract_sha256": "106eb2ea6327696e30ca857c9583437788eb9059abb662aa6c3ab38b583534c8",
+      "record_date": "2026-10-27T21:25:40Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-04",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-04.md",
+      "source_sha256": "07e4e623cd550d2332071f8c2af57adbe06321d79f85705db27adbf73703d0f7",
+      "extract_sha256": "88b46758294687fd2b63e5fa7b50aebbef56c5667295fbe45ae7bd31fd3ab355",
+      "record_date": "2026-07-13T10:32:59Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-05",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-05.md",
+      "source_sha256": "faa508d7537c9514ad0950e7d853f37b949d89e6fb0e13a6ad8b2cd6f771e7c7",
+      "extract_sha256": "0ebb84cefbc2c8ba589e3312adcce077c61d465b539dba85d52a160592c94b0e",
+      "record_date": "2026-07-13T10:33:06Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-06",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-06.md",
+      "source_sha256": "91d185ca6c7694fff60ac91e95cdc9c11df6385dc31d46b3d65527fac1ccd77f",
+      "extract_sha256": "d87f57eab106a8747e9c8eaf5f61b36f1dee53b040169f5427f9dd93aedd3d8a",
+      "record_date": "2026-10-17T11:08:02Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-07",
+      "kind": "acceptance-record",
+      "path": "docs/evidence/proofs/record-07.md",
+      "source_sha256": "8784c2703576cfba926ed95802609628509718e60d84d58869fa10d020af181a",
+      "extract_sha256": "1721f5ebe0c397ecd245297718dfcc26da3ee65bc7db7f2ec093cd369c7614a7",
+      "record_date": "2026-10-27T19:13:50Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-08",
+      "kind": "integration-record",
+      "path": "docs/evidence/proofs/record-08.md",
+      "source_sha256": "5465087aca965a4c80cc914ff24d2c3003af892428218355a443eb24720b701b",
+      "extract_sha256": "0bcc1afdbfd7e9958e8ea83e6e4586a28bdf43d5305b338205741dbefd01ee0a",
+      "record_date": "2026-10-27T22:31:16Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-09",
+      "kind": "integration-record",
+      "path": "docs/evidence/proofs/record-09.md",
+      "source_sha256": "86eb985001e9ba81417505bb24e250b24e8d2eae5c7d0f2328b10c1c289976ca",
+      "extract_sha256": "b61828b1ea11596608ab4ecfb3bfe3cc0bd44f4b0b24c45fd8d017bab236824c",
+      "record_date": "2026-10-27T23:49:05Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-10",
+      "kind": "integration-record",
+      "path": "docs/evidence/proofs/record-10.md",
+      "source_sha256": "3fe59bd643a7e0e5ead2b4ba8efaf2147bfbe0d8a7a186d2f90a19bc05191eaa",
+      "extract_sha256": "1dc2aee000c851f1f6ae75fe3ba87c0961c8bc4cad9770db5d444bb8ec81ce8d",
+      "record_date": "2026-10-27T22:02:05Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-11",
+      "kind": "integration-record",
+      "path": "docs/evidence/proofs/record-11.md",
+      "source_sha256": "e1e74d4126725870d34f51cd14399f35e402b23df29c76e59a20023f50d8cc22",
+      "extract_sha256": "d7df6755976b5c1a89757af0e6304bdcc0c53425e2e6f1d03d6bdd8049e58133",
+      "record_date": "2026-10-27T22:33:50Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    },
+    {
+      "id": "record-12",
+      "kind": "integration-record",
+      "path": "docs/evidence/proofs/record-12.md",
+      "source_sha256": "8b59bbb2fdd5c0fe3498719b5674d512b515fc98e81f20b4b462d3ec363f7d36",
+      "extract_sha256": "0c6970796af6c84536670bf0f90bec6745988ff0eddfca16c89f5641f707c97d",
+      "record_date": "2026-10-27T23:52:56Z",
+      "qualification": "internal record; not independently reproduced",
+      "source_format": "GitHub REST JSON snapshot"
+    }
+  ]
+}
