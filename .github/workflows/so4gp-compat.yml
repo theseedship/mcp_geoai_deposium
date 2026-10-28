@@ -1,0 +1,97 @@
+name: so4gp CPU compatibility probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      so4gp_version:
+        description: so4gp version to probe
+        type: choice
+        required: true
+        default: "1.1.2"
+        options:
+          - "1.1.2"
+          - "0.9.1"
+          - "0.9.0"
+          - "0.8.9"
+      python_version:
+        description: Python version for the isolated probe
+        type: choice
+        required: true
+        default: "3.14"
+        options:
+          - "3.14"
+      repeats:
+        description: Optimizer repeats for ACO/GA/PSO variance signal
+        type: choice
+        required: true
+        default: "3"
+        options:
+          - "1"
+          - "3"
+          - "5"
+
+jobs:
+  probe:
+    name: Probe so4gp ${{ inputs.so4gp_version }} on Python ${{ inputs.python_version }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Validate workflow inputs
+        env:
+          PYTHON_VERSION: ${{ inputs.python_version }}
+          SO4GP_VERSION: ${{ inputs.so4gp_version }}
+          REPEATS: ${{ inputs.repeats }}
+        run: |
+          case "$PYTHON_VERSION" in
+            3.14) ;;
+            *) echo "::error::Unsupported python_version: $PYTHON_VERSION"; exit 1 ;;
+          esac
+          case "$SO4GP_VERSION" in
+            1.1.2|0.9.1|0.9.0|0.8.9) ;;
+            *) echo "::error::Unsupported so4gp_version: $SO4GP_VERSION"; exit 1 ;;
+          esac
+          case "$REPEATS" in
+            1|3|5) ;;
+            *) echo "::error::Unsupported repeats: $REPEATS"; exit 1 ;;
+          esac
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+        with:
+          enable-cache: true
+          python-version: ${{ inputs.python_version }}
+
+      - name: Create isolated Python environment
+        env:
+          PYTHON_VERSION: ${{ inputs.python_version }}
+        run: uv venv --python "$PYTHON_VERSION" .venv-so4gp-compat
+
+      - name: Install so4gp candidate
+        env:
+          SO4GP_VERSION: ${{ inputs.so4gp_version }}
+        run: |
+          if [ "$SO4GP_VERSION" = "1.1.2" ]; then
+            uv pip install --python .venv-so4gp-compat/bin/python --torch-backend cpu \
+              "so4gp==$SO4GP_VERSION" "torch==2.13.0" "pandas~=3.0.5"
+          else
+            uv pip install --python .venv-so4gp-compat/bin/python \
+              "so4gp==$SO4GP_VERSION" "pandas~=3.0.3"
+          fi
+
+      - name: Run compatibility probe
+        env:
+          REPEATS: ${{ inputs.repeats }}
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
+          MKL_NUM_THREADS: "1"
+          PYTHONHASHSEED: "0"
+        run: >
+          .venv-so4gp-compat/bin/python scripts/so4gp_compat_probe.py
+          --repeats "$REPEATS"
+          --fail-on-required
+          --output so4gp-compat-result.json
+
+      - name: Print result
+        if: always()
+        run: test -f so4gp-compat-result.json && cat so4gp-compat-result.json || true

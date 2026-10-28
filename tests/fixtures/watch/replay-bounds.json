@@ -1,0 +1,7 @@
+[
+  "**Lead time is bounded by the archive.** Previous Runs stores 1..7 lead days (`fetch_daily` rejects anything else); no claim beyond 7 days.",
+  "**Archived model ≠ production model.** The archive client defaults to `gfs_seamless`; the production `forecast_query` chain is AIFS (`ecmwf_aifs025_single`) first, Open-Meteo physical fallback. A replay on GFS says nothing about the AIFS path that the live watch will use. Where an AIFS Previous Runs archive is used, record its actual coverage window in the report (the Deposium brief notes 2025-02 → 2025-10 at writing time; confirm against the provider's coverage response, do not copy the figure).",
+  "**Labels are not the reference.** Skill is measured against the ERA5 holdout above; vigilance bulletins are event labels for the trigger question only. They must not be read as a verification dataset.",
+  "**Wind labels are indicative only.** A wind vigilance is issued on gusts; the archived series is `wind_speed` (provider: `wind_speed_10m_max`, daily maximum of the 10 m wind, `src/utils/openmeteo.py`). The two are not commensurable; report wind separately and say so.",
+  "**No skill claim.** A hit rate is a rule-trigger count on `n_labels` episodes. It is not recall of a calibrated detector and does not lift the R13/R14 gates; `pattern_alert.confidence` stays `null`."
+]

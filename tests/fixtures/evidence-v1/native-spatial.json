@@ -1,0 +1,38 @@
+{
+  "context": {
+    "schema_version": "geoai-evidence-context/v1",
+    "dataset_id": "native_spatial_demo",
+    "artifact_version": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "scope_fingerprint": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "query_fingerprint": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "geometry_column": "geometry",
+    "crs": "EPSG:4326"
+  },
+  "request": {
+    "geometry": {
+      "type": "Point",
+      "coordinates": [0.5, 0.5]
+    },
+    "operation": "intersects",
+    "select_columns": ["geometry", "zone_id", "name"],
+    "limit": 2
+  },
+  "expected_evidence": {
+    "schema_version": "geoai-evidence/v1",
+    "evidence_id": "geoai_ev_a08e28a44b51201be4c3d8224687f880e00a8b8ee4c9e60ffbb90911da11afad",
+    "scope_fingerprint": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "dataset_id": "native_spatial_demo",
+    "artifact_version": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "operation": "spatial.intersects",
+    "query_fingerprint": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "selection": {
+      "feature_ids": [],
+      "row_offsets": [0, 2],
+      "columns": ["geometry", "zone_id", "name"],
+      "geometry_column": "geometry"
+    },
+    "derived": false,
+    "truncated": true,
+    "caveats": ["feature_ids_unavailable", "row_offsets_are_physical_zero_based"]
+  }
+}

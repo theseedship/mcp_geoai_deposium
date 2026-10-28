@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deposium.dev/contracts/watch-labelset.v1.schema.json",
+  "title": "watch-labelset/v1 (jeu de labels d'une variable sur une fenêtre, exhaustivité déclarée)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "variable",
+    "window_start",
+    "window_end",
+    "exhaustive",
+    "coverage_statement",
+    "labels"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "watch-labelset/v1"
+    },
+    "variable": {
+      "enum": [
+        "precipitation",
+        "wind_speed"
+      ]
+    },
+    "window_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "window_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "exhaustive": {
+      "type": "boolean",
+      "description": "true = tous les bulletins orange/rouge de la variable sur la fenêtre sont présents ; décide false_triggers (true) vs unmatched_triggers (false)"
+    },
+    "coverage_statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "$ref": "watch-label.v1.schema.json"
+      }
+    }
+  }
+}

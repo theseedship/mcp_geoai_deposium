@@ -1,0 +1,5849 @@
+{
+  "algorithm": "tgrad",
+  "generated_at": null,
+  "patterns": [
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.704,
+        "connect": 1.0,
+        "density": 0.214,
+        "dispersion": 4.965,
+        "max_support_all_zones": 1.0,
+        "mean_support_all_zones": 0.6317999999999999,
+        "min_support_all_zones": 0.505,
+        "singularity_scr": 5.744,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.7142857142857143
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 months",
+      "pattern_id": 0,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6317999999999999,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "mombasa",
+        "niamey",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.788,
+        "connect": 1.0,
+        "density": 0.165,
+        "dispersion": 4.783,
+        "max_support_all_zones": 0.9,
+        "mean_support_all_zones": 0.6171,
+        "min_support_all_zones": 0.505,
+        "singularity_scr": 5.549,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.7142857142857143
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +1.0 months",
+      "pattern_id": 1,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6171,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "niamey",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.254,
+        "connect": 1.0,
+        "density": 0.2,
+        "dispersion": 4.724,
+        "max_support_all_zones": 1.0,
+        "mean_support_all_zones": 0.6543333333333333,
+        "min_support_all_zones": 0.525,
+        "singularity_scr": 5.921,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.6428571428571429
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +1.0 months",
+      "pattern_id": 2,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6543333333333333,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "mombasa",
+        "niamey",
+        "manaus",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.561,
+        "connect": 1.0,
+        "density": 0.221,
+        "dispersion": 4.822,
+        "max_support_all_zones": 0.7,
+        "mean_support_all_zones": 0.5997777777777777,
+        "min_support_all_zones": 0.51,
+        "singularity_scr": 6.321,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.6428571428571429
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +1.0 months",
+      "pattern_id": 3,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5997777777777777,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "niamey",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.848,
+        "connect": 1.0,
+        "density": 0.219,
+        "dispersion": 4.886,
+        "max_support_all_zones": 0.9,
+        "mean_support_all_zones": 0.584111111111111,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 6.029,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.6428571428571429
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 months",
+      "pattern_id": 4,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.584111111111111,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "niamey",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.344,
+        "connect": 1.0,
+        "density": 0.194,
+        "dispersion": 4.818,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.5741111111111111,
+        "min_support_all_zones": 0.51,
+        "singularity_scr": 5.73,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.6428571428571429
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months",
+      "pattern_id": 5,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5741111111111111,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "mombasa",
+        "niamey",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.515,
+        "connect": 1.0,
+        "density": 0.373,
+        "dispersion": 6.889,
+        "max_support_all_zones": 0.689,
+        "mean_support_all_zones": 0.5636666666666668,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 4.451,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.6428571428571429
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 weeks",
+      "pattern_id": 6,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5636666666666668,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "tromso",
+        "svalbard",
+        "riyadh",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.822,
+        "connect": 1.0,
+        "density": 0.392,
+        "dispersion": 7.143,
+        "max_support_all_zones": 0.778,
+        "mean_support_all_zones": 0.637375,
+        "min_support_all_zones": 0.506,
+        "singularity_scr": 4.31,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5714285714285714
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 weeks",
+      "pattern_id": 7,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.637375,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "tromso",
+        "svalbard",
+        "riyadh",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.781,
+        "connect": 1.0,
+        "density": 0.406,
+        "dispersion": 7.14,
+        "max_support_all_zones": 0.711,
+        "mean_support_all_zones": 0.612125,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 4.086,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5714285714285714
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 weeks",
+      "pattern_id": 8,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.612125,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "tromso",
+        "svalbard",
+        "riyadh",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.918,
+        "connect": 1.0,
+        "density": 0.36,
+        "dispersion": 5.222,
+        "max_support_all_zones": 0.689,
+        "mean_support_all_zones": 0.592125,
+        "min_support_all_zones": 0.529,
+        "singularity_scr": 3.931,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5714285714285714
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 weeks",
+      "pattern_id": 9,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.592125,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "rennes",
+        "tromso",
+        "svalbard",
+        "manaus",
+        "riyadh",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.028,
+        "connect": 1.0,
+        "density": 0.283,
+        "dispersion": 5.757,
+        "max_support_all_zones": 0.676,
+        "mean_support_all_zones": 0.580375,
+        "min_support_all_zones": 0.528,
+        "singularity_scr": 5.1,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5714285714285714
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +3.0 weeks",
+      "pattern_id": 10,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.580375,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.598,
+        "connect": 1.0,
+        "density": 0.348,
+        "dispersion": 7.011,
+        "max_support_all_zones": 0.732,
+        "mean_support_all_zones": 0.6197142857142858,
+        "min_support_all_zones": 0.528,
+        "singularity_scr": 4.888,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +3.0 weeks",
+      "pattern_id": 11,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6197142857142858,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.495,
+        "connect": 1.0,
+        "density": 0.343,
+        "dispersion": 6.564,
+        "max_support_all_zones": 0.625,
+        "mean_support_all_zones": 0.5667142857142857,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 5.301,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +3.0 weeks",
+      "pattern_id": 12,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5667142857142857,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.043,
+        "connect": 1.0,
+        "density": 0.367,
+        "dispersion": 6.67,
+        "max_support_all_zones": 0.639,
+        "mean_support_all_zones": 0.5637142857142857,
+        "min_support_all_zones": 0.502,
+        "singularity_scr": 5.729,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +3.0 weeks",
+      "pattern_id": 13,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5637142857142857,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "riyadh",
+        "seoul",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.778,
+        "connect": 1.0,
+        "density": 0.133,
+        "dispersion": 3.059,
+        "max_support_all_zones": 0.8,
+        "mean_support_all_zones": 0.6568333333333333,
+        "min_support_all_zones": 0.514,
+        "singularity_scr": 4.702,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 months",
+      "pattern_id": 14,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6568333333333333,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "niamey",
+        "rennes",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.985,
+        "connect": 1.0,
+        "density": 0.485,
+        "dispersion": 6.5,
+        "max_support_all_zones": 0.695,
+        "mean_support_all_zones": 0.592,
+        "min_support_all_zones": 0.504,
+        "singularity_scr": 3.16,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +5.0 days",
+      "pattern_id": 15,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.592,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "niamey",
+        "rennes",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.175,
+        "connect": 1.0,
+        "density": 0.493,
+        "dispersion": 6.514,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.59,
+        "min_support_all_zones": 0.508,
+        "singularity_scr": 2.187,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +5.0 days",
+      "pattern_id": 16,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.59,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "niamey",
+        "rennes",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.029,
+        "connect": 1.0,
+        "density": 0.383,
+        "dispersion": 6.721,
+        "max_support_all_zones": 0.75,
+        "mean_support_all_zones": 0.5851666666666667,
+        "min_support_all_zones": 0.502,
+        "singularity_scr": 5.08,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +3.0 weeks",
+      "pattern_id": 17,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5851666666666667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "riyadh",
+        "seoul",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.364,
+        "connect": 1.0,
+        "density": 0.375,
+        "dispersion": 7.139,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.5736666666666667,
+        "min_support_all_zones": 0.509,
+        "singularity_scr": 4.389,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 weeks",
+      "pattern_id": 18,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5736666666666667,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "rennes",
+        "tromso",
+        "manaus",
+        "riyadh",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.673,
+        "connect": 1.0,
+        "density": 0.135,
+        "dispersion": 2.979,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.5655,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 4.48,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 months",
+      "pattern_id": 19,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5655,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "niamey",
+        "rennes",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.049,
+        "connect": 1.0,
+        "density": 0.324,
+        "dispersion": 6.501,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.559,
+        "min_support_all_zones": 0.516,
+        "singularity_scr": 4.426,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +3.0 weeks",
+      "pattern_id": 20,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.559,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.611,
+        "connect": 1.0,
+        "density": 0.327,
+        "dispersion": 1.533,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.6166,
+        "min_support_all_zones": 0.545,
+        "singularity_scr": 1.672,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 weeks",
+      "pattern_id": 21,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6166,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "rennes",
+        "tromso",
+        "manaus",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.97,
+        "connect": 1.0,
+        "density": 0.485,
+        "dispersion": 6.633,
+        "max_support_all_zones": 0.719,
+        "mean_support_all_zones": 0.6138,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 2.033,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +5.0 days",
+      "pattern_id": 22,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.6138,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "niamey",
+        "rennes",
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 12.483,
+        "connect": 1.0,
+        "density": 0.473,
+        "dispersion": 8.313,
+        "max_support_all_zones": 0.749,
+        "mean_support_all_zones": 0.5944,
+        "min_support_all_zones": 0.501,
+        "singularity_scr": 2.676,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 days",
+      "pattern_id": 23,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5944,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.643,
+        "connect": 1.0,
+        "density": 0.389,
+        "dispersion": 1.54,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.5900000000000001,
+        "min_support_all_zones": 0.508,
+        "singularity_scr": 1.246,
+        "validated_folds": 5.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 weeks",
+      "pattern_id": 24,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 1.0,
+      "support": 0.5900000000000001,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "niamey",
+        "rennes",
+        "tromso",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.196,
+        "connect": 1.0,
+        "density": 0.154,
+        "dispersion": 4.321,
+        "max_support_all_zones": 1.0,
+        "mean_support_all_zones": 0.631,
+        "min_support_all_zones": 0.509,
+        "singularity_scr": 5.137,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.5714285714285714
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 months",
+      "pattern_id": 25,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.631,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi",
+        "mombasa",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.146,
+        "connect": 1.0,
+        "density": 0.389,
+        "dispersion": 5.824,
+        "max_support_all_zones": 0.8,
+        "mean_support_all_zones": 0.6437142857142858,
+        "min_support_all_zones": 0.514,
+        "singularity_scr": 3.179,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 weeks",
+      "pattern_id": 26,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.6437142857142858,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "tromso",
+        "svalbard",
+        "riyadh",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.748,
+        "connect": 1.0,
+        "density": 0.183,
+        "dispersion": 4.572,
+        "max_support_all_zones": 1.0,
+        "mean_support_all_zones": 0.6157142857142858,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 6.255,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +1.0 months",
+      "pattern_id": 27,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.6157142857142858,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "mombasa",
+        "manaus",
+        "riyadh",
+        "seoul",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.153,
+        "connect": 1.0,
+        "density": 0.187,
+        "dispersion": 5.023,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.588,
+        "min_support_all_zones": 0.532,
+        "singularity_scr": 5.377,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 months",
+      "pattern_id": 28,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.588,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "mombasa",
+        "manaus",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.638,
+        "connect": 1.0,
+        "density": 0.39,
+        "dispersion": 7.083,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.5798571428571428,
+        "min_support_all_zones": 0.522,
+        "singularity_scr": 4.366,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 weeks",
+      "pattern_id": 29,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.5798571428571428,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "niamey",
+        "rennes",
+        "tromso",
+        "manaus",
+        "riyadh"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +1.0 months, (humidity-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.928,
+        "connect": 1.0,
+        "density": 0.132,
+        "dispersion": 3.767,
+        "max_support_all_zones": 0.833,
+        "mean_support_all_zones": 0.6344,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 5.594,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 months, (humidity-) +1.0 months",
+      "pattern_id": 30,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.6344,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi",
+        "mombasa",
+        "niamey",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.873,
+        "connect": 1.0,
+        "density": 0.502,
+        "dispersion": 6.566,
+        "max_support_all_zones": 0.733,
+        "mean_support_all_zones": 0.6188,
+        "min_support_all_zones": 0.551,
+        "singularity_scr": 2.397,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +5.0 days",
+      "pattern_id": 31,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.6188,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "niamey",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.079,
+        "connect": 1.0,
+        "density": 0.26,
+        "dispersion": 5.814,
+        "max_support_all_zones": 0.647,
+        "mean_support_all_zones": 0.571,
+        "min_support_all_zones": 0.522,
+        "singularity_scr": 5.749,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +4.0 weeks",
+      "pattern_id": 32,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.571,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "tromso",
+        "manaus",
+        "riyadh"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.782,
+        "connect": 1.0,
+        "density": 0.467,
+        "dispersion": 7.8,
+        "max_support_all_zones": 0.614,
+        "mean_support_all_zones": 0.5694,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 2.901,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +5.0 days",
+      "pattern_id": 33,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.5694,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "rennes",
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.694,
+        "connect": 1.0,
+        "density": 0.27,
+        "dispersion": 5.615,
+        "max_support_all_zones": 0.643,
+        "mean_support_all_zones": 0.556,
+        "min_support_all_zones": 0.505,
+        "singularity_scr": 5.197,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +4.0 weeks",
+      "pattern_id": 34,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.556,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "tromso",
+        "manaus",
+        "riyadh",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.422,
+        "connect": 1.0,
+        "density": 0.398,
+        "dispersion": 7.469,
+        "max_support_all_zones": 0.585,
+        "mean_support_all_zones": 0.5368,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 4.052,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +2.0 weeks",
+      "pattern_id": 35,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.5368,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "tromso",
+        "manaus",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.833,
+        "connect": 1.0,
+        "density": 0.109,
+        "dispersion": 1.067,
+        "max_support_all_zones": 0.833,
+        "mean_support_all_zones": 0.66525,
+        "min_support_all_zones": 0.561,
+        "singularity_scr": 1.409,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +2.0 months",
+      "pattern_id": 36,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.66525,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "rennes",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.092,
+        "connect": 1.0,
+        "density": 0.483,
+        "dispersion": 6.53,
+        "max_support_all_zones": 0.736,
+        "mean_support_all_zones": 0.62875,
+        "min_support_all_zones": 0.519,
+        "singularity_scr": 2.136,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 days",
+      "pattern_id": 37,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.62875,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +1.0 months, (solar_radiation+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.646,
+        "connect": 1.0,
+        "density": 0.125,
+        "dispersion": 3.898,
+        "max_support_all_zones": 0.9,
+        "mean_support_all_zones": 0.62375,
+        "min_support_all_zones": 0.516,
+        "singularity_scr": 5.105,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 months, (solar_radiation+) +1.0 months",
+      "pattern_id": 38,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.62375,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.907,
+        "connect": 1.0,
+        "density": 0.544,
+        "dispersion": 8.205,
+        "max_support_all_zones": 0.723,
+        "mean_support_all_zones": 0.6105,
+        "min_support_all_zones": 0.538,
+        "singularity_scr": 2.084,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 days",
+      "pattern_id": 39,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.6105,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.916,
+        "connect": 1.0,
+        "density": 0.437,
+        "dispersion": 7.454,
+        "max_support_all_zones": 0.753,
+        "mean_support_all_zones": 0.603,
+        "min_support_all_zones": 0.543,
+        "singularity_scr": 3.653,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 weeks",
+      "pattern_id": 40,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.603,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.201,
+        "connect": 1.0,
+        "density": 0.451,
+        "dispersion": 7.351,
+        "max_support_all_zones": 0.774,
+        "mean_support_all_zones": 0.59425,
+        "min_support_all_zones": 0.51,
+        "singularity_scr": 3.525,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 weeks",
+      "pattern_id": 41,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.59425,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.901,
+        "connect": 1.0,
+        "density": 0.4,
+        "dispersion": 7.583,
+        "max_support_all_zones": 0.647,
+        "mean_support_all_zones": 0.59,
+        "min_support_all_zones": 0.508,
+        "singularity_scr": 3.575,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +1.0 weeks",
+      "pattern_id": 42,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.59,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 12.533,
+        "connect": 1.0,
+        "density": 0.506,
+        "dispersion": 8.374,
+        "max_support_all_zones": 0.595,
+        "mean_support_all_zones": 0.5547500000000001,
+        "min_support_all_zones": 0.532,
+        "singularity_scr": 3.046,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 days",
+      "pattern_id": 43,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.5547500000000001,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.031,
+        "connect": 1.0,
+        "density": 0.31,
+        "dispersion": 6.749,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.54025,
+        "min_support_all_zones": 0.515,
+        "singularity_scr": 4.787,
+        "validated_folds": 4.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +3.0 weeks",
+      "pattern_id": 44,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.8,
+      "support": 0.54025,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "nairobi",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.237,
+        "connect": 1.0,
+        "density": 0.148,
+        "dispersion": 4.427,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.6111428571428572,
+        "min_support_all_zones": 0.526,
+        "singularity_scr": 5.629,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.5
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months",
+      "pattern_id": 45,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6111428571428572,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi",
+        "mombasa",
+        "manaus",
+        "seoul",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.552,
+        "connect": 1.0,
+        "density": 0.357,
+        "dispersion": 5.849,
+        "max_support_all_zones": 0.756,
+        "mean_support_all_zones": 0.64,
+        "min_support_all_zones": 0.525,
+        "singularity_scr": 3.221,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.42857142857142855
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "pattern_id": 46,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.64,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "tromso",
+        "svalbard",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.6,
+        "connect": 1.0,
+        "density": 0.148,
+        "dispersion": 3.417,
+        "max_support_all_zones": 0.733,
+        "mean_support_all_zones": 0.6092000000000001,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 4.912,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 months",
+      "pattern_id": 47,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6092000000000001,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "svalbard",
+        "montpellier_metropole",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.262,
+        "connect": 1.0,
+        "density": 0.254,
+        "dispersion": 5.361,
+        "max_support_all_zones": 0.607,
+        "mean_support_all_zones": 0.5528000000000001,
+        "min_support_all_zones": 0.51,
+        "singularity_scr": 6.324,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.35714285714285715
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +4.0 weeks",
+      "pattern_id": 48,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5528000000000001,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "rennes",
+        "tromso",
+        "riyadh"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.764,
+        "connect": 1.0,
+        "density": 0.249,
+        "dispersion": 5.716,
+        "max_support_all_zones": 0.821,
+        "mean_support_all_zones": 0.6335,
+        "min_support_all_zones": 0.55,
+        "singularity_scr": 5.666,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +4.0 weeks",
+      "pattern_id": 49,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6335,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.6275000000000001,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 1.111,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "pattern_id": 50,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6275000000000001,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa",
+        "seoul",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.468,
+        "connect": 1.0,
+        "density": 0.195,
+        "dispersion": 3.744,
+        "max_support_all_zones": 0.8,
+        "mean_support_all_zones": 0.6092500000000001,
+        "min_support_all_zones": 0.514,
+        "singularity_scr": 4.818,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +4.0 weeks",
+      "pattern_id": 51,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6092500000000001,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "rennes",
+        "tromso",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.15,
+        "connect": 1.0,
+        "density": 0.148,
+        "dispersion": 3.511,
+        "max_support_all_zones": 0.691,
+        "mean_support_all_zones": 0.60175,
+        "min_support_all_zones": 0.545,
+        "singularity_scr": 4.729,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 months",
+      "pattern_id": 52,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.60175,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "svalbard",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.477,
+        "connect": 1.0,
+        "density": 0.473,
+        "dispersion": 7.615,
+        "max_support_all_zones": 0.679,
+        "mean_support_all_zones": 0.58025,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 3.455,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +1.0 weeks",
+      "pattern_id": 53,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.58025,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "riyadh",
+        "seoul",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.386,
+        "connect": 1.0,
+        "density": 0.279,
+        "dispersion": 5.567,
+        "max_support_all_zones": 0.714,
+        "mean_support_all_zones": 0.5785,
+        "min_support_all_zones": 0.522,
+        "singularity_scr": 5.756,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +4.0 weeks",
+      "pattern_id": 54,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5785,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "riyadh",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.453,
+        "connect": 1.0,
+        "density": 0.406,
+        "dispersion": 7.368,
+        "max_support_all_zones": 0.641,
+        "mean_support_all_zones": 0.56775,
+        "min_support_all_zones": 0.516,
+        "singularity_scr": 3.176,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +1.0 weeks",
+      "pattern_id": 55,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.56775,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "tromso",
+        "riyadh"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 weeks, (humidity-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.214,
+        "connect": 1.0,
+        "density": 0.233,
+        "dispersion": 2.651,
+        "max_support_all_zones": 0.622,
+        "mean_support_all_zones": 0.54375,
+        "min_support_all_zones": 0.503,
+        "singularity_scr": 2.643,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 weeks, (humidity-) +2.0 weeks",
+      "pattern_id": 56,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.54375,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +3.0 weeks, (solar_radiation+) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.404,
+        "connect": 1.0,
+        "density": 0.298,
+        "dispersion": 5.986,
+        "max_support_all_zones": 0.556,
+        "mean_support_all_zones": 0.537,
+        "min_support_all_zones": 0.505,
+        "singularity_scr": 5.359,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.2857142857142857
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +3.0 weeks, (solar_radiation+) +3.0 weeks",
+      "pattern_id": 57,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.537,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.75,
+        "connect": 1.0,
+        "density": 0.145,
+        "dispersion": 0.829,
+        "max_support_all_zones": 0.8,
+        "mean_support_all_zones": 0.677,
+        "min_support_all_zones": 0.564,
+        "singularity_scr": 1.92,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 months",
+      "pattern_id": 58,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.677,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.574,
+        "connect": 1.0,
+        "density": 0.264,
+        "dispersion": 3.578,
+        "max_support_all_zones": 0.8,
+        "mean_support_all_zones": 0.677,
+        "min_support_all_zones": 0.564,
+        "singularity_scr": 3.405,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 months",
+      "pattern_id": 59,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.677,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "montpellier_metropole",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.708,
+        "connect": 1.0,
+        "density": 0.44,
+        "dispersion": 8.075,
+        "max_support_all_zones": 0.711,
+        "mean_support_all_zones": 0.6366666666666667,
+        "min_support_all_zones": 0.525,
+        "singularity_scr": 2.452,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 weeks",
+      "pattern_id": 60,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6366666666666667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "riyadh",
+        "seoul",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.526,
+        "connect": 1.0,
+        "density": 0.522,
+        "dispersion": 7.975,
+        "max_support_all_zones": 0.689,
+        "mean_support_all_zones": 0.6323333333333333,
+        "min_support_all_zones": 0.586,
+        "singularity_scr": 3.351,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +3.0 days",
+      "pattern_id": 61,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6323333333333333,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "niamey",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.324,
+        "connect": 1.0,
+        "density": 0.602,
+        "dispersion": 4.926,
+        "max_support_all_zones": 0.662,
+        "mean_support_all_zones": 0.6246666666666667,
+        "min_support_all_zones": 0.571,
+        "singularity_scr": 1.105,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 days",
+      "pattern_id": 62,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6246666666666667,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "riyadh",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.8,
+        "connect": 1.0,
+        "density": 0.375,
+        "dispersion": 2.864,
+        "max_support_all_zones": 0.634,
+        "mean_support_all_zones": 0.6036666666666667,
+        "min_support_all_zones": 0.577,
+        "singularity_scr": 2.108,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 weeks",
+      "pattern_id": 63,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6036666666666667,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "manaus",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 months, (humidity+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.833,
+        "connect": 1.0,
+        "density": 0.109,
+        "dispersion": 1.067,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.6,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 1.409,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 months, (humidity+) +2.0 months",
+      "pattern_id": 64,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.6,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "rennes",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.976,
+        "connect": 1.0,
+        "density": 0.465,
+        "dispersion": 7.53,
+        "max_support_all_zones": 0.679,
+        "mean_support_all_zones": 0.5896666666666667,
+        "min_support_all_zones": 0.535,
+        "singularity_scr": 3.265,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +5.0 days",
+      "pattern_id": 65,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5896666666666667,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi",
+        "riyadh"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 weeks, (temperature_2m+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.276,
+        "connect": 1.0,
+        "density": 0.242,
+        "dispersion": 2.664,
+        "max_support_all_zones": 0.617,
+        "mean_support_all_zones": 0.581,
+        "min_support_all_zones": 0.526,
+        "singularity_scr": 2.478,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 weeks, (temperature_2m+) +2.0 weeks",
+      "pattern_id": 66,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.581,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.5,
+        "connect": 1.0,
+        "density": 0.214,
+        "dispersion": 0.957,
+        "max_support_all_zones": 0.607,
+        "mean_support_all_zones": 0.5706666666666667,
+        "min_support_all_zones": 0.505,
+        "singularity_scr": 1.0,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +4.0 weeks",
+      "pattern_id": 67,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5706666666666667,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "rennes",
+        "tromso",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 weeks, (wind_speed+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.4,
+        "connect": 1.0,
+        "density": 0.292,
+        "dispersion": 2.643,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.5696666666666667,
+        "min_support_all_zones": 0.509,
+        "singularity_scr": 2.539,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 weeks, (wind_speed+) +2.0 weeks",
+      "pattern_id": 68,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5696666666666667,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "bassin_du_lez",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +5.0 days, (temperature_2m+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.238,
+        "connect": 1.0,
+        "density": 0.382,
+        "dispersion": 1.77,
+        "max_support_all_zones": 0.588,
+        "mean_support_all_zones": 0.5696666666666667,
+        "min_support_all_zones": 0.538,
+        "singularity_scr": 1.61,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +5.0 days, (temperature_2m+) +5.0 days",
+      "pattern_id": 69,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5696666666666667,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +5.0 days, (humidity-) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.318,
+        "connect": 1.0,
+        "density": 0.4,
+        "dispersion": 1.768,
+        "max_support_all_zones": 0.611,
+        "mean_support_all_zones": 0.5673333333333334,
+        "min_support_all_zones": 0.529,
+        "singularity_scr": 1.591,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +5.0 days, (humidity-) +5.0 days",
+      "pattern_id": 70,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5673333333333334,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.194,
+        "connect": 1.0,
+        "density": 0.467,
+        "dispersion": 7.416,
+        "max_support_all_zones": 0.621,
+        "mean_support_all_zones": 0.5670000000000001,
+        "min_support_all_zones": 0.524,
+        "singularity_scr": 3.384,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +3.0 days",
+      "pattern_id": 71,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5670000000000001,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "niamey",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.711,
+        "connect": 1.0,
+        "density": 0.375,
+        "dispersion": 2.833,
+        "max_support_all_zones": 0.582,
+        "mean_support_all_zones": 0.564,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 1.975,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 weeks",
+      "pattern_id": 72,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.564,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "manaus",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +2.0 weeks, (evapotranspiration-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.875,
+        "connect": 1.0,
+        "density": 0.286,
+        "dispersion": 1.364,
+        "max_support_all_zones": 0.583,
+        "mean_support_all_zones": 0.5416666666666666,
+        "min_support_all_zones": 0.509,
+        "singularity_scr": 0.875,
+        "validated_folds": 3.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 weeks, (evapotranspiration-) +2.0 weeks",
+      "pattern_id": 73,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.6,
+      "support": 0.5416666666666666,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "rennes",
+        "tromso",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.073,
+        "connect": 1.0,
+        "density": 0.458,
+        "dispersion": 3.247,
+        "max_support_all_zones": 0.682,
+        "mean_support_all_zones": 0.6546666666666666,
+        "min_support_all_zones": 0.604,
+        "singularity_scr": 1.78,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +4.0 days",
+      "pattern_id": 74,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6546666666666666,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.182,
+        "connect": 1.0,
+        "density": 0.235,
+        "dispersion": 5.755,
+        "max_support_all_zones": 0.9,
+        "mean_support_all_zones": 0.6506666666666666,
+        "min_support_all_zones": 0.516,
+        "singularity_scr": 5.008,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +4.0 weeks",
+      "pattern_id": 75,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6506666666666666,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "rennes"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.227,
+        "connect": 1.0,
+        "density": 0.611,
+        "dispersion": 1.807,
+        "max_support_all_zones": 0.786,
+        "mean_support_all_zones": 0.627,
+        "min_support_all_zones": 0.512,
+        "singularity_scr": 0.975,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +5.0 days",
+      "pattern_id": 76,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.627,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "niamey",
+        "riyadh"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.922,
+        "connect": 1.0,
+        "density": 0.158,
+        "dispersion": 3.532,
+        "max_support_all_zones": 0.727,
+        "mean_support_all_zones": 0.6233333333333334,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 4.789,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 months",
+      "pattern_id": 77,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6233333333333334,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.075,
+        "connect": 1.0,
+        "density": 0.424,
+        "dispersion": 7.638,
+        "max_support_all_zones": 0.679,
+        "mean_support_all_zones": 0.6173333333333334,
+        "min_support_all_zones": 0.506,
+        "singularity_scr": 3.841,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +5.0 days",
+      "pattern_id": 78,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6173333333333334,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi",
+        "rennes"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.327,
+        "connect": 1.0,
+        "density": 0.408,
+        "dispersion": 3.322,
+        "max_support_all_zones": 0.731,
+        "mean_support_all_zones": 0.6046666666666667,
+        "min_support_all_zones": 0.538,
+        "singularity_scr": 1.753,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +4.0 days",
+      "pattern_id": 79,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6046666666666667,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.163,
+        "connect": 1.0,
+        "density": 0.408,
+        "dispersion": 3.216,
+        "max_support_all_zones": 0.69,
+        "mean_support_all_zones": 0.6013333333333333,
+        "min_support_all_zones": 0.538,
+        "singularity_scr": 1.589,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +4.0 days",
+      "pattern_id": 80,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6013333333333333,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.333,
+        "connect": 1.0,
+        "density": 0.214,
+        "dispersion": 0.943,
+        "max_support_all_zones": 0.643,
+        "mean_support_all_zones": 0.5906666666666667,
+        "min_support_all_zones": 0.529,
+        "singularity_scr": 1.167,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +4.0 weeks",
+      "pattern_id": 81,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5906666666666667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "rennes",
+        "riyadh",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 months, (solar_radiation+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.464,
+        "connect": 1.0,
+        "density": 0.138,
+        "dispersion": 3.417,
+        "max_support_all_zones": 0.691,
+        "mean_support_all_zones": 0.5856666666666667,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 4.495,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 months, (solar_radiation+) +2.0 months",
+      "pattern_id": 82,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5856666666666667,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.871,
+        "connect": 1.0,
+        "density": 0.308,
+        "dispersion": 6.307,
+        "max_support_all_zones": 0.611,
+        "mean_support_all_zones": 0.5746666666666667,
+        "min_support_all_zones": 0.513,
+        "singularity_scr": 4.619,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +3.0 weeks",
+      "pattern_id": 83,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5746666666666667,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.069,
+        "connect": 1.0,
+        "density": 0.229,
+        "dispersion": 5.307,
+        "max_support_all_zones": 0.643,
+        "mean_support_all_zones": 0.5743333333333333,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 5.799,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +4.0 weeks",
+      "pattern_id": 84,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5743333333333333,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "riyadh",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.925,
+        "connect": 1.0,
+        "density": 0.51,
+        "dispersion": 8.262,
+        "max_support_all_zones": 0.564,
+        "mean_support_all_zones": 0.5546666666666668,
+        "min_support_all_zones": 0.539,
+        "singularity_scr": 2.248,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +2.0 days",
+      "pattern_id": 85,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5546666666666668,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 weeks, (humidity-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.214,
+        "connect": 1.0,
+        "density": 0.233,
+        "dispersion": 2.651,
+        "max_support_all_zones": 0.578,
+        "mean_support_all_zones": 0.5406666666666666,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 2.643,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 weeks, (humidity-) +2.0 weeks",
+      "pattern_id": 86,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5406666666666666,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 weeks, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.214,
+        "connect": 1.0,
+        "density": 0.233,
+        "dispersion": 2.651,
+        "max_support_all_zones": 0.578,
+        "mean_support_all_zones": 0.5353333333333333,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 2.643,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.21428571428571427
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 weeks, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "pattern_id": 87,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5353333333333333,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(precipitation+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.333,
+        "connect": 1.0,
+        "density": 0.2,
+        "dispersion": 0.471,
+        "max_support_all_zones": 1.0,
+        "mean_support_all_zones": 0.8665,
+        "min_support_all_zones": 0.733,
+        "singularity_scr": 1.0,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (precipitation+) +1.0 months",
+      "pattern_id": 88,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.8665,
+      "variables": [
+        "ndvi_mean",
+        "precipitation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "mombasa",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.857,
+        "connect": 1.0,
+        "density": 0.127,
+        "dispersion": 0.99,
+        "max_support_all_zones": 0.7,
+        "mean_support_all_zones": 0.6835,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.584,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 months",
+      "pattern_id": 89,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6835,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +1.0 months, (evapotranspiration-) +1.0 months, (wind_speed+) +1.0 months, (solar_radiation-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 months, (evapotranspiration-) +1.0 months, (wind_speed+) +1.0 months, (solar_radiation-) +1.0 months",
+      "pattern_id": 90,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration",
+        "wind_speed",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +1.0 months, (solar_radiation-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 months, (solar_radiation-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "pattern_id": 91,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 months, (evapotranspiration-) +1.0 months, (solar_radiation-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months, (evapotranspiration-) +1.0 months, (solar_radiation-) +1.0 months",
+      "pattern_id": 92,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 months, (temperature_2m-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months, (temperature_2m-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "pattern_id": 93,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "pattern_id": 94,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 months, (evapotranspiration-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months, (evapotranspiration-) +1.0 months",
+      "pattern_id": 95,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 months, (temperature_2m-) +1.0 months, (solar_radiation-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months, (temperature_2m-) +1.0 months, (solar_radiation-) +1.0 months",
+      "pattern_id": 96,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "temperature_2m",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 months, (temperature_2m-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months, (temperature_2m-) +1.0 months",
+      "pattern_id": 97,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 months, (wind_speed+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months, (wind_speed+) +1.0 months",
+      "pattern_id": 98,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +1.0 months, (temperature_2m-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.111,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.667,
+        "min_support_all_zones": 0.667,
+        "singularity_scr": 1.111,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months, (temperature_2m-) +1.0 months",
+      "pattern_id": 99,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.667,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "mombasa"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +5.0 days, (solar_radiation+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.34,
+        "connect": 1.0,
+        "density": 0.433,
+        "dispersion": 4.224,
+        "max_support_all_zones": 0.654,
+        "mean_support_all_zones": 0.653,
+        "min_support_all_zones": 0.652,
+        "singularity_scr": 2.539,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +5.0 days, (solar_radiation+) +5.0 days",
+      "pattern_id": 100,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.653,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 months, (evapotranspiration-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.857,
+        "connect": 1.0,
+        "density": 0.127,
+        "dispersion": 0.99,
+        "max_support_all_zones": 0.7,
+        "mean_support_all_zones": 0.6499999999999999,
+        "min_support_all_zones": 0.6,
+        "singularity_scr": 1.584,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 months, (evapotranspiration-) +2.0 months",
+      "pattern_id": 101,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6499999999999999,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 days, (solar_radiation+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.626,
+        "connect": 1.0,
+        "density": 0.567,
+        "dispersion": 4.867,
+        "max_support_all_zones": 0.662,
+        "mean_support_all_zones": 0.643,
+        "min_support_all_zones": 0.624,
+        "singularity_scr": 1.19,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 days, (solar_radiation+) +2.0 days",
+      "pattern_id": 102,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.643,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.005,
+        "connect": 1.0,
+        "density": 0.495,
+        "dispersion": 6.312,
+        "max_support_all_zones": 0.745,
+        "mean_support_all_zones": 0.6385000000000001,
+        "min_support_all_zones": 0.532,
+        "singularity_scr": 2.596,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 days",
+      "pattern_id": 103,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6385000000000001,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 weeks, (temperature_2m+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.333,
+        "connect": 1.0,
+        "density": 0.25,
+        "dispersion": 2.637,
+        "max_support_all_zones": 0.644,
+        "mean_support_all_zones": 0.6345000000000001,
+        "min_support_all_zones": 0.625,
+        "singularity_scr": 2.55,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 weeks, (temperature_2m+) +2.0 weeks",
+      "pattern_id": 104,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6345000000000001,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 5.5,
+        "connect": 1.0,
+        "density": 0.417,
+        "dispersion": 3.378,
+        "max_support_all_zones": 0.702,
+        "mean_support_all_zones": 0.6255,
+        "min_support_all_zones": 0.549,
+        "singularity_scr": 1.85,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +4.0 days",
+      "pattern_id": 105,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6255,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.994,
+        "connect": 1.0,
+        "density": 0.497,
+        "dispersion": 8.064,
+        "max_support_all_zones": 0.679,
+        "mean_support_all_zones": 0.6185,
+        "min_support_all_zones": 0.558,
+        "singularity_scr": 2.985,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +3.0 days",
+      "pattern_id": 106,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6185,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +1.0 months, (temperature_2m+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.857,
+        "connect": 1.0,
+        "density": 0.194,
+        "dispersion": 0.833,
+        "max_support_all_zones": 0.7,
+        "mean_support_all_zones": 0.6165,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 1.444,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 months, (temperature_2m+) +1.0 months",
+      "pattern_id": 107,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6165,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "niamey"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.229,
+        "connect": 1.0,
+        "density": 0.303,
+        "dispersion": 3.558,
+        "max_support_all_zones": 0.655,
+        "mean_support_all_zones": 0.613,
+        "min_support_all_zones": 0.571,
+        "singularity_scr": 3.436,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 months",
+      "pattern_id": 108,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.613,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +2.0 weeks, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.276,
+        "connect": 1.0,
+        "density": 0.242,
+        "dispersion": 2.664,
+        "max_support_all_zones": 0.617,
+        "mean_support_all_zones": 0.6085,
+        "min_support_all_zones": 0.6,
+        "singularity_scr": 2.478,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 weeks, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "pattern_id": 109,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6085,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 months, (precipitation+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.5,
+        "connect": 1.0,
+        "density": 0.133,
+        "dispersion": 0.5,
+        "max_support_all_zones": 0.667,
+        "mean_support_all_zones": 0.6000000000000001,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 0.833,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months, (precipitation+) +1.0 months",
+      "pattern_id": 110,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6000000000000001,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "precipitation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "mombasa",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +2.0 months, (humidity+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.833,
+        "connect": 1.0,
+        "density": 0.109,
+        "dispersion": 1.067,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.6,
+        "min_support_all_zones": 0.6,
+        "singularity_scr": 1.409,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 months, (humidity+) +2.0 months",
+      "pattern_id": 111,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.6,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +3.0 weeks, (humidity-) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.025,
+        "connect": 1.0,
+        "density": 0.316,
+        "dispersion": 5.958,
+        "max_support_all_zones": 0.614,
+        "mean_support_all_zones": 0.5905,
+        "min_support_all_zones": 0.567,
+        "singularity_scr": 5.266,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +3.0 weeks, (humidity-) +3.0 weeks",
+      "pattern_id": 112,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5905,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.635,
+        "connect": 1.0,
+        "density": 0.433,
+        "dispersion": 2.961,
+        "max_support_all_zones": 0.606,
+        "mean_support_all_zones": 0.5885,
+        "min_support_all_zones": 0.571,
+        "singularity_scr": 2.077,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +4.0 days",
+      "pattern_id": 113,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5885,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +4.0 weeks, (evapotranspiration-) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.5,
+        "connect": 1.0,
+        "density": 0.214,
+        "dispersion": 0.957,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.5854999999999999,
+        "min_support_all_zones": 0.571,
+        "singularity_scr": 1.0,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +4.0 weeks, (evapotranspiration-) +4.0 weeks",
+      "pattern_id": 114,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5854999999999999,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "rennes",
+        "tromso"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 days, (humidity-) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.05,
+        "connect": 1.0,
+        "density": 0.524,
+        "dispersion": 4.772,
+        "max_support_all_zones": 0.593,
+        "mean_support_all_zones": 0.5845,
+        "min_support_all_zones": 0.576,
+        "singularity_scr": 1.223,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 days, (humidity-) +2.0 days",
+      "pattern_id": 115,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5845,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.929,
+        "connect": 1.0,
+        "density": 0.509,
+        "dispersion": 2.389,
+        "max_support_all_zones": 0.622,
+        "mean_support_all_zones": 0.5820000000000001,
+        "min_support_all_zones": 0.542,
+        "singularity_scr": 1.016,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +3.0 days",
+      "pattern_id": 116,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5820000000000001,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +1.0 months, (temperature_2m+) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.875,
+        "connect": 1.0,
+        "density": 0.291,
+        "dispersion": 1.615,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.582,
+        "min_support_all_zones": 0.564,
+        "singularity_scr": 1.841,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +1.0 months, (temperature_2m+) +1.0 months",
+      "pattern_id": 117,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.582,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +5.0 days, (temperature_2m+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.833,
+        "connect": 1.0,
+        "density": 0.39,
+        "dispersion": 4.14,
+        "max_support_all_zones": 0.588,
+        "mean_support_all_zones": 0.5794999999999999,
+        "min_support_all_zones": 0.571,
+        "singularity_scr": 2.74,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +5.0 days, (temperature_2m+) +5.0 days",
+      "pattern_id": 118,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5794999999999999,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.792,
+        "connect": 1.0,
+        "density": 0.485,
+        "dispersion": 6.504,
+        "max_support_all_zones": 0.636,
+        "mean_support_all_zones": 0.5785,
+        "min_support_all_zones": 0.521,
+        "singularity_scr": 2.119,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 days",
+      "pattern_id": 119,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5785,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 weeks, (evapotranspiration-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.778,
+        "connect": 1.0,
+        "density": 0.321,
+        "dispersion": 1.315,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.5780000000000001,
+        "min_support_all_zones": 0.556,
+        "singularity_scr": 1.417,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 weeks, (evapotranspiration-) +2.0 weeks",
+      "pattern_id": 120,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5780000000000001,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "rennes",
+        "tromso"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +4.0 weeks, (solar_radiation+) +4.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.849,
+        "connect": 1.0,
+        "density": 0.212,
+        "dispersion": 4.607,
+        "max_support_all_zones": 0.643,
+        "mean_support_all_zones": 0.573,
+        "min_support_all_zones": 0.503,
+        "singularity_scr": 4.453,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 28.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +4.0 weeks, (solar_radiation+) +4.0 weeks",
+      "pattern_id": 121,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.573,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "marseille",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 days, (temperature_2m+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.94,
+        "connect": 1.0,
+        "density": 0.502,
+        "dispersion": 4.995,
+        "max_support_all_zones": 0.593,
+        "mean_support_all_zones": 0.5725,
+        "min_support_all_zones": 0.552,
+        "singularity_scr": 1.274,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 days, (temperature_2m+) +2.0 days",
+      "pattern_id": 122,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5725,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +5.0 days, (temperature_2m+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.435,
+        "connect": 1.0,
+        "density": 0.418,
+        "dispersion": 1.952,
+        "max_support_all_zones": 0.639,
+        "mean_support_all_zones": 0.571,
+        "min_support_all_zones": 0.503,
+        "singularity_scr": 1.731,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +5.0 days, (temperature_2m+) +5.0 days",
+      "pattern_id": 123,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.571,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +2.0 weeks, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.353,
+        "connect": 1.0,
+        "density": 0.283,
+        "dispersion": 2.667,
+        "max_support_all_zones": 0.622,
+        "mean_support_all_zones": 0.5665,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 2.456,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 weeks, (evapotranspiration+) +2.0 weeks, (solar_radiation+) +2.0 weeks",
+      "pattern_id": 124,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5665,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +2.0 months, (evapotranspiration-) +2.0 months, (humidity+) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 1.833,
+        "connect": 1.0,
+        "density": 0.109,
+        "dispersion": 1.067,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.5665,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 1.409,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 months, (evapotranspiration-) +2.0 months, (humidity+) +2.0 months",
+      "pattern_id": 125,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5665,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 12.536,
+        "connect": 1.0,
+        "density": 0.479,
+        "dispersion": 8.25,
+        "max_support_all_zones": 0.595,
+        "mean_support_all_zones": 0.5665,
+        "min_support_all_zones": 0.538,
+        "singularity_scr": 2.861,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +3.0 days",
+      "pattern_id": 126,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5665,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 weeks, (wind_speed+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.353,
+        "connect": 1.0,
+        "density": 0.283,
+        "dispersion": 2.667,
+        "max_support_all_zones": 0.622,
+        "mean_support_all_zones": 0.5665,
+        "min_support_all_zones": 0.511,
+        "singularity_scr": 2.456,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 weeks, (wind_speed+) +2.0 weeks",
+      "pattern_id": 127,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5665,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 days, (temperature_2m+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.872,
+        "connect": 1.0,
+        "density": 0.506,
+        "dispersion": 5.027,
+        "max_support_all_zones": 0.567,
+        "mean_support_all_zones": 0.562,
+        "min_support_all_zones": 0.557,
+        "singularity_scr": 1.27,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 days, (temperature_2m+) +2.0 days",
+      "pattern_id": 128,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.562,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +2.0 days, (humidity-) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.855,
+        "connect": 1.0,
+        "density": 0.537,
+        "dispersion": 4.874,
+        "max_support_all_zones": 0.59,
+        "mean_support_all_zones": 0.5609999999999999,
+        "min_support_all_zones": 0.532,
+        "singularity_scr": 1.195,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 days, (humidity-) +2.0 days",
+      "pattern_id": 129,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5609999999999999,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.168,
+        "connect": 1.0,
+        "density": 0.452,
+        "dispersion": 4.525,
+        "max_support_all_zones": 0.561,
+        "mean_support_all_zones": 0.5585,
+        "min_support_all_zones": 0.556,
+        "singularity_scr": 2.637,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +4.0 days",
+      "pattern_id": 130,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5585,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "manaus",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.857,
+        "connect": 1.0,
+        "density": 0.35,
+        "dispersion": 3.005,
+        "max_support_all_zones": 0.578,
+        "mean_support_all_zones": 0.558,
+        "min_support_all_zones": 0.538,
+        "singularity_scr": 1.75,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 weeks",
+      "pattern_id": 131,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.558,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "seoul"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +5.0 days, (evapotranspiration+) +5.0 days, (solar_radiation+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.833,
+        "connect": 1.0,
+        "density": 0.39,
+        "dispersion": 4.14,
+        "max_support_all_zones": 0.588,
+        "mean_support_all_zones": 0.5535,
+        "min_support_all_zones": 0.519,
+        "singularity_scr": 2.74,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +5.0 days, (evapotranspiration+) +5.0 days, (solar_radiation+) +5.0 days",
+      "pattern_id": 132,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5535,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation+) +1.0 months, (humidity-) +1.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.0,
+        "connect": 1.0,
+        "density": 0.167,
+        "dispersion": 1.155,
+        "max_support_all_zones": 0.6,
+        "mean_support_all_zones": 0.5525,
+        "min_support_all_zones": 0.505,
+        "singularity_scr": 1.5,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 months, (humidity-) +1.0 months",
+      "pattern_id": 133,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5525,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "nairobi",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +3.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.396,
+        "connect": 1.0,
+        "density": 0.373,
+        "dispersion": 6.541,
+        "max_support_all_zones": 0.579,
+        "mean_support_all_zones": 0.5525,
+        "min_support_all_zones": 0.526,
+        "singularity_scr": 4.996,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 21.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +3.0 weeks",
+      "pattern_id": 134,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5525,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "marseille"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 11.588,
+        "connect": 1.0,
+        "density": 0.47,
+        "dispersion": 7.809,
+        "max_support_all_zones": 0.561,
+        "mean_support_all_zones": 0.5485,
+        "min_support_all_zones": 0.536,
+        "singularity_scr": 3.583,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity+) +5.0 days",
+      "pattern_id": 135,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5485,
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.042,
+        "connect": 1.0,
+        "density": 0.436,
+        "dispersion": 2.406,
+        "max_support_all_zones": 0.563,
+        "mean_support_all_zones": 0.548,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 1.261,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +3.0 days",
+      "pattern_id": 136,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.548,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m+) +2.0 days, (evapotranspiration+) +2.0 days, (solar_radiation+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 8.94,
+        "connect": 1.0,
+        "density": 0.502,
+        "dispersion": 4.995,
+        "max_support_all_zones": 0.552,
+        "mean_support_all_zones": 0.5465,
+        "min_support_all_zones": 0.541,
+        "singularity_scr": 1.274,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 days, (evapotranspiration+) +2.0 days, (solar_radiation+) +2.0 days",
+      "pattern_id": 137,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5465,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 days, (evapotranspiration+) +2.0 days, (solar_radiation+) +2.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 9.05,
+        "connect": 1.0,
+        "density": 0.524,
+        "dispersion": 4.772,
+        "max_support_all_zones": 0.576,
+        "mean_support_all_zones": 0.5455,
+        "min_support_all_zones": 0.515,
+        "singularity_scr": 1.223,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 2.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 days, (evapotranspiration+) +2.0 days, (solar_radiation+) +2.0 days",
+      "pattern_id": 138,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5455,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "evapotranspiration",
+        "solar_radiation"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "fos_sur_mer"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +5.0 days, (temperature_2m+) +5.0 days, (evapotranspiration+) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.238,
+        "connect": 1.0,
+        "density": 0.382,
+        "dispersion": 1.77,
+        "max_support_all_zones": 0.583,
+        "mean_support_all_zones": 0.5429999999999999,
+        "min_support_all_zones": 0.503,
+        "singularity_scr": 1.61,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +5.0 days, (temperature_2m+) +5.0 days, (evapotranspiration+) +5.0 days",
+      "pattern_id": 139,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5429999999999999,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "niamey",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(temperature_2m-) +5.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 10.745,
+        "connect": 1.0,
+        "density": 0.46,
+        "dispersion": 7.552,
+        "max_support_all_zones": 0.549,
+        "mean_support_all_zones": 0.5425,
+        "min_support_all_zones": 0.536,
+        "singularity_scr": 2.548,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 5.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (temperature_2m-) +5.0 days",
+      "pattern_id": 140,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5425,
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "nairobi"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration+) +2.0 months, (humidity-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 6.609,
+        "connect": 1.0,
+        "density": 0.277,
+        "dispersion": 3.485,
+        "max_support_all_zones": 0.545,
+        "mean_support_all_zones": 0.539,
+        "min_support_all_zones": 0.533,
+        "singularity_scr": 3.354,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 months, (humidity-) +2.0 months",
+      "pattern_id": 141,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.539,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(solar_radiation-) +1.0 weeks, (evapotranspiration-) +1.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 4.619,
+        "connect": 1.0,
+        "density": 0.35,
+        "dispersion": 2.777,
+        "max_support_all_zones": 0.538,
+        "mean_support_all_zones": 0.537,
+        "min_support_all_zones": 0.536,
+        "singularity_scr": 1.893,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 7.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 weeks, (evapotranspiration-) +1.0 weeks",
+      "pattern_id": 142,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.537,
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "manaus"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +3.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 12.0,
+        "connect": 1.0,
+        "density": 0.465,
+        "dispersion": 7.997,
+        "max_support_all_zones": 0.547,
+        "mean_support_all_zones": 0.5345,
+        "min_support_all_zones": 0.522,
+        "singularity_scr": 3.108,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 3.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +3.0 days",
+      "pattern_id": 143,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5345,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "montpellier",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(evapotranspiration-) +4.0 days",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.43,
+        "connect": 1.0,
+        "density": 0.41,
+        "dispersion": 4.382,
+        "max_support_all_zones": 0.561,
+        "mean_support_all_zones": 0.532,
+        "min_support_all_zones": 0.503,
+        "singularity_scr": 2.914,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 4.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (evapotranspiration-) +4.0 days",
+      "pattern_id": 144,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.532,
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "manaus",
+        "bassin_du_lez"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 weeks, (temperature_2m+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.88,
+        "connect": 1.0,
+        "density": 0.208,
+        "dispersion": 2.085,
+        "max_support_all_zones": 0.556,
+        "mean_support_all_zones": 0.532,
+        "min_support_all_zones": 0.508,
+        "singularity_scr": 2.795,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 weeks, (temperature_2m+) +2.0 weeks",
+      "pattern_id": 145,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.532,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "temperature_2m"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed-) +2.0 weeks, (evapotranspiration-) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 2.75,
+        "connect": 1.0,
+        "density": 0.286,
+        "dispersion": 1.392,
+        "max_support_all_zones": 0.533,
+        "mean_support_all_zones": 0.5305,
+        "min_support_all_zones": 0.528,
+        "singularity_scr": 1.25,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 weeks, (evapotranspiration-) +2.0 weeks",
+      "pattern_id": 146,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5305,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "rennes",
+        "tromso"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(wind_speed+) +2.0 months, (humidity-) +2.0 months",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 7.094,
+        "connect": 1.0,
+        "density": 0.229,
+        "dispersion": 3.509,
+        "max_support_all_zones": 0.533,
+        "mean_support_all_zones": 0.521,
+        "min_support_all_zones": 0.509,
+        "singularity_scr": 3.238,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 60.833333333333336,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 months, (humidity-) +2.0 months",
+      "pattern_id": 147,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.521,
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "humidity"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "svalbard",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "algorithm": "tgrad",
+      "antecedent": "(humidity-) +2.0 weeks, (temperature_2m+) +2.0 weeks, (evapotranspiration+) +2.0 weeks",
+      "confidence": null,
+      "consequent": "ndvi_mean+",
+      "created_at": "2026-06-27T11:51:47.699364Z",
+      "extra_metrics": {
+        "avg_dev": 3.833,
+        "connect": 1.0,
+        "density": 0.2,
+        "dispersion": 2.115,
+        "max_support_all_zones": 0.533,
+        "mean_support_all_zones": 0.5205,
+        "min_support_all_zones": 0.508,
+        "singularity_scr": 2.708,
+        "validated_folds": 2.0,
+        "zone_coverage": 0.14285714285714285
+      },
+      "is_temporal": true,
+      "lag_days": 14.0,
+      "n_folds": 5,
+      "pattern": "ndvi_mean+, (humidity-) +2.0 weeks, (temperature_2m+) +2.0 weeks, (evapotranspiration+) +2.0 weeks",
+      "pattern_id": 148,
+      "period_end": "2023-09-30",
+      "period_start": "2023-07-01",
+      "stability": 0.4,
+      "support": 0.5205,
+      "variables": [
+        "ndvi_mean",
+        "humidity",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "zone_id": "cross_zone",
+      "zones_validated": [
+        "tromso",
+        "svalbard"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "zone_id": "cross_zone"
+}

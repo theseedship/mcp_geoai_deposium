@@ -1,0 +1,4031 @@
+{
+  "candidates": [
+    {
+      "antecedent": 660,
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "confidence": 0.48484848484848486,
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "joint": 320,
+      "lag_steps": 0,
+      "pairs": 786,
+      "passing_folds": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.4071246819338422,
+      "validated": false
+    },
+    {
+      "antecedent": 2832,
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ]
+      ],
+      "confidence": 0.5646186440677966,
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "joint": 1599,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.5638222849083215,
+      "validated": false
+    },
+    {
+      "antecedent": 660,
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "confidence": 0.48484848484848486,
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "joint": 320,
+      "lag_steps": 0,
+      "pairs": 786,
+      "passing_folds": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.4071246819338422,
+      "validated": false
+    },
+    {
+      "antecedent": 2832,
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ]
+      ],
+      "confidence": 0.5646186440677966,
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "joint": 1599,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.5638222849083215,
+      "validated": false
+    },
+    {
+      "antecedent": 2721,
+      "antecedent_items": [
+        [
+          "humidity",
+          "+"
+        ]
+      ],
+      "confidence": 0.5927967658948916,
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "joint": 1613,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 1,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "stability": 0.2,
+      "status": "fail",
+      "support": 0.5687588152327221,
+      "validated": false
+    },
+    {
+      "antecedent": 2721,
+      "antecedent_items": [
+        [
+          "humidity",
+          "-"
+        ]
+      ],
+      "confidence": 0.5927967658948916,
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "joint": 1613,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 1,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "stability": 0.2,
+      "status": "fail",
+      "support": 0.5687588152327221,
+      "validated": false
+    },
+    {
+      "antecedent": 2835,
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "confidence": 0.5777777777777777,
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "joint": 1638,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 0,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.577574047954866,
+      "validated": false
+    },
+    {
+      "antecedent": 2835,
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "confidence": 0.5777777777777777,
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "joint": 1638,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 0,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.577574047954866,
+      "validated": false
+    },
+    {
+      "antecedent": 2834,
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "+"
+        ]
+      ],
+      "confidence": 0.5261115031757233,
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "joint": 1491,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 0,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.5257404795486601,
+      "validated": false
+    },
+    {
+      "antecedent": 2834,
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "-"
+        ]
+      ],
+      "confidence": 0.5261115031757233,
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "joint": 1491,
+      "lag_steps": 0,
+      "pairs": 2836,
+      "passing_folds": 0,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "stability": 0.0,
+      "status": "fail",
+      "support": 0.5257404795486601,
+      "validated": false
+    }
+  ],
+  "donor_scores": [
+    {
+      "antecedent": 1659,
+      "confidence": 0.6268836648583485,
+      "fold": 1,
+      "joint": 1040,
+      "pairs": 2050,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5073170731707317
+    },
+    {
+      "antecedent": 2046,
+      "confidence": 0.5943304007820137,
+      "fold": 1,
+      "joint": 1216,
+      "pairs": 2050,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.593170731707317
+    },
+    {
+      "antecedent": 1659,
+      "confidence": 0.6268836648583485,
+      "fold": 1,
+      "joint": 1040,
+      "pairs": 2050,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5073170731707317
+    },
+    {
+      "antecedent": 2046,
+      "confidence": 0.5943304007820137,
+      "fold": 1,
+      "joint": 1216,
+      "pairs": 2050,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.593170731707317
+    },
+    {
+      "antecedent": 1944,
+      "confidence": 0.6296296296296297,
+      "fold": 1,
+      "joint": 1224,
+      "pairs": 2050,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5970731707317073
+    },
+    {
+      "antecedent": 1944,
+      "confidence": 0.6296296296296297,
+      "fold": 1,
+      "joint": 1224,
+      "pairs": 2050,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5970731707317073
+    },
+    {
+      "antecedent": 2049,
+      "confidence": 0.6124938994631528,
+      "fold": 1,
+      "joint": 1255,
+      "pairs": 2050,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6121951219512195
+    },
+    {
+      "antecedent": 2049,
+      "confidence": 0.6124938994631528,
+      "fold": 1,
+      "joint": 1255,
+      "pairs": 2050,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6121951219512195
+    },
+    {
+      "antecedent": 2049,
+      "confidence": 0.5383113714006833,
+      "fold": 1,
+      "joint": 1103,
+      "pairs": 2050,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5380487804878049
+    },
+    {
+      "antecedent": 2049,
+      "confidence": 0.5383113714006833,
+      "fold": 1,
+      "joint": 1103,
+      "pairs": 2050,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5380487804878049
+    },
+    {
+      "antecedent": 2107,
+      "confidence": 0.5386805885144755,
+      "fold": 2,
+      "joint": 1135,
+      "pairs": 2111,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5376598768356229
+    },
+    {
+      "antecedent": 2107,
+      "confidence": 0.5386805885144755,
+      "fold": 2,
+      "joint": 1135,
+      "pairs": 2111,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5376598768356229
+    },
+    {
+      "antecedent": 2018,
+      "confidence": 0.5659068384539148,
+      "fold": 2,
+      "joint": 1142,
+      "pairs": 2111,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5409758408337281
+    },
+    {
+      "antecedent": 2018,
+      "confidence": 0.5659068384539148,
+      "fold": 2,
+      "joint": 1142,
+      "pairs": 2111,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5409758408337281
+    },
+    {
+      "antecedent": 2110,
+      "confidence": 0.5601895734597157,
+      "fold": 2,
+      "joint": 1182,
+      "pairs": 2111,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5599242065371862
+    },
+    {
+      "antecedent": 2110,
+      "confidence": 0.5601895734597157,
+      "fold": 2,
+      "joint": 1182,
+      "pairs": 2111,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5599242065371862
+    },
+    {
+      "antecedent": 2109,
+      "confidence": 0.5068752963489805,
+      "fold": 2,
+      "joint": 1069,
+      "pairs": 2111,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5063950734249171
+    },
+    {
+      "antecedent": 2109,
+      "confidence": 0.5068752963489805,
+      "fold": 2,
+      "joint": 1069,
+      "pairs": 2111,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5063950734249171
+    },
+    {
+      "antecedent": 2339,
+      "confidence": 0.5840102607952117,
+      "fold": 3,
+      "joint": 1366,
+      "pairs": 2340,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5837606837606838
+    },
+    {
+      "antecedent": 2339,
+      "confidence": 0.5840102607952117,
+      "fold": 3,
+      "joint": 1366,
+      "pairs": 2340,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5837606837606838
+    },
+    {
+      "antecedent": 2240,
+      "confidence": 0.6196428571428572,
+      "fold": 3,
+      "joint": 1388,
+      "pairs": 2340,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5931623931623932
+    },
+    {
+      "antecedent": 2240,
+      "confidence": 0.6196428571428572,
+      "fold": 3,
+      "joint": 1388,
+      "pairs": 2340,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5931623931623932
+    },
+    {
+      "antecedent": 2339,
+      "confidence": 0.5929884566053869,
+      "fold": 3,
+      "joint": 1387,
+      "pairs": 2340,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5927350427350427
+    },
+    {
+      "antecedent": 2339,
+      "confidence": 0.5929884566053869,
+      "fold": 3,
+      "joint": 1387,
+      "pairs": 2340,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5927350427350427
+    },
+    {
+      "antecedent": 2338,
+      "confidence": 0.539349871685201,
+      "fold": 3,
+      "joint": 1261,
+      "pairs": 2340,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5388888888888889
+    },
+    {
+      "antecedent": 2338,
+      "confidence": 0.539349871685201,
+      "fold": 3,
+      "joint": 1261,
+      "pairs": 2340,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5388888888888889
+    },
+    {
+      "antecedent": 2670,
+      "confidence": 0.5636704119850188,
+      "fold": 4,
+      "joint": 1505,
+      "pairs": 2673,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5630377852600075
+    },
+    {
+      "antecedent": 2670,
+      "confidence": 0.5636704119850188,
+      "fold": 4,
+      "joint": 1505,
+      "pairs": 2673,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5630377852600075
+    },
+    {
+      "antecedent": 2562,
+      "confidence": 0.5886026541764247,
+      "fold": 4,
+      "joint": 1508,
+      "pairs": 2673,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5641601197156753
+    },
+    {
+      "antecedent": 2562,
+      "confidence": 0.5886026541764247,
+      "fold": 4,
+      "joint": 1508,
+      "pairs": 2673,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5641601197156753
+    },
+    {
+      "antecedent": 2672,
+      "confidence": 0.5774700598802395,
+      "fold": 4,
+      "joint": 1543,
+      "pairs": 2673,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5772540216984662
+    },
+    {
+      "antecedent": 2672,
+      "confidence": 0.5774700598802395,
+      "fold": 4,
+      "joint": 1543,
+      "pairs": 2673,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5772540216984662
+    },
+    {
+      "antecedent": 2672,
+      "confidence": 0.5273203592814372,
+      "fold": 4,
+      "joint": 1409,
+      "pairs": 2673,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5271230826786383
+    },
+    {
+      "antecedent": 2672,
+      "confidence": 0.5273203592814372,
+      "fold": 4,
+      "joint": 1409,
+      "pairs": 2673,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5271230826786383
+    },
+    {
+      "antecedent": 2166,
+      "confidence": 0.5420129270544783,
+      "fold": 5,
+      "joint": 1174,
+      "pairs": 2170,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5410138248847927
+    },
+    {
+      "antecedent": 2166,
+      "confidence": 0.5420129270544783,
+      "fold": 5,
+      "joint": 1174,
+      "pairs": 2170,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5410138248847927
+    },
+    {
+      "antecedent": 2120,
+      "confidence": 0.5613207547169812,
+      "fold": 5,
+      "joint": 1190,
+      "pairs": 2170,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5483870967741935
+    },
+    {
+      "antecedent": 2120,
+      "confidence": 0.5613207547169812,
+      "fold": 5,
+      "joint": 1190,
+      "pairs": 2170,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5483870967741935
+    },
+    {
+      "antecedent": 2170,
+      "confidence": 0.5460829493087558,
+      "fold": 5,
+      "joint": 1185,
+      "pairs": 2170,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5460829493087558
+    },
+    {
+      "antecedent": 2170,
+      "confidence": 0.5460829493087558,
+      "fold": 5,
+      "joint": 1185,
+      "pairs": 2170,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5460829493087558
+    },
+    {
+      "antecedent": 2168,
+      "confidence": 0.5175276752767528,
+      "fold": 5,
+      "joint": 1122,
+      "pairs": 2170,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5170506912442396
+    },
+    {
+      "antecedent": 2168,
+      "confidence": 0.5175276752767528,
+      "fold": 5,
+      "joint": 1122,
+      "pairs": 2170,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5170506912442396
+    }
+  ],
+  "fold_scores": [
+    {
+      "antecedent": 660,
+      "confidence": 0.48484848484848486,
+      "fold": 1,
+      "joint": 320,
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4071246819338422
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 2,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 3,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 4,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 5,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4872773536895674
+    },
+    {
+      "antecedent": 725,
+      "confidence": 0.64,
+      "fold": 2,
+      "joint": 464,
+      "pairs": 725,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.64
+    },
+    {
+      "antecedent": 493,
+      "confidence": 0.4726166328600406,
+      "fold": 3,
+      "joint": 233,
+      "pairs": 496,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.46975806451612906
+    },
+    {
+      "antecedent": 162,
+      "confidence": 0.5802469135802469,
+      "fold": 4,
+      "joint": 94,
+      "pairs": 163,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5766871165644172
+    },
+    {
+      "antecedent": 666,
+      "confidence": 0.6381381381381381,
+      "fold": 5,
+      "joint": 425,
+      "pairs": 666,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6381381381381381
+    },
+    {
+      "antecedent": 660,
+      "confidence": 0.48484848484848486,
+      "fold": 1,
+      "joint": 320,
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4071246819338422
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 2,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 3,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 4,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": null,
+      "confidence": null,
+      "fold": 5,
+      "joint": null,
+      "pairs": null,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": false,
+      "status": "not_selected",
+      "support": null
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4872773536895674
+    },
+    {
+      "antecedent": 725,
+      "confidence": 0.64,
+      "fold": 2,
+      "joint": 464,
+      "pairs": 725,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.64
+    },
+    {
+      "antecedent": 493,
+      "confidence": 0.4726166328600406,
+      "fold": 3,
+      "joint": 233,
+      "pairs": 496,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.46975806451612906
+    },
+    {
+      "antecedent": 162,
+      "confidence": 0.5802469135802469,
+      "fold": 4,
+      "joint": 94,
+      "pairs": 163,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5766871165644172
+    },
+    {
+      "antecedent": 666,
+      "confidence": 0.6381381381381381,
+      "fold": 5,
+      "joint": 425,
+      "pairs": 666,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6381381381381381
+    },
+    {
+      "antecedent": 777,
+      "confidence": 0.5006435006435006,
+      "fold": 1,
+      "joint": 389,
+      "pairs": 786,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.494910941475827
+    },
+    {
+      "antecedent": 703,
+      "confidence": 0.6699857752489331,
+      "fold": 2,
+      "joint": 471,
+      "pairs": 725,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6496551724137931
+    },
+    {
+      "antecedent": 481,
+      "confidence": 0.4677754677754678,
+      "fold": 3,
+      "joint": 225,
+      "pairs": 496,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4536290322580645
+    },
+    {
+      "antecedent": 159,
+      "confidence": 0.660377358490566,
+      "fold": 4,
+      "joint": 105,
+      "pairs": 163,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6441717791411042
+    },
+    {
+      "antecedent": 601,
+      "confidence": 0.7038269550748752,
+      "fold": 5,
+      "joint": 423,
+      "pairs": 666,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "pass",
+      "support": 0.6351351351351351
+    },
+    {
+      "antecedent": 777,
+      "confidence": 0.5006435006435006,
+      "fold": 1,
+      "joint": 389,
+      "pairs": 786,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.494910941475827
+    },
+    {
+      "antecedent": 703,
+      "confidence": 0.6699857752489331,
+      "fold": 2,
+      "joint": 471,
+      "pairs": 725,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6496551724137931
+    },
+    {
+      "antecedent": 481,
+      "confidence": 0.4677754677754678,
+      "fold": 3,
+      "joint": 225,
+      "pairs": 496,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4536290322580645
+    },
+    {
+      "antecedent": 159,
+      "confidence": 0.660377358490566,
+      "fold": 4,
+      "joint": 105,
+      "pairs": 163,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6441717791411042
+    },
+    {
+      "antecedent": 601,
+      "confidence": 0.7038269550748752,
+      "fold": 5,
+      "joint": 423,
+      "pairs": 666,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "pass",
+      "support": 0.6351351351351351
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "pairs": 786,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4872773536895674
+    },
+    {
+      "antecedent": 725,
+      "confidence": 0.6289655172413793,
+      "fold": 2,
+      "joint": 456,
+      "pairs": 725,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6289655172413793
+    },
+    {
+      "antecedent": 496,
+      "confidence": 0.5060483870967742,
+      "fold": 3,
+      "joint": 251,
+      "pairs": 496,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5060483870967742
+    },
+    {
+      "antecedent": 163,
+      "confidence": 0.5828220858895705,
+      "fold": 4,
+      "joint": 95,
+      "pairs": 163,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5828220858895705
+    },
+    {
+      "antecedent": 665,
+      "confidence": 0.681203007518797,
+      "fold": 5,
+      "joint": 453,
+      "pairs": 666,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6801801801801802
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "pairs": 786,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4872773536895674
+    },
+    {
+      "antecedent": 725,
+      "confidence": 0.6289655172413793,
+      "fold": 2,
+      "joint": 456,
+      "pairs": 725,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6289655172413793
+    },
+    {
+      "antecedent": 496,
+      "confidence": 0.5060483870967742,
+      "fold": 3,
+      "joint": 251,
+      "pairs": 496,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5060483870967742
+    },
+    {
+      "antecedent": 163,
+      "confidence": 0.5828220858895705,
+      "fold": 4,
+      "joint": 95,
+      "pairs": 163,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5828220858895705
+    },
+    {
+      "antecedent": 665,
+      "confidence": 0.681203007518797,
+      "fold": 5,
+      "joint": 453,
+      "pairs": 666,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.6801801801801802
+    },
+    {
+      "antecedent": 785,
+      "confidence": 0.4942675159235669,
+      "fold": 1,
+      "joint": 388,
+      "pairs": 786,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.49363867684478374
+    },
+    {
+      "antecedent": 725,
+      "confidence": 0.5820689655172414,
+      "fold": 2,
+      "joint": 422,
+      "pairs": 725,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5820689655172414
+    },
+    {
+      "antecedent": 496,
+      "confidence": 0.4637096774193548,
+      "fold": 3,
+      "joint": 230,
+      "pairs": 496,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4637096774193548
+    },
+    {
+      "antecedent": 162,
+      "confidence": 0.5061728395061729,
+      "fold": 4,
+      "joint": 82,
+      "pairs": 163,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5030674846625767
+    },
+    {
+      "antecedent": 666,
+      "confidence": 0.5540540540540541,
+      "fold": 5,
+      "joint": 369,
+      "pairs": 666,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5540540540540541
+    },
+    {
+      "antecedent": 785,
+      "confidence": 0.4942675159235669,
+      "fold": 1,
+      "joint": 388,
+      "pairs": 786,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.49363867684478374
+    },
+    {
+      "antecedent": 725,
+      "confidence": 0.5820689655172414,
+      "fold": 2,
+      "joint": 422,
+      "pairs": 725,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5820689655172414
+    },
+    {
+      "antecedent": 496,
+      "confidence": 0.4637096774193548,
+      "fold": 3,
+      "joint": 230,
+      "pairs": 496,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.4637096774193548
+    },
+    {
+      "antecedent": 162,
+      "confidence": 0.5061728395061729,
+      "fold": 4,
+      "joint": 82,
+      "pairs": 163,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5030674846625767
+    },
+    {
+      "antecedent": 666,
+      "confidence": 0.5540540540540541,
+      "fold": 5,
+      "joint": 369,
+      "pairs": 666,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "selected": true,
+      "status": "fail",
+      "support": 0.5540540540540541
+    }
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train_zones": [
+        "fos_sur_mer",
+        "manaus",
+        "marseille",
+        "mombasa",
+        "nairobi",
+        "niamey",
+        "rennes",
+        "riyadh",
+        "seoul",
+        "svalbard",
+        "tromso"
+      ],
+      "validation_zones": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_zones": [
+        "bassin_du_lez",
+        "manaus",
+        "mombasa",
+        "montpellier",
+        "montpellier_metropole",
+        "nairobi",
+        "niamey",
+        "rennes",
+        "riyadh",
+        "svalbard",
+        "tromso"
+      ],
+      "validation_zones": [
+        "fos_sur_mer",
+        "marseille",
+        "seoul"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_zones": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "marseille",
+        "mombasa",
+        "montpellier",
+        "montpellier_metropole",
+        "nairobi",
+        "rennes",
+        "riyadh",
+        "seoul",
+        "tromso"
+      ],
+      "validation_zones": [
+        "manaus",
+        "niamey",
+        "svalbard"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_zones": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "manaus",
+        "marseille",
+        "montpellier",
+        "montpellier_metropole",
+        "nairobi",
+        "niamey",
+        "riyadh",
+        "seoul",
+        "svalbard"
+      ],
+      "validation_zones": [
+        "mombasa",
+        "rennes",
+        "tromso"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_zones": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "manaus",
+        "marseille",
+        "mombasa",
+        "montpellier",
+        "montpellier_metropole",
+        "niamey",
+        "rennes",
+        "seoul",
+        "svalbard",
+        "tromso"
+      ],
+      "validation_zones": [
+        "nairobi",
+        "riyadh"
+      ]
+    }
+  ],
+  "koppen_scores": [
+    {
+      "antecedent": 660,
+      "confidence": 0.48484848484848486,
+      "fold": 1,
+      "joint": 320,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4071246819338422,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4872773536895674,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 659,
+      "confidence": 0.6707132018209409,
+      "fold": 2,
+      "joint": 442,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6707132018209409,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.3333333333333333,
+      "fold": 2,
+      "joint": 22,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3333333333333333,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 209,
+      "confidence": 0.35406698564593303,
+      "fold": 3,
+      "joint": 74,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3523809523809524,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 54,
+      "confidence": 0.2777777777777778,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 230,
+      "confidence": 0.6260869565217392,
+      "fold": 3,
+      "joint": 144,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6233766233766234,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.42857142857142855,
+      "fold": 4,
+      "joint": 12,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42857142857142855,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 119,
+      "confidence": 0.6218487394957983,
+      "fold": 4,
+      "joint": 74,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6166666666666667,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.638095238095238,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.638095238095238,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6388888888888888,
+      "fold": 5,
+      "joint": 23,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6388888888888888,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 660,
+      "confidence": 0.48484848484848486,
+      "fold": 1,
+      "joint": 320,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4071246819338422,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4872773536895674,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 659,
+      "confidence": 0.6707132018209409,
+      "fold": 2,
+      "joint": 442,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6707132018209409,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.3333333333333333,
+      "fold": 2,
+      "joint": 22,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3333333333333333,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 209,
+      "confidence": 0.35406698564593303,
+      "fold": 3,
+      "joint": 74,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3523809523809524,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 54,
+      "confidence": 0.2777777777777778,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 230,
+      "confidence": 0.6260869565217392,
+      "fold": 3,
+      "joint": 144,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6233766233766234,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.42857142857142855,
+      "fold": 4,
+      "joint": 12,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42857142857142855,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 119,
+      "confidence": 0.6218487394957983,
+      "fold": 4,
+      "joint": 74,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6166666666666667,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.638095238095238,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.638095238095238,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6388888888888888,
+      "fold": 5,
+      "joint": 23,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6388888888888888,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 777,
+      "confidence": 0.5006435006435006,
+      "fold": 1,
+      "joint": 389,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.494910941475827,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 638,
+      "confidence": 0.6661442006269592,
+      "fold": 2,
+      "joint": 425,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.644916540212443,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 65,
+      "confidence": 0.7076923076923077,
+      "fold": 2,
+      "joint": 46,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.696969696969697,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 205,
+      "confidence": 0.4,
+      "fold": 3,
+      "joint": 82,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3904761904761905,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 52,
+      "confidence": 0.28846153846153844,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 224,
+      "confidence": 0.5714285714285714,
+      "fold": 3,
+      "joint": 128,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5541125541125541,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.7333333333333333,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7333333333333333,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.5714285714285714,
+      "fold": 4,
+      "joint": 16,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5714285714285714,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 116,
+      "confidence": 0.6724137931034483,
+      "fold": 4,
+      "joint": 78,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.65,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 566,
+      "confidence": 0.7102473498233216,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.638095238095238,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 35,
+      "confidence": 0.6,
+      "fold": 5,
+      "joint": 21,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5833333333333334,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 777,
+      "confidence": 0.5006435006435006,
+      "fold": 1,
+      "joint": 389,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.494910941475827,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 638,
+      "confidence": 0.6661442006269592,
+      "fold": 2,
+      "joint": 425,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.644916540212443,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 65,
+      "confidence": 0.7076923076923077,
+      "fold": 2,
+      "joint": 46,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.696969696969697,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 205,
+      "confidence": 0.4,
+      "fold": 3,
+      "joint": 82,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3904761904761905,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 52,
+      "confidence": 0.28846153846153844,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 224,
+      "confidence": 0.5714285714285714,
+      "fold": 3,
+      "joint": 128,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5541125541125541,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.7333333333333333,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7333333333333333,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.5714285714285714,
+      "fold": 4,
+      "joint": 16,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5714285714285714,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 116,
+      "confidence": 0.6724137931034483,
+      "fold": 4,
+      "joint": 78,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.65,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 566,
+      "confidence": 0.7102473498233216,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.638095238095238,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 35,
+      "confidence": 0.6,
+      "fold": 5,
+      "joint": 21,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5833333333333334,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4872773536895674,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 659,
+      "confidence": 0.6494688922610015,
+      "fold": 2,
+      "joint": 428,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6494688922610015,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.3761904761904762,
+      "fold": 3,
+      "joint": 79,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3761904761904762,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.5272727272727272,
+      "fold": 3,
+      "joint": 29,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5272727272727272,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.6190476190476191,
+      "fold": 3,
+      "joint": 143,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6190476190476191,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.39285714285714285,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.39285714285714285,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.6333333333333333,
+      "fold": 4,
+      "joint": 76,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6333333333333333,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 629,
+      "confidence": 0.6899841017488076,
+      "fold": 5,
+      "joint": 434,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6888888888888889,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.5277777777777778,
+      "fold": 5,
+      "joint": 19,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5277777777777778,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 786,
+      "confidence": 0.4872773536895674,
+      "fold": 1,
+      "joint": 383,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4872773536895674,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 659,
+      "confidence": 0.6494688922610015,
+      "fold": 2,
+      "joint": 428,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6494688922610015,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.3761904761904762,
+      "fold": 3,
+      "joint": 79,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3761904761904762,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.5272727272727272,
+      "fold": 3,
+      "joint": 29,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5272727272727272,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.6190476190476191,
+      "fold": 3,
+      "joint": 143,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6190476190476191,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.39285714285714285,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.39285714285714285,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.6333333333333333,
+      "fold": 4,
+      "joint": 76,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6333333333333333,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 629,
+      "confidence": 0.6899841017488076,
+      "fold": 5,
+      "joint": 434,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6888888888888889,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.5277777777777778,
+      "fold": 5,
+      "joint": 19,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5277777777777778,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 785,
+      "confidence": 0.4942675159235669,
+      "fold": 1,
+      "joint": 388,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.49363867684478374,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 659,
+      "confidence": 0.5978755690440061,
+      "fold": 2,
+      "joint": 394,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5978755690440061,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.37142857142857144,
+      "fold": 3,
+      "joint": 78,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.37142857142857144,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.38181818181818183,
+      "fold": 3,
+      "joint": 21,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.38181818181818183,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.5670995670995671,
+      "fold": 3,
+      "joint": 131,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5670995670995671,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 14,
+      "confidence": 0.5,
+      "fold": 4,
+      "joint": 7,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4666666666666667,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.35714285714285715,
+      "fold": 4,
+      "joint": 10,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.35714285714285715,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.5416666666666666,
+      "fold": 4,
+      "joint": 65,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5416666666666666,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.546031746031746,
+      "fold": 5,
+      "joint": 344,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.546031746031746,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6944444444444444,
+      "fold": 5,
+      "joint": 25,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6944444444444444,
+      "zone_ids": [
+        "nairobi"
+      ]
+    },
+    {
+      "antecedent": 785,
+      "confidence": 0.4942675159235669,
+      "fold": 1,
+      "joint": 388,
+      "koppen": "Csa",
+      "pairs": 786,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.49363867684478374,
+      "zone_ids": [
+        "bassin_du_lez",
+        "montpellier",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 659,
+      "confidence": 0.5978755690440061,
+      "fold": 2,
+      "joint": 394,
+      "koppen": "Csa",
+      "pairs": 659,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5978755690440061,
+      "zone_ids": [
+        "fos_sur_mer",
+        "marseille"
+      ]
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_ids": [
+        "seoul"
+      ]
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.37142857142857144,
+      "fold": 3,
+      "joint": 78,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.37142857142857144,
+      "zone_ids": [
+        "manaus"
+      ]
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.38181818181818183,
+      "fold": 3,
+      "joint": 21,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.38181818181818183,
+      "zone_ids": [
+        "niamey"
+      ]
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.5670995670995671,
+      "fold": 3,
+      "joint": 131,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5670995670995671,
+      "zone_ids": [
+        "svalbard"
+      ]
+    },
+    {
+      "antecedent": 14,
+      "confidence": 0.5,
+      "fold": 4,
+      "joint": 7,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4666666666666667,
+      "zone_ids": [
+        "mombasa"
+      ]
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.35714285714285715,
+      "fold": 4,
+      "joint": 10,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.35714285714285715,
+      "zone_ids": [
+        "rennes"
+      ]
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.5416666666666666,
+      "fold": 4,
+      "joint": 65,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5416666666666666,
+      "zone_ids": [
+        "tromso"
+      ]
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.546031746031746,
+      "fold": 5,
+      "joint": 344,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.546031746031746,
+      "zone_ids": [
+        "riyadh"
+      ]
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6944444444444444,
+      "fold": 5,
+      "joint": 25,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6944444444444444,
+      "zone_ids": [
+        "nairobi"
+      ]
+    }
+  ],
+  "zone_scores": [
+    {
+      "antecedent": 73,
+      "confidence": 0.4520547945205479,
+      "fold": 1,
+      "joint": 33,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4230769230769231,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 515,
+      "confidence": 0.46990291262135925,
+      "fold": 1,
+      "joint": 242,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.38412698412698415,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 72,
+      "confidence": 0.625,
+      "fold": 1,
+      "joint": 45,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5769230769230769,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.44871794871794873,
+      "fold": 1,
+      "joint": 35,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.44871794871794873,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.47619047619047616,
+      "fold": 1,
+      "joint": 300,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.47619047619047616,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.6153846153846154,
+      "fold": 1,
+      "joint": 48,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6153846153846154,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.7944664031620553,
+      "fold": 2,
+      "joint": 201,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7944664031620553,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 406,
+      "confidence": 0.5935960591133005,
+      "fold": 2,
+      "joint": 241,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5935960591133005,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.3333333333333333,
+      "fold": 2,
+      "joint": 22,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3333333333333333,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 209,
+      "confidence": 0.35406698564593303,
+      "fold": 3,
+      "joint": 74,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3523809523809524,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 54,
+      "confidence": 0.2777777777777778,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 230,
+      "confidence": 0.6260869565217392,
+      "fold": 3,
+      "joint": 144,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6233766233766234,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.42857142857142855,
+      "fold": 4,
+      "joint": 12,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42857142857142855,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 119,
+      "confidence": 0.6218487394957983,
+      "fold": 4,
+      "joint": 74,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6166666666666667,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6388888888888888,
+      "fold": 5,
+      "joint": 23,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6388888888888888,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.638095238095238,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.638095238095238,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 73,
+      "confidence": 0.4520547945205479,
+      "fold": 1,
+      "joint": 33,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4230769230769231,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 515,
+      "confidence": 0.46990291262135925,
+      "fold": 1,
+      "joint": 242,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.38412698412698415,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 72,
+      "confidence": 0.625,
+      "fold": 1,
+      "joint": 45,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5769230769230769,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.44871794871794873,
+      "fold": 1,
+      "joint": 35,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.44871794871794873,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.47619047619047616,
+      "fold": 1,
+      "joint": 300,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.47619047619047616,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.6153846153846154,
+      "fold": 1,
+      "joint": 48,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6153846153846154,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.7944664031620553,
+      "fold": 2,
+      "joint": 201,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7944664031620553,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 406,
+      "confidence": 0.5935960591133005,
+      "fold": 2,
+      "joint": 241,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5935960591133005,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.3333333333333333,
+      "fold": 2,
+      "joint": 22,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3333333333333333,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 209,
+      "confidence": 0.35406698564593303,
+      "fold": 3,
+      "joint": 74,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3523809523809524,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 54,
+      "confidence": 0.2777777777777778,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 230,
+      "confidence": 0.6260869565217392,
+      "fold": 3,
+      "joint": 144,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6233766233766234,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.42857142857142855,
+      "fold": 4,
+      "joint": 12,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42857142857142855,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 119,
+      "confidence": 0.6218487394957983,
+      "fold": 4,
+      "joint": 74,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6166666666666667,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6388888888888888,
+      "fold": 5,
+      "joint": 23,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6388888888888888,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.638095238095238,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.638095238095238,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.5769230769230769,
+      "fold": 1,
+      "joint": 45,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5769230769230769,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 623,
+      "confidence": 0.46869983948635635,
+      "fold": 1,
+      "joint": 292,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4634920634920635,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 76,
+      "confidence": 0.6842105263157895,
+      "fold": 1,
+      "joint": 52,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6666666666666666,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 246,
+      "confidence": 0.7032520325203252,
+      "fold": 2,
+      "joint": 173,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.6837944664031621,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 392,
+      "confidence": 0.6428571428571429,
+      "fold": 2,
+      "joint": 252,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6206896551724138,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 65,
+      "confidence": 0.7076923076923077,
+      "fold": 2,
+      "joint": 46,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.696969696969697,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 205,
+      "confidence": 0.4,
+      "fold": 3,
+      "joint": 82,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3904761904761905,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 52,
+      "confidence": 0.28846153846153844,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 224,
+      "confidence": 0.5714285714285714,
+      "fold": 3,
+      "joint": 128,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5541125541125541,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.7333333333333333,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7333333333333333,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.5714285714285714,
+      "fold": 4,
+      "joint": 16,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5714285714285714,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 116,
+      "confidence": 0.6724137931034483,
+      "fold": 4,
+      "joint": 78,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.65,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 35,
+      "confidence": 0.6,
+      "fold": 5,
+      "joint": 21,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5833333333333334,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 566,
+      "confidence": 0.7102473498233216,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.638095238095238,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.5769230769230769,
+      "fold": 1,
+      "joint": 45,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5769230769230769,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 623,
+      "confidence": 0.46869983948635635,
+      "fold": 1,
+      "joint": 292,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4634920634920635,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 76,
+      "confidence": 0.6842105263157895,
+      "fold": 1,
+      "joint": 52,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6666666666666666,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 246,
+      "confidence": 0.7032520325203252,
+      "fold": 2,
+      "joint": 173,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.6837944664031621,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 392,
+      "confidence": 0.6428571428571429,
+      "fold": 2,
+      "joint": 252,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6206896551724138,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 65,
+      "confidence": 0.7076923076923077,
+      "fold": 2,
+      "joint": 46,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.696969696969697,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 205,
+      "confidence": 0.4,
+      "fold": 3,
+      "joint": 82,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3904761904761905,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 52,
+      "confidence": 0.28846153846153844,
+      "fold": 3,
+      "joint": 15,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.2727272727272727,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 224,
+      "confidence": 0.5714285714285714,
+      "fold": 3,
+      "joint": 128,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5541125541125541,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.7333333333333333,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7333333333333333,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.5714285714285714,
+      "fold": 4,
+      "joint": 16,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5714285714285714,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 116,
+      "confidence": 0.6724137931034483,
+      "fold": 4,
+      "joint": 78,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.65,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 35,
+      "confidence": 0.6,
+      "fold": 5,
+      "joint": 21,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5833333333333334,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 566,
+      "confidence": 0.7102473498233216,
+      "fold": 5,
+      "joint": 402,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.638095238095238,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.46153846153846156,
+      "fold": 1,
+      "joint": 36,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.46153846153846156,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.4746031746031746,
+      "fold": 1,
+      "joint": 299,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4746031746031746,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.6153846153846154,
+      "fold": 1,
+      "joint": 48,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6153846153846154,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.7707509881422925,
+      "fold": 2,
+      "joint": 195,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7707509881422925,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 406,
+      "confidence": 0.5738916256157636,
+      "fold": 2,
+      "joint": 233,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5738916256157636,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.3761904761904762,
+      "fold": 3,
+      "joint": 79,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.3761904761904762,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.5272727272727272,
+      "fold": 3,
+      "joint": 29,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5272727272727272,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.6190476190476191,
+      "fold": 3,
+      "joint": 143,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6190476190476191,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.39285714285714285,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.39285714285714285,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.6333333333333333,
+      "fold": 4,
+      "joint": 76,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6333333333333333,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.5277777777777778,
+      "fold": 5,
+      "joint": 19,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5277777777777778,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 629,
+      "confidence": 0.6899841017488076,
+      "fold": 5,
+      "joint": 434,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6888888888888889,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.46153846153846156,
+      "fold": 1,
+      "joint": 36,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.46153846153846156,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.4746031746031746,
+      "fold": 1,
+      "joint": 299,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4746031746031746,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.6153846153846154,
+      "fold": 1,
+      "joint": 48,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6153846153846154,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.7707509881422925,
+      "fold": 2,
+      "joint": 195,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7707509881422925,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 406,
+      "confidence": 0.5738916256157636,
+      "fold": 2,
+      "joint": 233,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5738916256157636,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.3761904761904762,
+      "fold": 3,
+      "joint": 79,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.3761904761904762,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.5272727272727272,
+      "fold": 3,
+      "joint": 29,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5272727272727272,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.6190476190476191,
+      "fold": 3,
+      "joint": 143,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6190476190476191,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 15,
+      "confidence": 0.5333333333333333,
+      "fold": 4,
+      "joint": 8,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5333333333333333,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.39285714285714285,
+      "fold": 4,
+      "joint": 11,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.39285714285714285,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.6333333333333333,
+      "fold": 4,
+      "joint": 76,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6333333333333333,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.5277777777777778,
+      "fold": 5,
+      "joint": 19,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5277777777777778,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 629,
+      "confidence": 0.6899841017488076,
+      "fold": 5,
+      "joint": 434,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6888888888888889,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.5769230769230769,
+      "fold": 1,
+      "joint": 45,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5769230769230769,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 629,
+      "confidence": 0.4578696343402226,
+      "fold": 1,
+      "joint": 288,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.45714285714285713,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.7051282051282052,
+      "fold": 1,
+      "joint": 55,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7051282051282052,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.6719367588932806,
+      "fold": 2,
+      "joint": 170,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6719367588932806,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 406,
+      "confidence": 0.5517241379310345,
+      "fold": 2,
+      "joint": 224,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5517241379310345,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.37142857142857144,
+      "fold": 3,
+      "joint": 78,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.37142857142857144,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.38181818181818183,
+      "fold": 3,
+      "joint": 21,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.38181818181818183,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.5670995670995671,
+      "fold": 3,
+      "joint": 131,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5670995670995671,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 14,
+      "confidence": 0.5,
+      "fold": 4,
+      "joint": 7,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4666666666666667,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.35714285714285715,
+      "fold": 4,
+      "joint": 10,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.35714285714285715,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.5416666666666666,
+      "fold": 4,
+      "joint": 65,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5416666666666666,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6944444444444444,
+      "fold": 5,
+      "joint": 25,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6944444444444444,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.546031746031746,
+      "fold": 5,
+      "joint": 344,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.546031746031746,
+      "zone_id": "riyadh"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.5769230769230769,
+      "fold": 1,
+      "joint": 45,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5769230769230769,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 629,
+      "confidence": 0.4578696343402226,
+      "fold": 1,
+      "joint": 288,
+      "koppen": "Csa",
+      "pairs": 630,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.45714285714285713,
+      "zone_id": "montpellier"
+    },
+    {
+      "antecedent": 78,
+      "confidence": 0.7051282051282052,
+      "fold": 1,
+      "joint": 55,
+      "koppen": "Csa",
+      "pairs": 78,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7051282051282052,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.6719367588932806,
+      "fold": 2,
+      "joint": 170,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6719367588932806,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 406,
+      "confidence": 0.5517241379310345,
+      "fold": 2,
+      "joint": 224,
+      "koppen": "Csa",
+      "pairs": 406,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5517241379310345,
+      "zone_id": "marseille"
+    },
+    {
+      "antecedent": 66,
+      "confidence": 0.42424242424242425,
+      "fold": 2,
+      "joint": 28,
+      "koppen": "Dwa",
+      "pairs": 66,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42424242424242425,
+      "zone_id": "seoul"
+    },
+    {
+      "antecedent": 210,
+      "confidence": 0.37142857142857144,
+      "fold": 3,
+      "joint": 78,
+      "koppen": "Am",
+      "pairs": 210,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.37142857142857144,
+      "zone_id": "manaus"
+    },
+    {
+      "antecedent": 55,
+      "confidence": 0.38181818181818183,
+      "fold": 3,
+      "joint": 21,
+      "koppen": "BSh",
+      "pairs": 55,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.38181818181818183,
+      "zone_id": "niamey"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.5670995670995671,
+      "fold": 3,
+      "joint": 131,
+      "koppen": "ET",
+      "pairs": 231,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5670995670995671,
+      "zone_id": "svalbard"
+    },
+    {
+      "antecedent": 14,
+      "confidence": 0.5,
+      "fold": 4,
+      "joint": 7,
+      "koppen": "As",
+      "pairs": 15,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4666666666666667,
+      "zone_id": "mombasa"
+    },
+    {
+      "antecedent": 28,
+      "confidence": 0.35714285714285715,
+      "fold": 4,
+      "joint": 10,
+      "koppen": "Cfb",
+      "pairs": 28,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.35714285714285715,
+      "zone_id": "rennes"
+    },
+    {
+      "antecedent": 120,
+      "confidence": 0.5416666666666666,
+      "fold": 4,
+      "joint": 65,
+      "koppen": "Dfc",
+      "pairs": 120,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5416666666666666,
+      "zone_id": "tromso"
+    },
+    {
+      "antecedent": 36,
+      "confidence": 0.6944444444444444,
+      "fold": 5,
+      "joint": 25,
+      "koppen": "Cwb",
+      "pairs": 36,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6944444444444444,
+      "zone_id": "nairobi"
+    },
+    {
+      "antecedent": 630,
+      "confidence": 0.546031746031746,
+      "fold": 5,
+      "joint": 344,
+      "koppen": "BWh",
+      "pairs": 630,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.546031746031746,
+      "zone_id": "riyadh"
+    }
+  ]
+}

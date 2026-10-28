@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deposium.dev/contracts/watch-label.v1.schema.json",
+  "title": "watch-label/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "place_ref",
+    "variable",
+    "start",
+    "end",
+    "timezone",
+    "match_tolerance_days",
+    "source",
+    "level",
+    "provenance_url",
+    "licence",
+    "spatial_match"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "watch-label/v1"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "place_ref": {
+      "type": "string",
+      "pattern": "^zone:[a-z0-9_]+$"
+    },
+    "variable": {
+      "enum": [
+        "precipitation",
+        "wind_speed"
+      ]
+    },
+    "start": {
+      "type": "string",
+      "format": "date"
+    },
+    "end": {
+      "type": "string",
+      "format": "date"
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "match_tolerance_days": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "enum": [
+        "orange",
+        "rouge"
+      ]
+    },
+    "provenance_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "licence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "spatial_match": {
+      "enum": [
+        "zone_within_department",
+        "zone_equals_area",
+        "zone_overlaps_area"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

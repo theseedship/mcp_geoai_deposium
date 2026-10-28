@@ -1,0 +1,98 @@
+{
+  "descriptor": {
+    "algorithm": "tgrad",
+    "bbox": [
+      4.85,
+      43.4,
+      4.99,
+      43.49
+    ],
+    "case_id": "q3-2023-fos-native-recurrence/v1",
+    "evidence_kind": "historical_cross_zone_recurrence",
+    "forecast_point": {
+      "lat": 43.445,
+      "lon": 4.92
+    },
+    "geometry": {
+      "coordinates": [
+        [
+          [
+            4.99,
+            43.4
+          ],
+          [
+            4.99,
+            43.49
+          ],
+          [
+            4.85,
+            43.49
+          ],
+          [
+            4.85,
+            43.4
+          ],
+          [
+            4.99,
+            43.4
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "independent_heldout_day_lag_validation_established": false,
+    "live_activation": false,
+    "minimum_horizon_days": 5,
+    "native_parquet_sha256": "ac23cb68dcf1f1b62ce6416b867d1ae5afcd2ecac168c0308b82f0ef9db62e49",
+    "native_record_count": 149,
+    "period_end": "2023-09-30",
+    "period_start": "2023-07-01",
+    "primary_rule_ids": [
+      "cross_zone/tgrad/15",
+      "cross_zone/tgrad/16",
+      "cross_zone/tgrad/22"
+    ],
+    "probabilistic_confidence": null,
+    "producer_zone_id": "cross_zone",
+    "ready_for_scoring": false,
+    "registry_git_object": "4ff7441aee3f6970f14706c63937d9069baa39e0:zones/zones.geojson",
+    "registry_sha256": "8771cfc5ba55c37e277be0637087567cb1e561b54796e1753cb867ecb66b8467",
+    "scientific_adoption": "pending",
+    "shorter_lag_alternative_rule_ids": [
+      "cross_zone/tgrad/23"
+    ],
+    "source_bundle_sha256": "e0164cf24138ae5396064b0665ed35389577c2f538cfe588e9e502fa84297c8c",
+    "target_zone_id": "fos_sur_mer"
+  },
+  "files": {
+    "library.json": {
+      "bytes": 167199,
+      "sha256": "2d790c561dae5610ae538ea7c7fae1e60059965cd8f3cc48aaac22917c5283eb"
+    },
+    "source/b4-2023_07.json": {
+      "bytes": 4966,
+      "sha256": "e85c92a0426dad757f68316050e31af5086fbac4f554a8c1d0e6fe2a2b6e4b7f"
+    },
+    "source/b4-2023_08.json": {
+      "bytes": 4963,
+      "sha256": "c110800be8df8d2ace34373842f4328fa5eeb181759c2790a0ebb8bf521acaee"
+    },
+    "source/b4-2023_09.json": {
+      "bytes": 4963,
+      "sha256": "4b4df106ba2819efd31381709d0bd2d5b031cca269e49a02eeacac23babd6ea3"
+    },
+    "source/bundle.json": {
+      "bytes": 18139,
+      "sha256": "e0164cf24138ae5396064b0665ed35389577c2f538cfe588e9e502fa84297c8c"
+    },
+    "source/tgrad.parquet": {
+      "bytes": 19570,
+      "sha256": "ac23cb68dcf1f1b62ce6416b867d1ae5afcd2ecac168c0308b82f0ef9db62e49"
+    },
+    "source/zones.geojson": {
+      "bytes": 11150,
+      "sha256": "8771cfc5ba55c37e277be0637087567cb1e561b54796e1753cb867ecb66b8467"
+    }
+  },
+  "schema_version": "geoai-b6-historical-case/v1"
+}

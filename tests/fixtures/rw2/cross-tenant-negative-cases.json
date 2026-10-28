@@ -1,0 +1,137 @@
+{
+  "fixture_version": "geoai-rw2-cross-tenant-negative-cases/v1",
+  "cases": [
+    {
+      "id": "foreign-tenant-file",
+      "stage": "authorization",
+      "request_context": {
+        "authenticated_tenant_id": "tenant-alpha",
+        "authorized_space_ids": ["space-alpha"]
+      },
+      "locator": {
+        "kind": "app_artifact",
+        "file_id": 2002,
+        "artifact_kind": "geoparquet"
+      },
+      "catalog_facts": {
+        "owner_tenant_id": "tenant-bravo",
+        "space_ids": ["space-bravo"]
+      },
+      "expected": {
+        "code": "DATASET_NOT_FOUND",
+        "http_status": 404,
+        "disclose_existence": false,
+        "upstream_calls": 0
+      }
+    },
+    {
+      "id": "right-tenant-wrong-space",
+      "stage": "authorization",
+      "request_context": {
+        "authenticated_tenant_id": "tenant-alpha",
+        "authorized_space_ids": ["space-alpha"]
+      },
+      "locator": {
+        "kind": "app_artifact",
+        "file_id": 2003,
+        "artifact_kind": "geoparquet"
+      },
+      "catalog_facts": {
+        "owner_tenant_id": "tenant-alpha",
+        "space_ids": ["space-private"]
+      },
+      "expected": {
+        "code": "DATASET_NOT_FOUND",
+        "http_status": 404,
+        "disclose_existence": false,
+        "upstream_calls": 0
+      }
+    },
+    {
+      "id": "mismatched-document-id",
+      "stage": "authorization",
+      "request_context": {
+        "authenticated_tenant_id": "tenant-alpha",
+        "authorized_space_ids": ["space-alpha"]
+      },
+      "locator": {
+        "kind": "app_artifact",
+        "file_id": 1234,
+        "document_id": "wrong-document-id",
+        "artifact_kind": "geoparquet"
+      },
+      "catalog_facts": {
+        "owner_tenant_id": "tenant-alpha",
+        "space_ids": ["space-alpha"],
+        "document_id": "6dd36e95-815d-4da6-a959-f447f15d6831"
+      },
+      "expected": {
+        "code": "DATASET_NOT_FOUND",
+        "http_status": 404,
+        "disclose_existence": false,
+        "upstream_calls": 0
+      }
+    },
+    {
+      "id": "unknown-science-alias",
+      "stage": "authorization",
+      "request_context": {
+        "authenticated_tenant_id": "tenant-alpha",
+        "authorized_space_ids": []
+      },
+      "locator": {
+        "kind": "science_dataset",
+        "dataset_alias": "science:unknown:dataset"
+      },
+      "catalog_facts": null,
+      "expected": {
+        "code": "DATASET_NOT_FOUND",
+        "http_status": 404,
+        "disclose_existence": false,
+        "upstream_calls": 0
+      }
+    },
+    {
+      "id": "caller-supplied-source-key",
+      "stage": "schema",
+      "request_context": {
+        "authenticated_tenant_id": "tenant-alpha",
+        "authorized_space_ids": ["space-alpha"]
+      },
+      "locator": {
+        "kind": "app_artifact",
+        "file_id": 1234,
+        "artifact_kind": "geoparquet",
+        "source": "tenant-bravo/999/private.parquet"
+      },
+      "catalog_facts": null,
+      "expected": {
+        "code": "INVALID_DATASET_LOCATOR",
+        "http_status": 400,
+        "disclose_existence": false,
+        "upstream_calls": 0
+      }
+    },
+    {
+      "id": "caller-supplied-tenant-override",
+      "stage": "schema",
+      "request_context": {
+        "authenticated_tenant_id": "tenant-alpha",
+        "authorized_space_ids": ["space-alpha"]
+      },
+      "locator": {
+        "kind": "app_artifact",
+        "file_id": 1234,
+        "artifact_kind": "geoparquet",
+        "tenant_id": "tenant-bravo"
+      },
+      "catalog_facts": null,
+      "expected": {
+        "code": "INVALID_DATASET_LOCATOR",
+        "http_status": 400,
+        "disclose_existence": false,
+        "upstream_calls": 0
+      }
+    }
+  ]
+}

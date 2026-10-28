@@ -1,0 +1,124 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ruff
+.ruff_cache/
+
+# Environment
+.env
+.env.local
+.env.solar
+.env.*.local
+
+# Data and cache directories
+/data/
+/models/
+/cache/
+*.duckdb
+*.duckdb.wal
+
+# Raster/GeoTIFF files (can be large)
+*.tif
+*.tiff
+*.geotiff
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# uv
+.uv/
+# uv.lock IS committed on purpose: it pins the exact toolchain so CI, local dev and the Docker
+# image all resolve identically, and it lets Dependabot propose reviewed lockfile bumps.
+.gitnexus
+
+# Per-developer MCP tool state (Serena writes .serena/project.yml + its own .gitignore on first
+# index). Left untracked it still shows up in `git status --porcelain`, which is what run-manifest
+# provenance reads to set `code_ref.dirty` — so an unrelated local tool directory was marking every
+# published manifest as produced from a dirty tree.
+.serena/
+
+# Downloaded research inputs and generated local validation evidence.
+/research-data/
+.superpowers/
+
+# so4gp writes GRAANK_<timestamp>.csv/.txt (discover) and TGrad_<timestamp>.csv/.txt (discover_tgp) to the cwd (no flag
+# to disable).
+GRAANK_*.csv
+GRAANK_*.txt
+TGrad_*.csv
+TGrad_*.txt
+
+# zones.parquet is generated on demand by scripts/generate_zones.py — its Snappy
+# data pages are not byte-reproducible across machines (even at an identical
+# DuckDB build), so committing the binary guarantees spurious working-tree drift.
+# zones/zones.geojson stays the canonical, committed B1 artifact.
+zones/zones.parquet
+
+
+# Private local material never belongs in this standalone source repository.
+/docs/
+/docs-private/
+/private-docs-main/
+/private-root-material/
+/outputs/
+/results/
+.claude/
+.codex/
+.agents/
+AGENTS.md
+CLAUDE.md
+.env.*
+!.env.example

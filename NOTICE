@@ -1,0 +1,39 @@
+Original GeoAI software copyright (c) 2026 Deposium (TheSeedShip).
+Distributed under the MIT terms in LICENSE; third-party data and identity assets
+retain their separate conditions below.
+
+Data attribution for retained scientific examples
+================================================
+
+Weather data by [Open-Meteo.com](https://open-meteo.com/), derived from ERA5 reanalysis. Open-Meteo API data are provided under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); retain credit, the licence link and notice of modifications. See the [Open-Meteo licence](https://open-meteo.com/en/licence).
+
+ERA5 source: Copernicus Climate Change Service (C3S), ECMWF, [ERA5 hourly data on single levels](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview), DOI [10.24381/cds.adbb2d47](https://doi.org/10.24381/cds.adbb2d47). The packaged weather columns are processed/aggregated data, not original ERA5 GRIB files.
+
+**Contains modified Copernicus Climate Change Service information 2023.** Neither the European Commission nor ECMWF is responsible for the use made of this information. Retain the [Copernicus product licence](https://cds.climate.copernicus.eu/licences/licence-to-use-copernicus-products).
+
+**Contains modified Copernicus Sentinel data 2023.** Sentinel-2 inputs were accessed through the public [Earth Search STAC API](https://earth-search.aws.element84.com/v1). The packaged NDVI columns are derived zonal statistics, joined to weather inputs; they are not original Sentinel imagery. Retain the [Copernicus Sentinel Data Legal Notice](https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice).
+
+Deposium transformations include weather aggregation, NDVI calculation/zonal aggregation, temporal alignment and merging, and GRAANK/TGrad cross-zone pattern mining. No endorsement by Open-Meteo, ECMWF, C3S, Copernicus, the European Union or the data distributors is implied. Source data retain their applicable rights; this notice does not relicense them under the repository's software licence. API access/subscription terms for any future collection or commercial deployment are a separate decision, not authorised by this handoff.
+
+Retained NOAA GFS example
+========================
+
+The historical rule15 temperature forecast was retrieved directly from the
+NOAA/NCEP GFS public archive (https://registry.opendata.aws/noaa-gfs-bdp-pds/),
+cycle 2023-06-30 00 UTC. It was not retrieved through Open-Meteo. GeoAI extracted
+the containing 0.25 degree grid cell and averaged eight 3-hourly instantaneous
+samples per UTC day. This processed example is not an official NOAA/NWS product
+or endorsement. NOAA/NWS data retain their public-domain status and usage
+conditions: https://www.weather.gov/disclaimer . No copyright is claimed over
+the underlying NOAA/NWS material.
+
+Project acknowledgement assets
+==============================
+
+The FIERCE project mark and the European Union funding graphic are reproduced
+unchanged from the official FIERCE website for project acknowledgement.
+Their respective rights are retained; the repository MIT licence does not
+relicense these identity assets. Retrieved on 28 October 2026 from:
+- https://project-fierce.eu/wp-content/uploads/2025/02/Fierce-Logo-RGB_Logomark.png
+- https://project-fierce.eu/wp-content/uploads/2025/01/eu.jpg
+Project and funding information: https://project-fierce.eu/about/

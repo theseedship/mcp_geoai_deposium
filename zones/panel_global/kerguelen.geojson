@@ -1,0 +1,22 @@
+{
+  "type": "Feature",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "properties": {
+    "zone_id": "kerguelen",
+    "name": "Kerguelen",
+    "koppen": "ET",
+    "bbox": [
+      69.7,
+      -49.85,
+      70.7,
+      -48.85
+    ],
+    "role": "panel"
+  },
+  "geometry": {"type":"Polygon","coordinates":[[[70.7,-49.85],[70.7,-48.85],[69.7,-48.85],[69.7,-49.85],[70.7,-49.85]]]}
+}

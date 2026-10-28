@@ -1,0 +1,145 @@
+{
+  "alternative_mining_executed": false,
+  "cases": [
+    {
+      "case": "tie_reorder_a",
+      "reference": {
+        "apriori_support": 0.3333333333333333,
+        "hit_count": 2,
+        "native_support": 0.6666666666666666,
+        "ordered_pair_count": 6,
+        "unordered_pair_count": 3
+      },
+      "source_derived_candidate_gt_0_5": true,
+      "source_derived_singleton_gate_x": 0.3333333333333333,
+      "synthetic_rows": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "tie_reorder_b",
+      "reference": {
+        "apriori_support": 0.3333333333333333,
+        "hit_count": 2,
+        "native_support": 0.6666666666666666,
+        "ordered_pair_count": 6,
+        "unordered_pair_count": 3
+      },
+      "source_derived_candidate_gt_0_5": true,
+      "source_derived_singleton_gate_x": 0.6666666666666666,
+      "synthetic_rows": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "case": "monotone",
+      "reference": {
+        "apriori_support": 0.5,
+        "hit_count": 3,
+        "native_support": 1.0,
+        "ordered_pair_count": 6,
+        "unordered_pair_count": 3
+      },
+      "source_derived_candidate_gt_0_5": true,
+      "source_derived_singleton_gate_x": 1.0,
+      "synthetic_rows": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "case": "constant",
+      "reference": {
+        "apriori_support": 0.0,
+        "hit_count": 0,
+        "native_support": 0.0,
+        "ordered_pair_count": 6,
+        "unordered_pair_count": 3
+      },
+      "source_derived_candidate_gt_0_5": false,
+      "source_derived_singleton_gate_x": 0.0,
+      "synthetic_rows": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "exact_threshold",
+      "inclusive_transaction_ge_0_25": true,
+      "reference": {
+        "apriori_support": 0.25,
+        "hit_count": 3,
+        "native_support": 0.5,
+        "ordered_pair_count": 12,
+        "unordered_pair_count": 6
+      },
+      "source_derived_candidate_gt_0_5": false,
+      "synthetic_rows": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    }
+  ],
+  "implementation_sha256": "8f9f7b4ad381ace7b5c81dacc9549e1ff9e67b76eb8c0289191704d466d9b712",
+  "native_mining_executed": false,
+  "pilot_inputs_read": false,
+  "schema_version": "geoai-db-synthetic-reference/v1",
+  "scientific_acceptance": false,
+  "scope": "synthetic arithmetic and source-derived diagnostics only"
+}

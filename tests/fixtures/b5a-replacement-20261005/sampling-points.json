@@ -1,0 +1,612 @@
+{
+  "current_geometry_midpoint_discrepancies": [
+    {
+      "current_bbox_midpoint": {
+        "latitude": 43.65965,
+        "longitude": 3.795
+      },
+      "frozen": {
+        "latitude": 43.72,
+        "longitude": 3.8149999999999995
+      },
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "current_bbox_midpoint": {
+        "latitude": 43.45455,
+        "longitude": 4.89795
+      },
+      "frozen": {
+        "latitude": 43.445,
+        "longitude": 4.92
+      },
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "current_bbox_midpoint": {
+        "latitude": 43.6168,
+        "longitude": 3.86125
+      },
+      "frozen": {
+        "latitude": 43.605000000000004,
+        "longitude": 3.865
+      },
+      "zone_id": "montpellier_metropole"
+    }
+  ],
+  "holdout_bundle_manifest_sha256": "0653dc43727d0810122f9919b1a6a4232c98f0f1b30d345e28d3067c4bced14a",
+  "holdout_writer_runs": [
+    {
+      "logical_manifest_key": "climate/runs/holdout-pilot-mesh-2021-2025-proof-era5/manifest.json",
+      "proof_url": "https://github.com/theseedship/deposium_geoai/blob/b9028f0/docs/demo/holdout-pilot-mesh-rustfs-2026-06-27.md",
+      "run_id": "holdout-pilot-mesh-2021-2025-proof-era5",
+      "zones": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "logical_manifest_key": "climate/runs/holdout-representative-mesh-2023-q3-widening-proof-era5/manifest.json",
+      "proof_url": "https://github.com/theseedship/deposium_geoai/blob/b9028f0/docs/demo/holdout-b4-representative-q3-mesh-rustfs-2026-06-27.md",
+      "run_id": "holdout-representative-mesh-2023-q3-widening-proof-era5",
+      "zones": [
+        "mombasa",
+        "nairobi",
+        "niamey",
+        "rennes",
+        "riyadh"
+      ]
+    },
+    {
+      "logical_manifest_key": "climate/runs/holdout-full-panel-mesh-2023-q3-segmented-proof-era5/manifest.json",
+      "proof_url": "https://github.com/theseedship/deposium_geoai/blob/b9028f0/docs/demo/holdout-b4-full-panel-q3-segmented-mesh-rustfs-2026-06-27.md",
+      "run_id": "holdout-full-panel-mesh-2023-q3-segmented-proof-era5",
+      "zones": [
+        "kerguelen",
+        "manaus",
+        "marseille",
+        "montpellier",
+        "seoul",
+        "svalbard",
+        "tromso"
+      ]
+    }
+  ],
+  "notes": [
+    "Sampling points are extracted from the published source Parquets, never inferred from current boundaries.",
+    "These stored lat/lon points identify requested sampling coordinates, not model grid-cell coordinates.",
+    "Replacement retrieval must use these exact coordinates; current three French pilot bbox midpoints differ."
+  ],
+  "sampling_points": [
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "010100000084eb51b81e850e405c8fc2f528dc4540",
+      "latitude": 43.72,
+      "longitude": 3.8149999999999995,
+      "sources": [
+        {
+          "bytes": 39250,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/bassin_du_lez.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/bassin_du_lez.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "bbd22e1b7ed6d64592702a9e5eb829d84eff6ba10328b9f6dbf0abc517e730c8",
+          "source_s3_last_modified": "2026-06-27T06:17:46.844000+00:00"
+        },
+        {
+          "bytes": 169997,
+          "logical_s3_key": "climate/era5/bassin_du_lez.parquet",
+          "member": "climate/era5/bassin_du_lez.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "d23ff8d431ad82140bf2ee652ecf3dd10acbf64362c6e17ff9f51d7ab6f6bae5"
+        },
+        {
+          "bytes": 4864,
+          "logical_s3_key": "climate/normals/bassin_du_lez.parquet",
+          "member": "climate/normals/bassin_du_lez.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "f641832e8591e064a067dfa2f7c07e381a0dafc052c4104014828217d48a9a1a"
+        }
+      ],
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "0101000000ae47e17a14ae1340295c8fc2f5b84540",
+      "latitude": 43.445,
+      "longitude": 4.92,
+      "sources": [
+        {
+          "bytes": 39408,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/fos_sur_mer.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/fos_sur_mer.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "c7230e53fe6ed0634830184ddf233c2bc17f3a4be68a5a00fc1e0d94ea0cff1d",
+          "source_s3_last_modified": "2026-06-27T06:17:49.784000+00:00"
+        },
+        {
+          "bytes": 173190,
+          "logical_s3_key": "climate/era5/fos_sur_mer.parquet",
+          "member": "climate/era5/fos_sur_mer.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "f02bf1339a26a1168a2a7e00ee33e53b38b41896c12f0b92f89c51b3b84e0f80"
+        },
+        {
+          "bytes": 4866,
+          "logical_s3_key": "climate/normals/fos_sur_mer.parquet",
+          "member": "climate/normals/fos_sur_mer.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "84047caf5ce08bc48b6c92bba6a17f0e73e6228af352f82feb47564d4c317d5c"
+        }
+      ],
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "0101000000cdcccccccc8c5140cdccccccccac48c0",
+      "latitude": -49.35,
+      "longitude": 70.2,
+      "sources": [
+        {
+          "bytes": 37279,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/kerguelen.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/kerguelen.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "2e54cf79241edfca672d19b18c3786a2277db40b9a6cef772086ea4fe950b015",
+          "source_s3_last_modified": "2026-06-27T08:56:09.281000+00:00"
+        },
+        {
+          "bytes": 170109,
+          "logical_s3_key": "climate/era5/kerguelen.parquet",
+          "member": "climate/era5/kerguelen.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "656bffa22570a4069cfc4b16b32e542753e767ed247a7ee39c88623b7ee619e2"
+        },
+        {
+          "bytes": 4836,
+          "logical_s3_key": "climate/normals/kerguelen.parquet",
+          "member": "climate/normals/kerguelen.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "de0426e90efdf87040e8a3380cca11e2333cbbdd522ab98d4c60d2b038d64033"
+        }
+      ],
+      "zone_id": "kerguelen"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000000000000000004ec0cdcccccccccc08c0",
+      "latitude": -3.1,
+      "longitude": -60.0,
+      "sources": [
+        {
+          "bytes": 35947,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/manaus.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/manaus.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "2d7f52876225823f24398478cb0df650e924cf48845edf674a874c3904ea1b46",
+          "source_s3_last_modified": "2026-06-27T08:55:43.170000+00:00"
+        },
+        {
+          "bytes": 139536,
+          "logical_s3_key": "climate/era5/manaus.parquet",
+          "member": "climate/era5/manaus.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "8efe46572439cfb44c0a9f806c511a65e9019979705b150328acd5436a791e2a"
+        },
+        {
+          "bytes": 4786,
+          "logical_s3_key": "climate/normals/manaus.parquet",
+          "member": "climate/normals/manaus.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "ba721112d428a328da0aba8a88b2fb8263b7c5a03f1c068f7353c69317f78b41"
+        }
+      ],
+      "zone_id": "manaus"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000009a999999999915406666666666a64540",
+      "latitude": 43.3,
+      "longitude": 5.4,
+      "sources": [
+        {
+          "bytes": 39196,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/marseille.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/marseille.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "c916f9d411ea81f2ee22ee4c9ac439fee30e4464b21ab97ead43990245459e9f",
+          "source_s3_last_modified": "2026-06-27T08:55:03.490000+00:00"
+        },
+        {
+          "bytes": 171391,
+          "logical_s3_key": "climate/era5/marseille.parquet",
+          "member": "climate/era5/marseille.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "77e9864349e9d6e64a9cbe2d6af09f2f37ec180a306c80cc4747174ed45996cc"
+        },
+        {
+          "bytes": 4839,
+          "logical_s3_key": "climate/normals/marseille.parquet",
+          "member": "climate/normals/marseille.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "a3440a47f65ebd2ae404d3d9370aeeb24ba37003111ad612ad891086adb8c0f4"
+        }
+      ],
+      "zone_id": "marseille"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "0101000000cdcccccccccc434000000000000010c0",
+      "latitude": -4.0,
+      "longitude": 39.6,
+      "sources": [
+        {
+          "bytes": 34775,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/mombasa.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/mombasa.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "3cb779eb44868eb58974a6003cd2263be4b6ffbbfb420fe6aba1dc99ce8b7476",
+          "source_s3_last_modified": "2026-06-27T07:18:34.830000+00:00"
+        },
+        {
+          "bytes": 139912,
+          "logical_s3_key": "climate/era5/mombasa.parquet",
+          "member": "climate/era5/mombasa.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "2251845699a8633283111e2d6655823d5c0ae121a29f7405520a74430d9d2e9e"
+        },
+        {
+          "bytes": 4805,
+          "logical_s3_key": "climate/normals/mombasa.parquet",
+          "member": "climate/normals/mombasa.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "15b879a2c6155d6617d13f4eecb796c607f58ba9e39f8078a915357c9d95acec"
+        }
+      ],
+      "zone_id": "mombasa"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000000000000000000c40cdcccccccccc4540",
+      "latitude": 43.6,
+      "longitude": 3.5,
+      "sources": [
+        {
+          "bytes": 38948,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/montpellier.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/montpellier.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "76e6d6e3f7e07b503782c3acf3a916293278a09f7461f5b015bef05ff56ba399",
+          "source_s3_last_modified": "2026-06-27T08:54:59.594000+00:00"
+        },
+        {
+          "bytes": 171093,
+          "logical_s3_key": "climate/era5/montpellier.parquet",
+          "member": "climate/era5/montpellier.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "984cff2af1a6359097d8bf3d7467a622e0d24336f8023a5c8ca2b27a48ee2f55"
+        },
+        {
+          "bytes": 4825,
+          "logical_s3_key": "climate/normals/montpellier.parquet",
+          "member": "climate/normals/montpellier.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "98a918fa5a5fca3c88e85637f22cdfe29b2389d8b74283b5d3d4faf42ac4d11e"
+        }
+      ],
+      "zone_id": "montpellier"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "0101000000ec51b81e85eb0e403e0ad7a370cd4540",
+      "latitude": 43.605000000000004,
+      "longitude": 3.865,
+      "sources": [
+        {
+          "bytes": 38670,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/montpellier_metropole.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/montpellier_metropole.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "c3be7a6096b017cf7afa6cba3a66b47bd5f61d94860490c0c516e7ee892b48cb",
+          "source_s3_last_modified": "2026-06-27T06:17:43.814000+00:00"
+        },
+        {
+          "bytes": 170970,
+          "logical_s3_key": "climate/era5/montpellier_metropole.parquet",
+          "member": "climate/era5/montpellier_metropole.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "4f44699092b3453568b08ce68dfc5f384295b1988aabd0caad46864b33cf09a4"
+        },
+        {
+          "bytes": 4873,
+          "logical_s3_key": "climate/normals/montpellier_metropole.parquet",
+          "member": "climate/normals/montpellier_metropole.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "9a545c471da14d7b29e117d80087f2e715d1b12fd0ef565cc48ad10b856e4150"
+        }
+      ],
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000006666666666664240cdccccccccccf4bf",
+      "latitude": -1.3,
+      "longitude": 36.8,
+      "sources": [
+        {
+          "bytes": 35835,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/nairobi.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/nairobi.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "2960c459ce5d4940ab6506a169ac8c1b345252aef34381d72e1db36f3f700151",
+          "source_s3_last_modified": "2026-06-27T07:18:31.504000+00:00"
+        },
+        {
+          "bytes": 138123,
+          "logical_s3_key": "climate/era5/nairobi.parquet",
+          "member": "climate/era5/nairobi.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "2e320b17dcafd9f4c7b313f7dcb69c2ce706597032a11ec49cd69968104593bb"
+        },
+        {
+          "bytes": 4824,
+          "logical_s3_key": "climate/normals/nairobi.parquet",
+          "member": "climate/normals/nairobi.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "f02ba8ce2a04ab35a3108d011f39401b31b3f969bde4e073fcdb0795dbc70719"
+        }
+      ],
+      "zone_id": "nairobi"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "0101000000cdcccccccccc00400000000000002b40",
+      "latitude": 13.5,
+      "longitude": 2.1,
+      "sources": [
+        {
+          "bytes": 35370,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/niamey.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/niamey.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "6a7d27a7f7d5d08eca5fd1908c6d1b6c7905d6cd27374c3a572bc7dafca35792",
+          "source_s3_last_modified": "2026-06-27T07:18:40.246000+00:00"
+        },
+        {
+          "bytes": 133041,
+          "logical_s3_key": "climate/era5/niamey.parquet",
+          "member": "climate/era5/niamey.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "9067f839a5b574a73bd866e28b4c4188c5a27bbc991ff83604ea43d4d9c5adf3"
+        },
+        {
+          "bytes": 4787,
+          "logical_s3_key": "climate/normals/niamey.parquet",
+          "member": "climate/normals/niamey.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "ab58ee0f815af0269f6f189d68797404e680eceea7bbee41f0e7ff7c51530d27"
+        }
+      ],
+      "zone_id": "niamey"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "0101000000343333333333fbbfcdcccccccc0c4840",
+      "latitude": 48.1,
+      "longitude": -1.7000000000000002,
+      "sources": [
+        {
+          "bytes": 39060,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/rennes.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/rennes.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "beadd846a5067df7db3dd4eb99daa5571fa9935c5ff0dc9895a5308efd6689bb",
+          "source_s3_last_modified": "2026-06-27T07:18:47.193000+00:00"
+        },
+        {
+          "bytes": 168362,
+          "logical_s3_key": "climate/era5/rennes.parquet",
+          "member": "climate/era5/rennes.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "d7852af3e0dfcacd30d0de8ade118bd537459b977e474129d36a03f8e9cc38a4"
+        },
+        {
+          "bytes": 4859,
+          "logical_s3_key": "climate/normals/rennes.parquet",
+          "member": "climate/normals/rennes.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "30e80172ae00396af0b8ed6311e65c0a648b2cec824c6c8120e730f6d472efce"
+        }
+      ],
+      "zone_id": "rennes"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000009a999999995947403333333333b33840",
+      "latitude": 24.7,
+      "longitude": 46.7,
+      "sources": [
+        {
+          "bytes": 37310,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/riyadh.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/riyadh.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "23345936b5356d647bb67b7ae661416344647f1dc350208134dd982ead5e72b6",
+          "source_s3_last_modified": "2026-06-27T07:18:43.845000+00:00"
+        },
+        {
+          "bytes": 142118,
+          "logical_s3_key": "climate/era5/riyadh.parquet",
+          "member": "climate/era5/riyadh.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "9ee801472371c26a1a4a0a2c3aab528834a0ad937fd9cd37682fff9b4b857af0"
+        },
+        {
+          "bytes": 4791,
+          "logical_s3_key": "climate/normals/riyadh.parquet",
+          "member": "climate/normals/riyadh.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "0cad3ac0d9e051ffc990d04068f22f79a7cbde361484dce69bcc13465babc6a5"
+        }
+      ],
+      "zone_id": "riyadh"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000000000000000c05f400000000000c04240",
+      "latitude": 37.5,
+      "longitude": 127.0,
+      "sources": [
+        {
+          "bytes": 41370,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/seoul.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/seoul.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "94d8a0dfb1b397baae834f319b7c8fc4c10996e9f509929658048252ae145107",
+          "source_s3_last_modified": "2026-06-27T08:56:16.716000+00:00"
+        },
+        {
+          "bytes": 170991,
+          "logical_s3_key": "climate/era5/seoul.parquet",
+          "member": "climate/era5/seoul.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "2b09d887e3e07d349539e31e1d4c796c180863d782cc9e034b83a13d765090d4"
+        },
+        {
+          "bytes": 4796,
+          "logical_s3_key": "climate/normals/seoul.parquet",
+          "member": "climate/normals/seoul.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "ed76dcf96621c1a4e67e17a680f8798a3c6153a72542e5a0393075b7bd02972b"
+        }
+      ],
+      "zone_id": "seoul"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000003433333333332f40cdcccccccc8c5340",
+      "latitude": 78.2,
+      "longitude": 15.600000000000001,
+      "sources": [
+        {
+          "bytes": 33877,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/svalbard.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/svalbard.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "70083a1251526f11fb428900f7a57dad8f3dbb35bee2cf9889ccf0a9b3475e5c",
+          "source_s3_last_modified": "2026-06-27T08:55:36.773000+00:00"
+        },
+        {
+          "bytes": 147291,
+          "logical_s3_key": "climate/era5/svalbard.parquet",
+          "member": "climate/era5/svalbard.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "efc0a7f5fba6129e6810ad1d9e00a5a477790b7ff5314a638993455510c39383"
+        },
+        {
+          "bytes": 4740,
+          "logical_s3_key": "climate/normals/svalbard.parquet",
+          "member": "climate/normals/svalbard.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "980752cd04c7b8274f57503355ba5f84b3cc188fb1241060fae6792d366cea93"
+        }
+      ],
+      "zone_id": "svalbard"
+    },
+    {
+      "agreement": "exact_float_and_wkb_across_holdout_wmo_era5_wmo_normals",
+      "geometry_wkb_hex": "01010000006666666666e632406666666666665140",
+      "latitude": 69.6,
+      "longitude": 18.9,
+      "sources": [
+        {
+          "bytes": 37788,
+          "logical_s3_key": "climate/holdout/era5/2021_2025/tromso.parquet",
+          "member": "objects/climate/holdout/era5/2021_2025/tromso.parquet",
+          "release": "holdout",
+          "rows": 1826,
+          "sha256": "98706cebcbf75dac652e589be3e489b258ef020081294fde7575ca362819ebf6",
+          "source_s3_last_modified": "2026-06-27T08:55:28.666000+00:00"
+        },
+        {
+          "bytes": 158706,
+          "logical_s3_key": "climate/era5/tromso.parquet",
+          "member": "climate/era5/tromso.parquet",
+          "release": "wmo",
+          "rows": 10958,
+          "sha256": "830b6fa39a435fa93c1f04d4c87011d69ff2f0735a1b48e44e3a010684ef8133"
+        },
+        {
+          "bytes": 4781,
+          "logical_s3_key": "climate/normals/tromso.parquet",
+          "member": "climate/normals/tromso.parquet",
+          "release": "wmo",
+          "rows": 72,
+          "sha256": "3d899e0b087fd7739b4c064b5c7f95c805b9d39285fd28f86cf5a2a627985bf9"
+        }
+      ],
+      "zone_id": "tromso"
+    }
+  ],
+  "schema_version": "b5a-replacement-sampling-points/v1",
+  "source_discrepancies": [],
+  "source_releases": {
+    "holdout": {
+      "asset": "geoai-era5-holdout-2021-2025-handoff.zip",
+      "bytes": 421034,
+      "release_url": "https://github.com/theseedship/deposium_geoai/releases/tag/era5-holdout-handoff-2026-09-19",
+      "sha256": "3a03059e6a0f75e77fb355b68e2535b0e841e2bb460ac0d2574a0104c7f5937d"
+    },
+    "wmo": {
+      "asset": "geoai-canonical-full-panel-wmo-1991-2020-20260624.zip",
+      "bytes": 1819096,
+      "release_url": "https://github.com/theseedship/deposium_geoai/releases/tag/climate-baseline-full-panel-2026-06-26",
+      "sha256": "44f6831db4029e4df9769604092ed52e63316ae865dd94b9c836c76aed9fa7a8"
+    }
+  },
+  "status": "candidate_not_agreed_no_forecasts_collected",
+  "wmo_bundle_manifest_sha256": "bc7685b6dcf49de7d93aeeca1aae8e68119249bb9addc76f743124f3f3d6a312",
+  "wmo_run_manifest_sha256": "cc71273a3f30d5f399c2fa37a5ee084fa7ae8127024485fd5bed47f911a138f7"
+}

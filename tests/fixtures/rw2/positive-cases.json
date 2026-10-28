@@ -1,0 +1,124 @@
+{
+  "fixture_version": "geoai-rw2-positive-cases/v1",
+  "cases": [
+    {
+      "id": "app-artifact-locator",
+      "schema": "dataset_locator",
+      "payload": {
+        "kind": "app_artifact",
+        "file_id": 1234,
+        "document_id": "6dd36e95-815d-4da6-a959-f447f15d6831",
+        "artifact_kind": "geoparquet"
+      }
+    },
+    {
+      "id": "science-dataset-locator",
+      "schema": "dataset_locator",
+      "payload": {
+        "kind": "science_dataset",
+        "dataset_alias": "science:normals:montpellier_metropole"
+      }
+    },
+    {
+      "id": "registration-request",
+      "schema": "registration_request",
+      "payload": {
+        "schema_version": "geoai-rw2/v1",
+        "registration_id": "reg_01J2RW2EXAMPLE",
+        "idempotency_key": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "dataset_id": "app-file-1234",
+        "tenant_id": "tenant-alpha",
+        "folder_id": "481",
+        "file_id": 1234,
+        "document_id": "6dd36e95-815d-4da6-a959-f447f15d6831",
+        "source": {
+          "bucket": "deposium",
+          "key": "tenant-alpha/481/geospatial/source.parquet",
+          "etag": "source-etag",
+          "content_length": 4096
+        },
+        "artifact_kind": "geoparquet",
+        "requested_at": "2026-07-11T20:00:00Z"
+      }
+    },
+    {
+      "id": "validating-status",
+      "schema": "registration_status",
+      "payload": {
+        "schema_version": "geoai-rw2/v1",
+        "registration_id": "reg_01J2RW2EXAMPLE",
+        "job_id": "job_01J2RW2EXAMPLE",
+        "status": "validating",
+        "dataset_id": "app-file-1234",
+        "attempt": 1,
+        "retryable": true,
+        "artifact_version": null,
+        "manifest_sha256": null,
+        "error": null,
+        "updated_at": "2026-07-11T20:00:02Z"
+      }
+    },
+    {
+      "id": "catalog-pending-status",
+      "schema": "registration_status",
+      "payload": {
+        "schema_version": "geoai-rw2/v1",
+        "registration_id": "reg_01J2RW2EXAMPLE",
+        "job_id": "job_01J2RW2EXAMPLE",
+        "status": "catalog_pending",
+        "dataset_id": "app-file-1234",
+        "attempt": 1,
+        "retryable": true,
+        "artifact_version": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "manifest_sha256": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "error": null,
+        "updated_at": "2026-07-11T20:00:05Z"
+      }
+    },
+    {
+      "id": "catalog-ack-request",
+      "schema": "catalog_ack_request",
+      "payload": {
+        "schema_version": "geoai-rw2/v1",
+        "registration_id": "reg_01J2RW2EXAMPLE",
+        "dataset_id": "app-file-1234",
+        "artifact_version": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "manifest_key": "tenant-alpha/481/geospatial/6dd36e95-815d-4da6-a959-f447f15d6831/manifest.json",
+        "manifest_sha256": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "published_at": "2026-07-11T20:00:04Z"
+      }
+    },
+    {
+      "id": "catalog-ack-response",
+      "schema": "catalog_ack_response",
+      "payload": {
+        "schema_version": "geoai-rw2/v1",
+        "registration_id": "reg_01J2RW2EXAMPLE",
+        "dataset_id": "app-file-1234",
+        "artifact_version": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "manifest_sha256": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "status": "acknowledged",
+        "catalog_revision": 7,
+        "idempotent_replay": false,
+        "acknowledged_at": "2026-07-11T20:00:06Z"
+      }
+    },
+    {
+      "id": "registered-status",
+      "schema": "registration_status",
+      "payload": {
+        "schema_version": "geoai-rw2/v1",
+        "registration_id": "reg_01J2RW2EXAMPLE",
+        "job_id": "job_01J2RW2EXAMPLE",
+        "status": "registered",
+        "dataset_id": "app-file-1234",
+        "attempt": 1,
+        "retryable": false,
+        "artifact_version": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "manifest_sha256": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "error": null,
+        "updated_at": "2026-07-11T20:00:07Z"
+      }
+    }
+  ]
+}

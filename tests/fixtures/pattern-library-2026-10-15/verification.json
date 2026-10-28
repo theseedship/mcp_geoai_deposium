@@ -1,0 +1,125 @@
+{
+  "capture_script_path": "capture/capture_native.v1.py.txt",
+  "capture_script_sha256": "7e784175cd21d8c8f8b567b8daf8a401ea2405acc7d2b7719a7bad8e010b97c3",
+  "capture_script_source_commit": "e7cf68f2e598a7035752e01af363131961576f48",
+  "capture_script_source_path": "docs/research/pattern-library-2026-10-15/capture_native.py",
+  "confidence_null": true,
+  "consumer_readback": [
+    {
+      "algorithm": "graank",
+      "patterns": 6,
+      "result": {
+        "error": "patterns_source does not look like an O3 validated library",
+        "metadata": {
+          "confidence_status": "experimental_unratified",
+          "required": [
+            "zones_validated",
+            "n_folds",
+            "stability"
+          ]
+        }
+      },
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "algorithm": "tgrad",
+      "patterns": 135,
+      "result": {
+        "error": "patterns_source does not look like an O3 validated library",
+        "metadata": {
+          "confidence_status": "experimental_unratified",
+          "required": [
+            "zones_validated",
+            "n_folds",
+            "stability"
+          ]
+        }
+      },
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "algorithm": "graank",
+      "patterns": 10,
+      "result": {
+        "error": "patterns_source does not look like an O3 validated library",
+        "metadata": {
+          "confidence_status": "experimental_unratified",
+          "required": [
+            "zones_validated",
+            "n_folds",
+            "stability"
+          ]
+        }
+      },
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "algorithm": "tgrad",
+      "patterns": 152,
+      "result": {
+        "error": "patterns_source does not look like an O3 validated library",
+        "metadata": {
+          "confidence_status": "experimental_unratified",
+          "required": [
+            "zones_validated",
+            "n_folds",
+            "stability"
+          ]
+        }
+      },
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "algorithm": "graank",
+      "patterns": 7,
+      "result": {
+        "error": "patterns_source does not look like an O3 validated library",
+        "metadata": {
+          "confidence_status": "experimental_unratified",
+          "required": [
+            "zones_validated",
+            "n_folds",
+            "stability"
+          ]
+        }
+      },
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "algorithm": "tgrad",
+      "patterns": 108,
+      "result": {
+        "error": "patterns_source does not look like an O3 validated library",
+        "metadata": {
+          "confidence_status": "experimental_unratified",
+          "required": [
+            "zones_validated",
+            "n_folds",
+            "stability"
+          ]
+        }
+      },
+      "zone_id": "montpellier_metropole"
+    }
+  ],
+  "fixed_capture_script": {
+    "path": "capture_native.py",
+    "sha256": "faf33ac0e9f415476be6e9cdc8d04979cdc44134a472166c44a4e0efdb01e8d7",
+    "used_for_delivered_capture": false
+  },
+  "folds_absent": true,
+  "library_version": "2026.10.15-native-pilots.1",
+  "manifest_sha256": "bfed1a04a176e9fba288fa822b3a02a3f280591c8fd9c4942bb245854cfa47e2",
+  "native_conf_metrics_above_one": 244,
+  "native_lag_days_range": [
+    0.0,
+    730.5
+  ],
+  "patterns": 418,
+  "reader_runtime": {
+    "duckdb": "1.5.4",
+    "pandas": "3.0.5",
+    "pydantic": "2.13.4"
+  },
+  "verified_files": 17
+}

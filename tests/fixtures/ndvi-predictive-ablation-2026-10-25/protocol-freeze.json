@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-10-24T22:16:15.214721+00:00",
+  "base_commit": "15bbc9640e0e60ad9d9af57ca3f0dbd93295d8ac",
+  "files": {
+    "PROTOCOL.md": "88aa965f3f588e9f7b7db1773962380adb372f402f00c39fcdee23382d33bbff",
+    "protocol.json": "bb93a903239c045f3cf08e76cb18ff9d53049d11e5f788a77291d0edee141711"
+  },
+  "native_mining_model_fitting_predictive_scoring_started": false,
+  "prior_inspection": "Input identity/schema/eligibility inspection only; historical studies and 2023\u20132024 outcomes already examined, so exploratory not confirmatory.",
+  "approved_scope": "Offline test authorized by Nicolas; no model, tool or scientific acceptance deployment."
+}

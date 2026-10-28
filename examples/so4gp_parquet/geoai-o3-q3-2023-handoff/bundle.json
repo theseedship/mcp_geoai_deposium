@@ -1,0 +1,586 @@
+{
+  "caveats": [
+    "This is a fresh byte-for-byte export and readback, not fresh mining or provider evidence.",
+    "All O3 confidence values remain null; scientific validation thresholds are not ratified.",
+    "Svalbard July 2023 retained the documented STAC truncation warning.",
+    "Kerguelen was excluded from O3 mining for insufficient Q3 rows.",
+    "The archive is not the missing #98a historical forecast bundle.",
+    "No remote contributor access or production deployment is proven."
+  ],
+  "generated_at": "2026-09-06T22:18:35.691386Z",
+  "historical_producers": {
+    "b4_input_base_commit": "4ff7441",
+    "o3_output_base_commit": "8c3f8d7",
+    "proof_date": "2026-06-27"
+  },
+  "inventory": {
+    "limits": {
+      "max_object_bytes": 1048576,
+      "max_objects": 50,
+      "max_total_bytes": 20971520,
+      "run_list_max_keys": 200
+    },
+    "object_count": 50,
+    "total_source_bytes": 155891
+  },
+  "objects": [
+    {
+      "bytes": 8438,
+      "key": "climate/o3/holdout/q3_2023/graank_validated.parquet",
+      "readback": {
+        "non_null_confidence": 0,
+        "period_end": "2023-09-30",
+        "period_start": "2023-07-01",
+        "rows": 30
+      },
+      "role": "o3_output",
+      "sha256": "78d6a6f329749f67703fc68ed017332f2dc69578d4990ee6acfee2d6d2f7654d"
+    },
+    {
+      "bytes": 19570,
+      "key": "climate/o3/holdout/q3_2023/tgrad_validated.parquet",
+      "readback": {
+        "non_null_confidence": 0,
+        "period_end": "2023-09-30",
+        "period_start": "2023-07-01",
+        "rows": 149
+      },
+      "role": "o3_output",
+      "sha256": "ac23cb68dcf1f1b62ce6416b867d1ae5afcd2ecac168c0308b82f0ef9db62e49"
+    },
+    {
+      "bytes": 3261,
+      "key": "climate/holdout/unified/2023_07/montpellier.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-03",
+        "rows": 13
+      },
+      "role": "o3_input_unified",
+      "sha256": "56720defc4f3f21860b70d25d809948efa02085aa9c55b3c0ce67d3cc20fcefe"
+    },
+    {
+      "bytes": 3183,
+      "key": "climate/holdout/unified/2023_07/marseille.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-01",
+        "rows": 13
+      },
+      "role": "o3_input_unified",
+      "sha256": "ed67b4a5361aa188d6e4836b470fb252c0594f6a1a01c4660f4811882b6f34ae"
+    },
+    {
+      "bytes": 2190,
+      "key": "climate/holdout/unified/2023_07/nairobi.parquet",
+      "readback": {
+        "max_date": "2023-07-27",
+        "min_date": "2023-07-12",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "7b2fa0483f4ecc2544f744fa7a84884bc71ba108289cb96f110e5a0389963cde"
+    },
+    {
+      "bytes": 2190,
+      "key": "climate/holdout/unified/2023_07/mombasa.parquet",
+      "readback": {
+        "max_date": "2023-07-19",
+        "min_date": "2023-07-14",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "c0a0ef4d8ea969e9bf4398092a8200ea4698f8531a38c0585a5573328bd7d7e3"
+    },
+    {
+      "bytes": 2714,
+      "key": "climate/holdout/unified/2023_07/niamey.parquet",
+      "readback": {
+        "max_date": "2023-07-25",
+        "min_date": "2023-07-07",
+        "rows": 5
+      },
+      "role": "o3_input_unified",
+      "sha256": "1f087391a0b40966f9ce1ff02fe36f500ad7f0b2b5a44a575395c2d09b06b877"
+    },
+    {
+      "bytes": 2186,
+      "key": "climate/holdout/unified/2023_07/rennes.parquet",
+      "readback": {
+        "max_date": "2023-07-10",
+        "min_date": "2023-07-07",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "29e161e3b3ae779f5a1f5f1ed29242a6e70daf1f3e3302a1ec5b6cc27c1bf671"
+    },
+    {
+      "bytes": 3134,
+      "key": "climate/holdout/unified/2023_07/tromso.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-01",
+        "rows": 12
+      },
+      "role": "o3_input_unified",
+      "sha256": "f18d5c12cce8f1ee4fa51e26f7dd0bc18ba234760ca5a8d80ed92feaee8178f3"
+    },
+    {
+      "bytes": 3209,
+      "key": "climate/holdout/unified/2023_07/svalbard.parquet",
+      "readback": {
+        "max_date": "2023-07-26",
+        "min_date": "2023-07-01",
+        "rows": 13
+      },
+      "role": "o3_input_unified",
+      "sha256": "1925bb1690895090f99fdeea3e6d99165d15e34d9fdf40faa760d76d95177276"
+    },
+    {
+      "bytes": 2836,
+      "key": "climate/holdout/unified/2023_07/manaus.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-11",
+        "rows": 7
+      },
+      "role": "o3_input_unified",
+      "sha256": "75e1dcff55e064d8bca9c12730911efb5c5699235633cc9d6d43a9ca5eade089"
+    },
+    {
+      "bytes": 383,
+      "key": "climate/holdout/unified/2023_07/kerguelen.parquet",
+      "readback": {
+        "max_date": null,
+        "min_date": null,
+        "rows": 0
+      },
+      "role": "o3_input_unified",
+      "sha256": "298432704a4f54d6f94d8409ecf098bce5f8d16bfd4840a234ced98b812cd3c4"
+    },
+    {
+      "bytes": 3209,
+      "key": "climate/holdout/unified/2023_07/riyadh.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-01",
+        "rows": 13
+      },
+      "role": "o3_input_unified",
+      "sha256": "19ddbe649aa4d3b376c2ad1845cd73397521451f94eea802f3c8ef7dc430fb62"
+    },
+    {
+      "bytes": 2229,
+      "key": "climate/holdout/unified/2023_07/seoul.parquet",
+      "readback": {
+        "max_date": "2023-07-21",
+        "min_date": "2023-07-01",
+        "rows": 3
+      },
+      "role": "o3_input_unified",
+      "sha256": "42d1c90b4acd6b4d9ec6f2ae170ad80bc01ee422ba9746847aa14fc4c954a983"
+    },
+    {
+      "bytes": 2847,
+      "key": "climate/holdout/unified/2023_07/montpellier_metropole.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-11",
+        "rows": 5
+      },
+      "role": "o3_input_unified",
+      "sha256": "3cfd8bf13bf232147d5948ca1fbefb18311aa2f11d327a26541b42f2efdddb8c"
+    },
+    {
+      "bytes": 2810,
+      "key": "climate/holdout/unified/2023_07/bassin_du_lez.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-11",
+        "rows": 5
+      },
+      "role": "o3_input_unified",
+      "sha256": "6329e279fda049c91a7b621495345541446f210e02cbfbf4ed9294c5775529e7"
+    },
+    {
+      "bytes": 2982,
+      "key": "climate/holdout/unified/2023_07/fos_sur_mer.parquet",
+      "readback": {
+        "max_date": "2023-07-31",
+        "min_date": "2023-07-01",
+        "rows": 9
+      },
+      "role": "o3_input_unified",
+      "sha256": "67206037da999b4bc36083024ae2e0b11baeefe5c572026a977e552b9e6d57c1"
+    },
+    {
+      "bytes": 3277,
+      "key": "climate/holdout/unified/2023_08/montpellier.parquet",
+      "readback": {
+        "max_date": "2023-08-30",
+        "min_date": "2023-08-05",
+        "rows": 13
+      },
+      "role": "o3_input_unified",
+      "sha256": "e67f894659ded88dd4cdb9706ab2ba67c77d0f30aa726fed272af51366f7adaa"
+    },
+    {
+      "bytes": 2916,
+      "key": "climate/holdout/unified/2023_08/marseille.parquet",
+      "readback": {
+        "max_date": "2023-08-25",
+        "min_date": "2023-08-02",
+        "rows": 8
+      },
+      "role": "o3_input_unified",
+      "sha256": "1a1ac7f7d4136102afce13818abe9d5790918df7388295abcb808d5428f16ee5"
+    },
+    {
+      "bytes": 2190,
+      "key": "climate/holdout/unified/2023_08/nairobi.parquet",
+      "readback": {
+        "max_date": "2023-08-26",
+        "min_date": "2023-08-21",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "4484d6c2f4e7034a8aeeb3876d7b5d4dded634bef2ac41e60cab4ae03fc40ffc"
+    },
+    {
+      "bytes": 2190,
+      "key": "climate/holdout/unified/2023_08/mombasa.parquet",
+      "readback": {
+        "max_date": "2023-08-28",
+        "min_date": "2023-08-18",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "c10e967fea2f15fedef02901e2fa6b9b91234802d1979a8f4197ae01999b1ff8"
+    },
+    {
+      "bytes": 2287,
+      "key": "climate/holdout/unified/2023_08/niamey.parquet",
+      "readback": {
+        "max_date": "2023-08-31",
+        "min_date": "2023-08-19",
+        "rows": 4
+      },
+      "role": "o3_input_unified",
+      "sha256": "c8cc96274423482a06b26b5b898e583f2e2a7bc4e9db40f27d299197aa21dada"
+    },
+    {
+      "bytes": 2186,
+      "key": "climate/holdout/unified/2023_08/rennes.parquet",
+      "readback": {
+        "max_date": "2023-08-21",
+        "min_date": "2023-08-19",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "d7d0b8ae72e624e0f5218ab26559888317f7fec2b6e31ce65025bd61ef68e9c8"
+    },
+    {
+      "bytes": 2295,
+      "key": "climate/holdout/unified/2023_08/tromso.parquet",
+      "readback": {
+        "max_date": "2023-08-26",
+        "min_date": "2023-08-06",
+        "rows": 4
+      },
+      "role": "o3_input_unified",
+      "sha256": "ec5901494372ecb4b72577d19f2661eba5baffd77009486b5633cad6dba2a279"
+    },
+    {
+      "bytes": 2198,
+      "key": "climate/holdout/unified/2023_08/svalbard.parquet",
+      "readback": {
+        "max_date": "2023-08-18",
+        "min_date": "2023-08-08",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "4bd2ac4a5e25b5f4acfc1044c3c4db151ad23d64236d1644f2a6ad5e8502a1df"
+    },
+    {
+      "bytes": 2837,
+      "key": "climate/holdout/unified/2023_08/manaus.parquet",
+      "readback": {
+        "max_date": "2023-08-30",
+        "min_date": "2023-08-05",
+        "rows": 7
+      },
+      "role": "o3_input_unified",
+      "sha256": "ea5c2d77cc6179f83b255b46f7afd59c2fe92cabead254b188f248b022b904e8"
+    },
+    {
+      "bytes": 2096,
+      "key": "climate/holdout/unified/2023_08/kerguelen.parquet",
+      "readback": {
+        "max_date": "2023-08-29",
+        "min_date": "2023-08-29",
+        "rows": 1
+      },
+      "role": "o3_input_unified",
+      "sha256": "738859d08a5901da4f49f4b97ae308b010b357d781e9828cbedf2cd04e284fcd"
+    },
+    {
+      "bytes": 3172,
+      "key": "climate/holdout/unified/2023_08/riyadh.parquet",
+      "readback": {
+        "max_date": "2023-08-30",
+        "min_date": "2023-08-03",
+        "rows": 12
+      },
+      "role": "o3_input_unified",
+      "sha256": "379e762c32e16b95b584691884b8f044c8e129dd295694832f7d9602ea2cb93a"
+    },
+    {
+      "bytes": 2704,
+      "key": "climate/holdout/unified/2023_08/seoul.parquet",
+      "readback": {
+        "max_date": "2023-08-25",
+        "min_date": "2023-08-05",
+        "rows": 5
+      },
+      "role": "o3_input_unified",
+      "sha256": "23abad2130c59a9c85bce76c971fa8abdc0fcdd44a89701e87647e183adf98d9"
+    },
+    {
+      "bytes": 2256,
+      "key": "climate/holdout/unified/2023_08/montpellier_metropole.parquet",
+      "readback": {
+        "max_date": "2023-08-15",
+        "min_date": "2023-08-05",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "dcc98da19e7c44e8aefe0d8bde4d6d24627756485281ce04be7a0558dac8adcc"
+    },
+    {
+      "bytes": 2215,
+      "key": "climate/holdout/unified/2023_08/bassin_du_lez.parquet",
+      "readback": {
+        "max_date": "2023-08-15",
+        "min_date": "2023-08-05",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "07ae8b3579d62ead8fa09159ceb2f428854bfd01c2cfb0241fd86b54486486e2"
+    },
+    {
+      "bytes": 2797,
+      "key": "climate/holdout/unified/2023_08/fos_sur_mer.parquet",
+      "readback": {
+        "max_date": "2023-08-25",
+        "min_date": "2023-08-02",
+        "rows": 6
+      },
+      "role": "o3_input_unified",
+      "sha256": "0f066592331dc557157558ff29a46bd8aefd4b3a75d574928a73d904015de147"
+    },
+    {
+      "bytes": 3087,
+      "key": "climate/holdout/unified/2023_09/montpellier.parquet",
+      "readback": {
+        "max_date": "2023-09-29",
+        "min_date": "2023-09-04",
+        "rows": 10
+      },
+      "role": "o3_input_unified",
+      "sha256": "260ef555abe81124d229491357b7548ebe289db7a958bcd707f1e3e495481e6c"
+    },
+    {
+      "bytes": 2955,
+      "key": "climate/holdout/unified/2023_09/marseille.parquet",
+      "readback": {
+        "max_date": "2023-09-29",
+        "min_date": "2023-09-04",
+        "rows": 8
+      },
+      "role": "o3_input_unified",
+      "sha256": "e5e3c2255346172bbbcbb935af726110ac06f45ba1a0167e4a566d06c775be0e"
+    },
+    {
+      "bytes": 2721,
+      "key": "climate/holdout/unified/2023_09/nairobi.parquet",
+      "readback": {
+        "max_date": "2023-09-30",
+        "min_date": "2023-09-05",
+        "rows": 5
+      },
+      "role": "o3_input_unified",
+      "sha256": "0a8e700f5d7d70228e72d61284cd6b53c426a2103a804223b00a5a39de22ba44"
+    },
+    {
+      "bytes": 2190,
+      "key": "climate/holdout/unified/2023_09/mombasa.parquet",
+      "readback": {
+        "max_date": "2023-09-12",
+        "min_date": "2023-09-07",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "e61852c01333a8b4235ce0a13d4463c4509c9108f7e1f72cbe0622edb0815a5a"
+    },
+    {
+      "bytes": 2184,
+      "key": "climate/holdout/unified/2023_09/niamey.parquet",
+      "readback": {
+        "max_date": "2023-09-23",
+        "min_date": "2023-09-18",
+        "rows": 2
+      },
+      "role": "o3_input_unified",
+      "sha256": "fe18c70b455ce2b9c2739489ea51f2df9f38b625bfa80a7acbc2c1765a63fa58"
+    },
+    {
+      "bytes": 2282,
+      "key": "climate/holdout/unified/2023_09/rennes.parquet",
+      "readback": {
+        "max_date": "2023-09-30",
+        "min_date": "2023-09-03",
+        "rows": 4
+      },
+      "role": "o3_input_unified",
+      "sha256": "3166d49d248b1ec925b04e998d637db47ba19b46233245eb2cd81cf122cdcd37"
+    },
+    {
+      "bytes": 383,
+      "key": "climate/holdout/unified/2023_09/tromso.parquet",
+      "readback": {
+        "max_date": null,
+        "min_date": null,
+        "rows": 0
+      },
+      "role": "o3_input_unified",
+      "sha256": "298432704a4f54d6f94d8409ecf098bce5f8d16bfd4840a234ced98b812cd3c4"
+    },
+    {
+      "bytes": 2844,
+      "key": "climate/holdout/unified/2023_09/svalbard.parquet",
+      "readback": {
+        "max_date": "2023-09-26",
+        "min_date": "2023-09-18",
+        "rows": 7
+      },
+      "role": "o3_input_unified",
+      "sha256": "786787c50d3026a5025b25fe19899f76809c4a8edfeb0975cfd17a25c838233a"
+    },
+    {
+      "bytes": 2841,
+      "key": "climate/holdout/unified/2023_09/manaus.parquet",
+      "readback": {
+        "max_date": "2023-09-27",
+        "min_date": "2023-09-02",
+        "rows": 7
+      },
+      "role": "o3_input_unified",
+      "sha256": "ba1400f73fada1af95f4b1ead69d6b979cbd979fa9c04691b779bbd998c7ef3a"
+    },
+    {
+      "bytes": 383,
+      "key": "climate/holdout/unified/2023_09/kerguelen.parquet",
+      "readback": {
+        "max_date": null,
+        "min_date": null,
+        "rows": 0
+      },
+      "role": "o3_input_unified",
+      "sha256": "298432704a4f54d6f94d8409ecf098bce5f8d16bfd4840a234ced98b812cd3c4"
+    },
+    {
+      "bytes": 3115,
+      "key": "climate/holdout/unified/2023_09/riyadh.parquet",
+      "readback": {
+        "max_date": "2023-09-29",
+        "min_date": "2023-09-02",
+        "rows": 11
+      },
+      "role": "o3_input_unified",
+      "sha256": "6cea1942d4a542eec48171f9d7558055e082444258791e8691d6afd4b82b52da"
+    },
+    {
+      "bytes": 2286,
+      "key": "climate/holdout/unified/2023_09/seoul.parquet",
+      "readback": {
+        "max_date": "2023-09-24",
+        "min_date": "2023-09-07",
+        "rows": 4
+      },
+      "role": "o3_input_unified",
+      "sha256": "7d01c031b1ddd4cbdb9ca1cf12f9d13e68ff0d73945d1c13094825e4f7b4d7b9"
+    },
+    {
+      "bytes": 2911,
+      "key": "climate/holdout/unified/2023_09/montpellier_metropole.parquet",
+      "readback": {
+        "max_date": "2023-09-29",
+        "min_date": "2023-09-04",
+        "rows": 6
+      },
+      "role": "o3_input_unified",
+      "sha256": "24d643cd7a627c66933e17b72ae0955e3e4234cc45809869dcd0fb0f3d3bff7c"
+    },
+    {
+      "bytes": 2867,
+      "key": "climate/holdout/unified/2023_09/bassin_du_lez.parquet",
+      "readback": {
+        "max_date": "2023-09-29",
+        "min_date": "2023-09-04",
+        "rows": 6
+      },
+      "role": "o3_input_unified",
+      "sha256": "5b0b448c0af184e3ec91c6edcbe98cec5dbffbcd6344db65b364843e72ba3c26"
+    },
+    {
+      "bytes": 2963,
+      "key": "climate/holdout/unified/2023_09/fos_sur_mer.parquet",
+      "readback": {
+        "max_date": "2023-09-29",
+        "min_date": "2023-09-04",
+        "rows": 8
+      },
+      "role": "o3_input_unified",
+      "sha256": "b2956d3a0713417b1fef3e0ec205ce61fa865a47fb0b5ae9b9756fd176b3e1f0"
+    },
+    {
+      "bytes": 4966,
+      "key": "climate/runs/holdout-full-panel-mesh-2023-q3-segmented-proof-2023_07-unified/manifest.json",
+      "readback": {
+        "kind": "geoai_run_manifest",
+        "outputs": 15,
+        "run_id": "holdout-full-panel-mesh-2023-q3-segmented-proof-2023_07-unified"
+      },
+      "role": "b4_input_manifest",
+      "sha256": "e85c92a0426dad757f68316050e31af5086fbac4f554a8c1d0e6fe2a2b6e4b7f"
+    },
+    {
+      "bytes": 4963,
+      "key": "climate/runs/holdout-full-panel-mesh-2023-q3-segmented-proof-2023_08-unified/manifest.json",
+      "readback": {
+        "kind": "geoai_run_manifest",
+        "outputs": 15,
+        "run_id": "holdout-full-panel-mesh-2023-q3-segmented-proof-2023_08-unified"
+      },
+      "role": "b4_input_manifest",
+      "sha256": "c110800be8df8d2ace34373842f4328fa5eeb181759c2790a0ebb8bf521acaee"
+    },
+    {
+      "bytes": 4963,
+      "key": "climate/runs/holdout-full-panel-mesh-2023-q3-segmented-proof-2023_09-unified/manifest.json",
+      "readback": {
+        "kind": "geoai_run_manifest",
+        "outputs": 15,
+        "run_id": "holdout-full-panel-mesh-2023-q3-segmented-proof-2023_09-unified"
+      },
+      "role": "b4_input_manifest",
+      "sha256": "4b4df106ba2819efd31381709d0bd2d5b031cca269e49a02eeacac23babd6ea3"
+    }
+  ],
+  "schema_version": "geoai-o3-offline-handoff/v1",
+  "verification": {
+    "historical_mesh_readback_date": "2026-09-05",
+    "method": "bounded read-only S3 LIST/HEAD/GET plus local DuckDB readback",
+    "repository_commit": "6b48981e4a8aa6bb6f0df04e717ff8ebc215404e"
+  }
+}

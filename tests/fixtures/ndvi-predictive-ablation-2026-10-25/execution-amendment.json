@@ -1,0 +1,14 @@
+{
+  "initial_failure_manifest_sha256": "6a5902558378e889086679dea0258ca4c97d5b617ecb99602427b77b728b83ae",
+  "interpretation": "Bounded pair-interaction feature selection; not a replication of unrestricted 14-column GRAANK, native TGrad day-lag estimation, scientific acceptance or confirmatory inference.",
+  "native_mining_was_attempted": true,
+  "original_implementation_commit": "8e08700",
+  "overrides": {
+    "maximum_antecedent_size": 2,
+    "native_strategy": "all_driver_pairs_plus_target"
+  },
+  "predictive_model_fitting_or_scoring_started": false,
+  "reason": "The full 14-column native GRAANK Apriori search reached the frozen 60-second bound on Fos before model fitting or predictive scoring. Native diagnostics locate the cost in pairwise candidate unions and linear duplicate scans, not in imports.",
+  "schema_version": "ndvi-predictive-ablation-execution-amendment/1",
+  "scope": "Exhaust all 78 unordered pairs of the 13 fixed drivers, one unchanged native GRAANK call per driver-pair plus training target. Select only exact two-antecedent patterns. Same support, inverse normalization, strict recount, top-eight cap, split, seven arms, ridge, seeds, metrics and per-site 60-second timeout."
+}

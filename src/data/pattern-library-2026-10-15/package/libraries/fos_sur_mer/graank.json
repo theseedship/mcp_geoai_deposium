@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "zone_id": "fos_sur_mer",
+  "algorithm": "graank",
+  "generated_at": "2026-10-15T06:37:03.658974Z",
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "antecedent": "ndvi_mean+, wind_speed+",
+      "consequent": "",
+      "pattern": "ndvi_mean+, wind_speed+",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.565,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 15.824,
+        "conf": 0.993,
+        "connect": 1.0,
+        "density": 0.565,
+        "dispersion": 10.87,
+        "singularity_scr": 2.865
+      }
+    },
+    {
+      "pattern_id": 1,
+      "antecedent": "temperature_2m+, wind_speed-",
+      "consequent": "",
+      "pattern": "temperature_2m+, wind_speed-",
+      "variables": [
+        "temperature_2m",
+        "wind_speed"
+      ],
+      "support": 0.53,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 15.565,
+        "conf": 1.025,
+        "connect": 1.0,
+        "density": 0.53,
+        "dispersion": 10.696,
+        "singularity_scr": 2.17
+      }
+    },
+    {
+      "pattern_id": 2,
+      "antecedent": "wind_speed-, humidity+",
+      "consequent": "",
+      "pattern": "wind_speed-, humidity+",
+      "variables": [
+        "wind_speed",
+        "humidity"
+      ],
+      "support": 0.614,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.734,
+        "conf": 1.183,
+        "connect": 1.0,
+        "density": 0.614,
+        "dispersion": 11.452,
+        "singularity_scr": 2.362
+      }
+    },
+    {
+      "pattern_id": 3,
+      "antecedent": "evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "evapotranspiration+, wind_speed+",
+      "variables": [
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.551,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.86,
+        "conf": 1.07,
+        "connect": 1.0,
+        "density": 0.551,
+        "dispersion": 11.455,
+        "singularity_scr": 2.55
+      }
+    },
+    {
+      "pattern_id": 4,
+      "antecedent": "solar_radiation-, wind_speed+",
+      "consequent": "",
+      "pattern": "solar_radiation-, wind_speed+",
+      "variables": [
+        "solar_radiation",
+        "wind_speed"
+      ],
+      "support": 0.518,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 15.808,
+        "conf": 1.012,
+        "connect": 1.0,
+        "density": 0.518,
+        "dispersion": 10.766,
+        "singularity_scr": 3.16
+      }
+    },
+    {
+      "pattern_id": 5,
+      "antecedent": "temperature_2m-, ndvi_mean+, solar_radiation-",
+      "consequent": "",
+      "pattern": "temperature_2m-, ndvi_mean+, solar_radiation-",
+      "variables": [
+        "temperature_2m",
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.542,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.177,
+        "conf": 1.048,
+        "connect": 1.0,
+        "density": 0.542,
+        "dispersion": 11.169,
+        "singularity_scr": 2.262
+      }
+    },
+    {
+      "pattern_id": 6,
+      "antecedent": "evapotranspiration-, ndvi_mean+, humidity+",
+      "consequent": "",
+      "pattern": "evapotranspiration-, ndvi_mean+, humidity+",
+      "variables": [
+        "evapotranspiration",
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.542,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.756,
+        "conf": 1.052,
+        "connect": 1.0,
+        "density": 0.542,
+        "dispersion": 11.263,
+        "singularity_scr": 2.078
+      }
+    },
+    {
+      "pattern_id": 7,
+      "antecedent": "temperature_2m+, solar_radiation+, evapotranspiration+, humidity-",
+      "consequent": "",
+      "pattern": "temperature_2m+, solar_radiation+, evapotranspiration+, humidity-",
+      "variables": [
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "support": 0.633,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.345,
+        "conf": 1.224,
+        "connect": 1.0,
+        "density": 0.633,
+        "dispersion": 11.272,
+        "singularity_scr": 1.295
+      }
+    },
+    {
+      "pattern_id": 8,
+      "antecedent": "evapotranspiration-, temperature_2m-, ndvi_mean+, solar_radiation-",
+      "consequent": "",
+      "pattern": "evapotranspiration-, temperature_2m-, ndvi_mean+, solar_radiation-",
+      "variables": [
+        "evapotranspiration",
+        "temperature_2m",
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.527,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.153,
+        "conf": 1.023,
+        "connect": 1.0,
+        "density": 0.527,
+        "dispersion": 11.214,
+        "singularity_scr": 2.092
+      }
+    },
+    {
+      "pattern_id": 9,
+      "antecedent": "temperature_2m+, solar_radiation+, evapotranspiration+, humidity-",
+      "consequent": "",
+      "pattern": "temperature_2m+, solar_radiation+, evapotranspiration+, humidity-",
+      "variables": [
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "support": 0.633,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "fos_sur_mer",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 16.345,
+        "conf": 1.224,
+        "connect": 1.0,
+        "density": 0.633,
+        "dispersion": 11.272,
+        "singularity_scr": 1.295
+      }
+    }
+  ]
+}

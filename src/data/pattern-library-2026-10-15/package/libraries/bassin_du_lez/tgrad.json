@@ -1,0 +1,3421 @@
+{
+  "schema_version": "1.0.0",
+  "zone_id": "bassin_du_lez",
+  "algorithm": "tgrad",
+  "generated_at": "2026-10-15T06:37:03.401085Z",
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "antecedent": "(temperature_2m-) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.628,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.163
+      }
+    },
+    {
+      "pattern_id": 1,
+      "antecedent": "(humidity+) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.596,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.104
+      }
+    },
+    {
+      "pattern_id": 2,
+      "antecedent": "(evapotranspiration-) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.595,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.102
+      }
+    },
+    {
+      "pattern_id": 3,
+      "antecedent": "(wind_speed+) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.505,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.935
+      }
+    },
+    {
+      "pattern_id": 4,
+      "antecedent": "(solar_radiation-) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.571,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.057
+      }
+    },
+    {
+      "pattern_id": 5,
+      "antecedent": "(evapotranspiration-) +1.0 months, (temperature_2m-) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 months, (temperature_2m-) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "support": 0.546,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.011
+      }
+    },
+    {
+      "pattern_id": 6,
+      "antecedent": "(solar_radiation-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 months, (evapotranspiration-) +1.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.532,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 30.416666666666668,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.985
+      }
+    },
+    {
+      "pattern_id": 7,
+      "antecedent": "(temperature_2m-) +3.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +3.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.54,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 91.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.047
+      }
+    },
+    {
+      "pattern_id": 8,
+      "antecedent": "(humidity-) +3.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +3.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.579,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 91.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.122
+      }
+    },
+    {
+      "pattern_id": 9,
+      "antecedent": "(evapotranspiration+) +3.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +3.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.53,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 91.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.027
+      }
+    },
+    {
+      "pattern_id": 10,
+      "antecedent": "(wind_speed+) +3.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +3.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.601,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 91.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.165
+      }
+    },
+    {
+      "pattern_id": 11,
+      "antecedent": "(solar_radiation+) +3.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +3.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.551,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 91.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.068
+      }
+    },
+    {
+      "pattern_id": 12,
+      "antecedent": "(temperature_2m+) +4.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +4.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.531,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 121.66666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.98
+      }
+    },
+    {
+      "pattern_id": 13,
+      "antecedent": "(humidity-) +4.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +4.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.609,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 121.66666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.124
+      }
+    },
+    {
+      "pattern_id": 14,
+      "antecedent": "(evapotranspiration+) +4.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +4.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.585,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 121.66666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.079
+      }
+    },
+    {
+      "pattern_id": 15,
+      "antecedent": "(wind_speed+) +4.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +4.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.616,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 121.66666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.137
+      }
+    },
+    {
+      "pattern_id": 16,
+      "antecedent": "(solar_radiation+) +4.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +4.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.593,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 121.66666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.094
+      }
+    },
+    {
+      "pattern_id": 17,
+      "antecedent": "(solar_radiation+) +4.0 months, (evapotranspiration+) +4.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +4.0 months, (evapotranspiration+) +4.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.538,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 121.66666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.993
+      }
+    },
+    {
+      "pattern_id": 18,
+      "antecedent": "(temperature_2m+) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.56,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.002
+      }
+    },
+    {
+      "pattern_id": 19,
+      "antecedent": "(humidity-) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.527,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.943
+      }
+    },
+    {
+      "pattern_id": 20,
+      "antecedent": "(evapotranspiration+) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.593,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.061
+      }
+    },
+    {
+      "pattern_id": 21,
+      "antecedent": "(wind_speed+) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.653,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.168
+      }
+    },
+    {
+      "pattern_id": 22,
+      "antecedent": "(solar_radiation+) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.581,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.039
+      }
+    },
+    {
+      "pattern_id": 23,
+      "antecedent": "(temperature_2m+) +5.0 months, (evapotranspiration+) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +5.0 months, (evapotranspiration+) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "support": 0.511,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.914
+      }
+    },
+    {
+      "pattern_id": 24,
+      "antecedent": "(solar_radiation+) +5.0 months, (evapotranspiration+) +5.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +5.0 months, (evapotranspiration+) +5.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.541,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 152.08333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.968
+      }
+    },
+    {
+      "pattern_id": 25,
+      "antecedent": "(temperature_2m+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.583,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.021
+      }
+    },
+    {
+      "pattern_id": 26,
+      "antecedent": "(humidity+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.511,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.895
+      }
+    },
+    {
+      "pattern_id": 27,
+      "antecedent": "(evapotranspiration+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.571,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.0
+      }
+    },
+    {
+      "pattern_id": 28,
+      "antecedent": "(wind_speed+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.525,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.919
+      }
+    },
+    {
+      "pattern_id": 29,
+      "antecedent": "(solar_radiation+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.571,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.0
+      }
+    },
+    {
+      "pattern_id": 30,
+      "antecedent": "(temperature_2m+) +6.0 months, (evapotranspiration+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +6.0 months, (evapotranspiration+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "support": 0.51,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.893
+      }
+    },
+    {
+      "pattern_id": 31,
+      "antecedent": "(solar_radiation+) +6.0 months, (evapotranspiration+) +6.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +6.0 months, (evapotranspiration+) +6.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.527,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 182.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.923
+      }
+    },
+    {
+      "pattern_id": 32,
+      "antecedent": "(temperature_2m+) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.59,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.057
+      }
+    },
+    {
+      "pattern_id": 33,
+      "antecedent": "(humidity+) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.506,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.907
+      }
+    },
+    {
+      "pattern_id": 34,
+      "antecedent": "(evapotranspiration+) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.555,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.995
+      }
+    },
+    {
+      "pattern_id": 35,
+      "antecedent": "(wind_speed-) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.565,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.013
+      }
+    },
+    {
+      "pattern_id": 36,
+      "antecedent": "(solar_radiation+) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.541,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.97
+      }
+    },
+    {
+      "pattern_id": 37,
+      "antecedent": "(temperature_2m+) +7.0 months, (evapotranspiration+) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +7.0 months, (evapotranspiration+) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "support": 0.504,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.903
+      }
+    },
+    {
+      "pattern_id": 38,
+      "antecedent": "(solar_radiation+) +7.0 months, (evapotranspiration+) +7.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +7.0 months, (evapotranspiration+) +7.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.506,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 212.91666666666669,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.907
+      }
+    },
+    {
+      "pattern_id": 39,
+      "antecedent": "(temperature_2m+) +8.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +8.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.576,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 243.33333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.073
+      }
+    },
+    {
+      "pattern_id": 40,
+      "antecedent": "(evapotranspiration+) +8.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +8.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.508,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 243.33333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.946
+      }
+    },
+    {
+      "pattern_id": 41,
+      "antecedent": "(wind_speed-) +8.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +8.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.567,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 243.33333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.056
+      }
+    },
+    {
+      "pattern_id": 42,
+      "antecedent": "(solar_radiation-) +8.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +8.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.513,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 243.33333333333334,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.955
+      }
+    },
+    {
+      "pattern_id": 43,
+      "antecedent": "(temperature_2m+) +9.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +9.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.534,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 273.75,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.037
+      }
+    },
+    {
+      "pattern_id": 44,
+      "antecedent": "(evapotranspiration-) +9.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +9.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.534,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 273.75,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.037
+      }
+    },
+    {
+      "pattern_id": 45,
+      "antecedent": "(wind_speed-) +9.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +9.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.644,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 273.75,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.25
+      }
+    },
+    {
+      "pattern_id": 46,
+      "antecedent": "(solar_radiation-) +9.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +9.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.559,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 273.75,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.085
+      }
+    },
+    {
+      "pattern_id": 47,
+      "antecedent": "(solar_radiation-) +9.0 months, (evapotranspiration-) +9.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +9.0 months, (evapotranspiration-) +9.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.502,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 273.75,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.975
+      }
+    },
+    {
+      "pattern_id": 48,
+      "antecedent": "(temperature_2m-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.587,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.16
+      }
+    },
+    {
+      "pattern_id": 49,
+      "antecedent": "(humidity+) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.548,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.083
+      }
+    },
+    {
+      "pattern_id": 50,
+      "antecedent": "(evapotranspiration-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.609,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.204
+      }
+    },
+    {
+      "pattern_id": 51,
+      "antecedent": "(wind_speed-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.623,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.231
+      }
+    },
+    {
+      "pattern_id": 52,
+      "antecedent": "(solar_radiation-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.615,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.215
+      }
+    },
+    {
+      "pattern_id": 53,
+      "antecedent": "(evapotranspiration-) +10.0 months, (temperature_2m-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +10.0 months, (temperature_2m-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "support": 0.53,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.047
+      }
+    },
+    {
+      "pattern_id": 54,
+      "antecedent": "(solar_radiation-) +10.0 months, (temperature_2m-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +10.0 months, (temperature_2m-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "support": 0.502,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.992
+      }
+    },
+    {
+      "pattern_id": 55,
+      "antecedent": "(solar_radiation-) +10.0 months, (evapotranspiration-) +10.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +10.0 months, (evapotranspiration-) +10.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.565,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 304.1666666666667,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.117
+      }
+    },
+    {
+      "pattern_id": 56,
+      "antecedent": "(temperature_2m-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.602,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.151
+      }
+    },
+    {
+      "pattern_id": 57,
+      "antecedent": "(humidity+) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.649,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.241
+      }
+    },
+    {
+      "pattern_id": 58,
+      "antecedent": "(evapotranspiration-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.619,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.184
+      }
+    },
+    {
+      "pattern_id": 59,
+      "antecedent": "(wind_speed-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.639,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.222
+      }
+    },
+    {
+      "pattern_id": 60,
+      "antecedent": "(solar_radiation-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.619,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.184
+      }
+    },
+    {
+      "pattern_id": 61,
+      "antecedent": "(evapotranspiration-) +12.0 months, (temperature_2m-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +12.0 months, (temperature_2m-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "support": 0.542,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.036
+      }
+    },
+    {
+      "pattern_id": 62,
+      "antecedent": "(solar_radiation-) +12.0 months, (temperature_2m-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +12.0 months, (temperature_2m-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "support": 0.51,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.975
+      }
+    },
+    {
+      "pattern_id": 63,
+      "antecedent": "(evapotranspiration-) +12.0 months, (humidity+) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +12.0 months, (humidity+) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "support": 0.531,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.015
+      }
+    },
+    {
+      "pattern_id": 64,
+      "antecedent": "(solar_radiation-) +12.0 months, (humidity+) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +12.0 months, (humidity+) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "humidity"
+      ],
+      "support": 0.518,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.99
+      }
+    },
+    {
+      "pattern_id": 65,
+      "antecedent": "(solar_radiation-) +12.0 months, (evapotranspiration-) +12.0 months",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +12.0 months, (evapotranspiration-) +12.0 months",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.57,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.0,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.09
+      }
+    },
+    {
+      "pattern_id": 66,
+      "antecedent": "(temperature_2m-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.591,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.067
+      }
+    },
+    {
+      "pattern_id": 67,
+      "antecedent": "(humidity+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.572,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.032
+      }
+    },
+    {
+      "pattern_id": 68,
+      "antecedent": "(evapotranspiration-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.582,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.051
+      }
+    },
+    {
+      "pattern_id": 69,
+      "antecedent": "(wind_speed+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.508,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.917
+      }
+    },
+    {
+      "pattern_id": 70,
+      "antecedent": "(solar_radiation-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.563,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.016
+      }
+    },
+    {
+      "pattern_id": 71,
+      "antecedent": "(evapotranspiration-) +1.0 years, (temperature_2m-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 years, (temperature_2m-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "support": 0.515,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.93
+      }
+    },
+    {
+      "pattern_id": 72,
+      "antecedent": "(solar_radiation-) +1.0 years, (evapotranspiration-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +1.0 years, (evapotranspiration-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.522,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.942
+      }
+    },
+    {
+      "pattern_id": 73,
+      "antecedent": "(temperature_2m-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.542,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.964
+      }
+    },
+    {
+      "pattern_id": 74,
+      "antecedent": "(humidity-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.502,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.893
+      }
+    },
+    {
+      "pattern_id": 75,
+      "antecedent": "(evapotranspiration-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.517,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.92
+      }
+    },
+    {
+      "pattern_id": 76,
+      "antecedent": "(wind_speed+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.576,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.025
+      }
+    },
+    {
+      "pattern_id": 77,
+      "antecedent": "(solar_radiation+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.517,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.92
+      }
+    },
+    {
+      "pattern_id": 78,
+      "antecedent": "(temperature_2m-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.537,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.991
+      }
+    },
+    {
+      "pattern_id": 79,
+      "antecedent": "(humidity-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.603,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.113
+      }
+    },
+    {
+      "pattern_id": 80,
+      "antecedent": "(evapotranspiration+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.524,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.967
+      }
+    },
+    {
+      "pattern_id": 81,
+      "antecedent": "(wind_speed+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.664,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.225
+      }
+    },
+    {
+      "pattern_id": 82,
+      "antecedent": "(solar_radiation+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.553,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.02
+      }
+    },
+    {
+      "pattern_id": 83,
+      "antecedent": "(temperature_2m-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.513,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.0
+      }
+    },
+    {
+      "pattern_id": 84,
+      "antecedent": "(humidity-) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.544,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.06
+      }
+    },
+    {
+      "pattern_id": 85,
+      "antecedent": "(evapotranspiration+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.538,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.049
+      }
+    },
+    {
+      "pattern_id": 86,
+      "antecedent": "(wind_speed+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.567,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.105
+      }
+    },
+    {
+      "pattern_id": 87,
+      "antecedent": "(solar_radiation+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.598,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.166
+      }
+    },
+    {
+      "pattern_id": 88,
+      "antecedent": "(solar_radiation+) +1.0 years, (evapotranspiration+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 years, (evapotranspiration+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.513,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.0
+      }
+    },
+    {
+      "pattern_id": 89,
+      "antecedent": "(temperature_2m+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.554,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.084
+      }
+    },
+    {
+      "pattern_id": 90,
+      "antecedent": "(evapotranspiration+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.578,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.131
+      }
+    },
+    {
+      "pattern_id": 91,
+      "antecedent": "(wind_speed+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.538,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.053
+      }
+    },
+    {
+      "pattern_id": 92,
+      "antecedent": "(solar_radiation+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.591,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.157
+      }
+    },
+    {
+      "pattern_id": 93,
+      "antecedent": "(solar_radiation+) +1.0 years, (evapotranspiration+) +1.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +1.0 years, (evapotranspiration+) +1.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.529,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 365.25,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.035
+      }
+    },
+    {
+      "pattern_id": 94,
+      "antecedent": "(temperature_2m+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.59,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.12
+      }
+    },
+    {
+      "pattern_id": 95,
+      "antecedent": "(humidity-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.52,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.987
+      }
+    },
+    {
+      "pattern_id": 96,
+      "antecedent": "(evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.61,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.157
+      }
+    },
+    {
+      "pattern_id": 97,
+      "antecedent": "(wind_speed+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.543,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.03
+      }
+    },
+    {
+      "pattern_id": 98,
+      "antecedent": "(solar_radiation+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.583,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.106
+      }
+    },
+    {
+      "pattern_id": 99,
+      "antecedent": "(temperature_2m+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "support": 0.52,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.987
+      }
+    },
+    {
+      "pattern_id": 100,
+      "antecedent": "(solar_radiation+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.543,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.03
+      }
+    },
+    {
+      "pattern_id": 101,
+      "antecedent": "(temperature_2m+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.649,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.288
+      }
+    },
+    {
+      "pattern_id": 102,
+      "antecedent": "(humidity-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.558,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.107
+      }
+    },
+    {
+      "pattern_id": 103,
+      "antecedent": "(evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.649,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.288
+      }
+    },
+    {
+      "pattern_id": 104,
+      "antecedent": "(wind_speed+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.554,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.099
+      }
+    },
+    {
+      "pattern_id": 105,
+      "antecedent": "(solar_radiation+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.609,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.208
+      }
+    },
+    {
+      "pattern_id": 106,
+      "antecedent": "(temperature_2m+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "evapotranspiration"
+      ],
+      "support": 0.569,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.129
+      }
+    },
+    {
+      "pattern_id": 107,
+      "antecedent": "(temperature_2m+) +2.0 years, (solar_radiation+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 years, (solar_radiation+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m",
+        "solar_radiation"
+      ],
+      "support": 0.518,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.028
+      }
+    },
+    {
+      "pattern_id": 108,
+      "antecedent": "(solar_radiation+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation+) +2.0 years, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.576,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.143
+      }
+    },
+    {
+      "pattern_id": 109,
+      "antecedent": "(temperature_2m+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.573,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.089
+      }
+    },
+    {
+      "pattern_id": 110,
+      "antecedent": "(humidity-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.518,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 0.985
+      }
+    },
+    {
+      "pattern_id": 111,
+      "antecedent": "(evapotranspiration+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.53,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.008
+      }
+    },
+    {
+      "pattern_id": 112,
+      "antecedent": "(wind_speed+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.553,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.051
+      }
+    },
+    {
+      "pattern_id": 113,
+      "antecedent": "(solar_radiation-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.545,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.036
+      }
+    },
+    {
+      "pattern_id": 114,
+      "antecedent": "(temperature_2m-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.515,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.008
+      }
+    },
+    {
+      "pattern_id": 115,
+      "antecedent": "(humidity+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.541,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.059
+      }
+    },
+    {
+      "pattern_id": 116,
+      "antecedent": "(evapotranspiration-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.593,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.16
+      }
+    },
+    {
+      "pattern_id": 117,
+      "antecedent": "(wind_speed-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.671,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.313
+      }
+    },
+    {
+      "pattern_id": 118,
+      "antecedent": "(solar_radiation-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.623,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.219
+      }
+    },
+    {
+      "pattern_id": 119,
+      "antecedent": "(wind_speed-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "evapotranspiration"
+      ],
+      "support": 0.519,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.016
+      }
+    },
+    {
+      "pattern_id": 120,
+      "antecedent": "(solar_radiation-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.558,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.092
+      }
+    },
+    {
+      "pattern_id": 121,
+      "antecedent": "(wind_speed-) +2.0 years, (solar_radiation-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years, (solar_radiation-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "solar_radiation"
+      ],
+      "support": 0.519,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.016
+      }
+    },
+    {
+      "pattern_id": 122,
+      "antecedent": "(temperature_2m-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (temperature_2m-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "temperature_2m"
+      ],
+      "support": 0.59,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.148
+      }
+    },
+    {
+      "pattern_id": 123,
+      "antecedent": "(humidity+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (humidity+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "humidity"
+      ],
+      "support": 0.624,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.214
+      }
+    },
+    {
+      "pattern_id": 124,
+      "antecedent": "(evapotranspiration-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration"
+      ],
+      "support": 0.686,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.335
+      }
+    },
+    {
+      "pattern_id": 125,
+      "antecedent": "(wind_speed-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.69,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.342
+      }
+    },
+    {
+      "pattern_id": 126,
+      "antecedent": "(solar_radiation-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.671,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.305
+      }
+    },
+    {
+      "pattern_id": 127,
+      "antecedent": "(evapotranspiration-) +2.0 years, (temperature_2m-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 years, (temperature_2m-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "temperature_2m"
+      ],
+      "support": 0.562,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.093
+      }
+    },
+    {
+      "pattern_id": 128,
+      "antecedent": "(solar_radiation-) +2.0 years, (temperature_2m-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years, (temperature_2m-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "temperature_2m"
+      ],
+      "support": 0.519,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.01
+      }
+    },
+    {
+      "pattern_id": 129,
+      "antecedent": "(evapotranspiration-) +2.0 years, (humidity+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (evapotranspiration-) +2.0 years, (humidity+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "evapotranspiration",
+        "humidity"
+      ],
+      "support": 0.543,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.056
+      }
+    },
+    {
+      "pattern_id": 130,
+      "antecedent": "(wind_speed-) +2.0 years, (humidity+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years, (humidity+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "humidity"
+      ],
+      "support": 0.529,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.029
+      }
+    },
+    {
+      "pattern_id": 131,
+      "antecedent": "(solar_radiation-) +2.0 years, (humidity+) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years, (humidity+) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "humidity"
+      ],
+      "support": 0.514,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.0
+      }
+    },
+    {
+      "pattern_id": 132,
+      "antecedent": "(wind_speed-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "evapotranspiration"
+      ],
+      "support": 0.571,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.111
+      }
+    },
+    {
+      "pattern_id": 133,
+      "antecedent": "(solar_radiation-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (solar_radiation-) +2.0 years, (evapotranspiration-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "solar_radiation",
+        "evapotranspiration"
+      ],
+      "support": 0.629,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.224
+      }
+    },
+    {
+      "pattern_id": 134,
+      "antecedent": "(wind_speed-) +2.0 years, (solar_radiation-) +2.0 years",
+      "consequent": "ndvi_mean+",
+      "pattern": "ndvi_mean+, (wind_speed-) +2.0 years, (solar_radiation-) +2.0 years",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed",
+        "solar_radiation"
+      ],
+      "support": 0.548,
+      "confidence": null,
+      "is_temporal": true,
+      "lag_days": 730.5,
+      "algorithm": "tgrad",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "conf": 1.066
+      }
+    }
+  ]
+}

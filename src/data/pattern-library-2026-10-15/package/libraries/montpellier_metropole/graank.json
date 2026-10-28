@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "zone_id": "montpellier_metropole",
+  "algorithm": "graank",
+  "generated_at": "2026-10-15T06:37:05.239449Z",
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "antecedent": "ndvi_mean+, wind_speed-",
+      "consequent": "",
+      "pattern": "ndvi_mean+, wind_speed-",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.56,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.481,
+        "conf": 0.982,
+        "connect": 1.0,
+        "density": 0.56,
+        "dispersion": 9.674,
+        "singularity_scr": 2.507
+      }
+    },
+    {
+      "pattern_id": 1,
+      "antecedent": "evapotranspiration-, temperature_2m-, ndvi_mean+",
+      "consequent": "",
+      "pattern": "evapotranspiration-, temperature_2m-, ndvi_mean+",
+      "variables": [
+        "evapotranspiration",
+        "temperature_2m",
+        "ndvi_mean"
+      ],
+      "support": 0.565,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.298,
+        "conf": 1.104,
+        "connect": 1.0,
+        "density": 0.565,
+        "dispersion": 9.632,
+        "singularity_scr": 1.801
+      }
+    },
+    {
+      "pattern_id": 2,
+      "antecedent": "temperature_2m-, ndvi_mean+, solar_radiation-",
+      "consequent": "",
+      "pattern": "temperature_2m-, ndvi_mean+, solar_radiation-",
+      "variables": [
+        "temperature_2m",
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.515,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.161,
+        "conf": 0.979,
+        "connect": 1.0,
+        "density": 0.515,
+        "dispersion": 9.676,
+        "singularity_scr": 1.801
+      }
+    },
+    {
+      "pattern_id": 3,
+      "antecedent": "evapotranspiration-, solar_radiation-, ndvi_mean+",
+      "consequent": "",
+      "pattern": "evapotranspiration-, solar_radiation-, ndvi_mean+",
+      "variables": [
+        "evapotranspiration",
+        "solar_radiation",
+        "ndvi_mean"
+      ],
+      "support": 0.554,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.189,
+        "conf": 1.082,
+        "connect": 1.0,
+        "density": 0.554,
+        "dispersion": 9.722,
+        "singularity_scr": 1.719
+      }
+    },
+    {
+      "pattern_id": 4,
+      "antecedent": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "variables": [
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.535,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.344,
+        "conf": 1.017,
+        "connect": 1.0,
+        "density": 0.535,
+        "dispersion": 9.877,
+        "singularity_scr": 2.093
+      }
+    },
+    {
+      "pattern_id": 5,
+      "antecedent": "solar_radiation+, evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "solar_radiation+, evapotranspiration+, wind_speed+",
+      "variables": [
+        "solar_radiation",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.655,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.395,
+        "conf": 1.284,
+        "connect": 1.0,
+        "density": 0.655,
+        "dispersion": 9.916,
+        "singularity_scr": 1.501
+      }
+    },
+    {
+      "pattern_id": 6,
+      "antecedent": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "variables": [
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.535,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "montpellier_metropole",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.344,
+        "conf": 1.017,
+        "connect": 1.0,
+        "density": 0.535,
+        "dispersion": 9.877,
+        "singularity_scr": 2.093
+      }
+    }
+  ]
+}

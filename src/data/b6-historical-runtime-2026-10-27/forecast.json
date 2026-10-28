@@ -1,0 +1,45 @@
+{
+  "zone_id": "fos_sur_mer",
+  "forecast": [
+    {
+      "date": "2023-07-01",
+      "temperature_2m": 23.483,
+      "humidity": null,
+      "evapotranspiration": null
+    },
+    {
+      "date": "2023-07-02",
+      "temperature_2m": 24.8038,
+      "humidity": null,
+      "evapotranspiration": null
+    },
+    {
+      "date": "2023-07-03",
+      "temperature_2m": 26.0922,
+      "humidity": null,
+      "evapotranspiration": null
+    },
+    {
+      "date": "2023-07-04",
+      "temperature_2m": 26.8739,
+      "humidity": null,
+      "evapotranspiration": null
+    },
+    {
+      "date": "2023-07-05",
+      "temperature_2m": 25.6175,
+      "humidity": null,
+      "evapotranspiration": null
+    }
+  ],
+  "metadata": {
+    "synthetic": false,
+    "source": "NOAA GFS 0.25 deg 2023-06-30 00 UTC cycle, TMP 2 m above ground, noaa-gfs-bdp-pds; mean of eight 3-hourly samples per UTC day; see manifest.json",
+    "model_issued_at": "2023-06-30T00:00:00Z",
+    "issued_at": "2026-10-26T21:50:52Z",
+    "lat": 43.445,
+    "lon": 4.92,
+    "horizon_days": 5,
+    "registry_sha256": "8771cfc5ba55c37e277be0637087567cb1e561b54796e1753cb867ecb66b8467"
+  }
+}

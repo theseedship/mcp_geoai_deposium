@@ -1,0 +1,24 @@
+version: 2
+updates:
+  # Python dependencies (pyproject.toml / uv.lock).
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # so4gp is pinned exactly on purpose (ADR 0001) — let Dependabot propose
+    # bumps but review them; numpy is constrained by so4gp's pin.
+    labels: ["dependencies"]
+    ignore:
+      # DuckPGQ (community extension) has no build for duckdb >= 1.5.5; keep duckdb on the
+      # newest duckpgq-compatible release (1.5.4). Lift this together with the pyproject
+      # ceiling when duckpgq publishes for a newer duckdb. See issue #131.
+      - dependency-name: "duckdb"
+        versions: [">=1.5.5"]
+
+  # GitHub Actions used by the workflows above.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["dependencies", "ci"]

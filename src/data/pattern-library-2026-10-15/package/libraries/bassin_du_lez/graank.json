@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "zone_id": "bassin_du_lez",
+  "algorithm": "graank",
+  "generated_at": "2026-10-15T06:37:02.349042Z",
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "antecedent": "ndvi_mean+, wind_speed-",
+      "consequent": "",
+      "pattern": "ndvi_mean+, wind_speed-",
+      "variables": [
+        "ndvi_mean",
+        "wind_speed"
+      ],
+      "support": 0.593,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 13.86,
+        "conf": 1.057,
+        "connect": 1.0,
+        "density": 0.593,
+        "dispersion": 9.408,
+        "singularity_scr": 2.118
+      }
+    },
+    {
+      "pattern_id": 1,
+      "antecedent": "temperature_2m-, ndvi_mean+, solar_radiation-",
+      "consequent": "",
+      "pattern": "temperature_2m-, ndvi_mean+, solar_radiation-",
+      "variables": [
+        "temperature_2m",
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.574,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 13.873,
+        "conf": 1.1,
+        "connect": 1.0,
+        "density": 0.574,
+        "dispersion": 9.543,
+        "singularity_scr": 1.638
+      }
+    },
+    {
+      "pattern_id": 2,
+      "antecedent": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "variables": [
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.518,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.544,
+        "conf": 0.992,
+        "connect": 1.0,
+        "density": 0.518,
+        "dispersion": 9.97,
+        "singularity_scr": 1.784
+      }
+    },
+    {
+      "pattern_id": 3,
+      "antecedent": "solar_radiation+, evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "solar_radiation+, evapotranspiration+, wind_speed+",
+      "variables": [
+        "solar_radiation",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.613,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.354,
+        "conf": 1.2,
+        "connect": 1.0,
+        "density": 0.613,
+        "dispersion": 9.88,
+        "singularity_scr": 1.507
+      }
+    },
+    {
+      "pattern_id": 4,
+      "antecedent": "evapotranspiration-, temperature_2m-, ndvi_mean+, solar_radiation-",
+      "consequent": "",
+      "pattern": "evapotranspiration-, temperature_2m-, ndvi_mean+, solar_radiation-",
+      "variables": [
+        "evapotranspiration",
+        "temperature_2m",
+        "ndvi_mean",
+        "solar_radiation"
+      ],
+      "support": 0.563,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 13.84,
+        "conf": 1.079,
+        "connect": 1.0,
+        "density": 0.563,
+        "dispersion": 9.606,
+        "singularity_scr": 1.682
+      }
+    },
+    {
+      "pattern_id": 5,
+      "antecedent": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "consequent": "",
+      "pattern": "temperature_2m+, solar_radiation+, evapotranspiration+, wind_speed+",
+      "variables": [
+        "temperature_2m",
+        "solar_radiation",
+        "evapotranspiration",
+        "wind_speed"
+      ],
+      "support": 0.518,
+      "confidence": null,
+      "is_temporal": false,
+      "lag_days": 0.0,
+      "algorithm": "graank",
+      "zone_id": "bassin_du_lez",
+      "zones_validated": [],
+      "period_start": null,
+      "period_end": null,
+      "n_folds": null,
+      "stability": null,
+      "created_at": null,
+      "extra_metrics": {
+        "avg_dev": 14.544,
+        "conf": 0.992,
+        "connect": 1.0,
+        "density": 0.518,
+        "dispersion": 9.97,
+        "singularity_scr": 1.784
+      }
+    }
+  ]
+}

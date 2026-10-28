@@ -1,0 +1,241 @@
+{
+  "$defs": {
+    "GradualPatternRecord": {
+      "additionalProperties": false,
+      "description": "One gradual pattern in the exchange format. One row of the patterns Parquet.",
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "graank",
+            "tgrad",
+            "aco",
+            "ga",
+            "pso"
+          ],
+          "title": "Algorithm",
+          "type": "string"
+        },
+        "antecedent": {
+          "description": "e.g. \"temperature_2m+, precipitation-\"",
+          "title": "Antecedent",
+          "type": "string"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "consequent": {
+          "default": "",
+          "description": "e.g. \"ndvi_mean-\"; \"\" for itemsets",
+          "title": "Consequent",
+          "type": "string"
+        },
+        "created_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Created At"
+        },
+        "extra_metrics": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Extra Metrics"
+        },
+        "is_temporal": {
+          "default": false,
+          "title": "Is Temporal",
+          "type": "boolean"
+        },
+        "lag_days": {
+          "default": 0.0,
+          "description": "signed temporal lag in days; 0 if contemporaneous",
+          "title": "Lag Days",
+          "type": "number"
+        },
+        "n_folds": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "cross-validation folds (O3)",
+          "title": "N Folds"
+        },
+        "pattern": {
+          "description": "raw so4gp itemset/temporal string",
+          "title": "Pattern",
+          "type": "string"
+        },
+        "pattern_id": {
+          "minimum": 0,
+          "title": "Pattern Id",
+          "type": "integer"
+        },
+        "period_end": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "validation period end",
+          "title": "Period End"
+        },
+        "period_start": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "validation period start",
+          "title": "Period Start"
+        },
+        "stability": {
+          "anyOf": [
+            {
+              "maximum": 1.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "per-pattern robustness (O3)",
+          "title": "Stability"
+        },
+        "support": {
+          "description": "fraction of concordant row pairs",
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Support",
+          "type": "number"
+        },
+        "variables": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Variables",
+          "type": "array"
+        },
+        "zone_id": {
+          "description": "producing zone",
+          "minLength": 1,
+          "title": "Zone Id",
+          "type": "string"
+        },
+        "zones_validated": {
+          "description": "cross-zone fold set (O3)",
+          "items": {
+            "type": "string"
+          },
+          "title": "Zones Validated",
+          "type": "array"
+        }
+      },
+      "required": [
+        "pattern_id",
+        "antecedent",
+        "pattern",
+        "support",
+        "algorithm",
+        "zone_id"
+      ],
+      "title": "GradualPatternRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A per-(zone, algorithm) pattern library \u2014 the unit written to one Parquet file.",
+  "properties": {
+    "algorithm": {
+      "enum": [
+        "graank",
+        "tgrad",
+        "aco",
+        "ga",
+        "pso"
+      ],
+      "title": "Algorithm",
+      "type": "string"
+    },
+    "generated_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Generated At"
+    },
+    "patterns": {
+      "items": {
+        "$ref": "#/$defs/GradualPatternRecord"
+      },
+      "title": "Patterns",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "zone_id": {
+      "minLength": 1,
+      "title": "Zone Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "zone_id",
+    "algorithm"
+  ],
+  "title": "PatternLibrary",
+  "type": "object"
+}

@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Cancel superseded runs on the same ref.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    name: Lint & test (Python 3.14)
+    runs-on: ubuntu-24.04
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      PYTHONHASHSEED: "0"
+    steps:
+      # Actions pinned to a full commit SHA (supply-chain hardening); Dependabot
+      # (github-actions) bumps the SHA + the trailing version comment weekly.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+        with:
+          enable-cache: true
+          # Pin the interpreter so the job name stays truthful. The patterns
+          # extra uses so4gp 1.1.2 CPU, which requires Python 3.14.
+          python-version: "3.14"
+
+      # --locked fails the job when uv.lock is out of sync with pyproject.toml,
+      # instead of silently re-resolving. (--frozen would skip that check and
+      # install a stale lock.) The Dockerfile exports from the same lock.
+      - name: Install dependencies (dev + patterns)
+        run: uv sync --locked --extra dev --extra patterns
+
+      # Run against the environment just synced above. A later implicit sync
+      # without --extra patterns can remove the optional runtime and skip its
+      # contract tests. This check must fail rather than silently skip.
+      - name: Verify CPU pattern runtime
+        run: |
+          uv run --no-sync python - <<'PY'
+          from importlib.metadata import distributions, version
+          import torch
+          assert version("so4gp") == "1.1.2"
+          assert version("torch") == "2.13.0+cpu"
+          assert torch.version.cuda is None
+          assert not torch.cuda.is_available()
+          names = {dist.metadata["Name"].lower().replace("_", "-") for dist in distributions()}
+          forbidden = {name for name in names if name.startswith(("nvidia-", "cuda-", "triton"))}
+          assert not forbidden, sorted(forbidden)
+          print("so4gp 1.1.2 / Torch 2.13.0+cpu; no CUDA runtime packages")
+          PY
+
+      - name: Ruff lint
+        run: uv run --no-sync ruff check .
+
+      - name: Ruff format check
+        run: uv run --no-sync ruff format --check .
+
+      # THE hermetic gate: everything under tests/ that pytest collects. There is no
+      # --ignore any more. The one network-/service-dependent harness used to be named
+      # tests/test_integration.py and had to be excluded by hand; it is now
+      # tests/live_acceptance.py, which pytest does not collect because it is not named
+      # like a test module. The exclusion is structural rather than configured, so a
+      # future edit to this file cannot silently pull a live harness into the gate, and
+      # a newly added hermetic test file is still covered automatically.
+      # The so4gp-dependent tests need only the patterns extra, installed above.
+      # Baseline measured on 2026-08-22: 84%; keep four points of headroom while
+      # preventing the coverage run from being silently disabled again.
+      - name: Tests (hermetic)
+        run: >
+          uv run --no-sync pytest
+          -o addopts="--cov=src --cov-report=term-missing --cov-fail-under=80"
+          tests/
+
+      # Report the collected gate size on each run.
+      - name: Report the hermetic gate size
+        if: always()
+        run: |
+          # pipefail and no 2>/dev/null: without them the step took tail's exit status and
+          # discarded pytest's stderr, so a collection error published an empty or unrelated
+          # line as the gate size and stayed green — a number as unfalsifiable as the 54 this
+          # step exists to replace. The shape is checked before it is published.
+          set -euo pipefail
+          # Collection has to succeed on its own before anything is published: the count is
+          # read out of the output, not off the last line, because pytest decorates that line
+          # and plugins can append to it.
+          OUT=$(uv run --no-sync pytest --collect-only -q tests/)
+          COUNT=$(printf '%s\n' "$OUT" | grep -oE '[0-9]+ tests? collected' | tail -1)
+          if [ -z "$COUNT" ]; then
+            printf '%s\n' "$OUT" | tail -20 >&2
+            echo "collection reported no count" >&2
+            exit 1
+          fi
+          echo "hermetic gate at ${GITHUB_SHA}: ${COUNT}" | tee -a "$GITHUB_STEP_SUMMARY"

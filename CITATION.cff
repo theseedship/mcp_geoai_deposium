@@ -1,0 +1,572 @@
+# Validate with: uvx --from cffconvert cffconvert --validate -i CITATION.cff
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata from this file
+  and include the acknowledgement: Funded by FIERCE through its Financial
+  Support Programme (https://project-fierce.eu/).
+type: software
+title: "Deposium GeoAI"
+abstract: >-
+  Python MCP Server for Geospatial AI capabilities. Funded by FIERCE through
+  its Financial Support Programme. FIERCE receives European Union funding
+  under Horizon Europe, Grant Agreement 101177496.
+repository-code: "https://github.com/theseedship/mcp_geoai_deposium"
+authors:
+  - given-names: Nicolas
+    family-names: Geysse
+    affiliation: "The Seed Ship"
+  - given-names: Dickson
+    family-names: Owuor
+version: 0.1.0
+date-released: "2026-06-17"
+license: MIT
+keywords:
+  - mcp
+  - geoai
+  - geospatial
+  - satellite
+  - stac
+  - change-detection
+references:
+  # ---------------------------------------------------------------------------
+  # Software the code depends on
+  # ---------------------------------------------------------------------------
+  - type: software
+    title: "so4gp"
+    authors:
+      - given-names: Dickson
+        family-names: Owuor
+      - given-names: Anne
+        family-names: Laurent
+    version: 1.1.2
+    year: 2026
+    license: MIT
+    repository-code: "https://github.com/owuordickson/gp-mining"
+    url: "https://pypi.org/project/so4gp/1.1.2/"
+    notes: "Gradual-pattern mining engine (GRAANK, TGrad); pinned so4gp==1.1.2 in the CPU patterns extra. See the package metadata for upstream attribution and licence."
+  - type: software
+    title: "Open-Meteo.com Weather API"
+    authors:
+      - given-names: Patrick
+        family-names: Zippenfenig
+    year: 2023
+    publisher:
+      name: Zenodo
+    doi: 10.5281/zenodo.7970649
+    url: "https://open-meteo.com/"
+    repository-code: "https://github.com/open-meteo/open-meteo"
+    notes: "Citation form requested by Open-Meteo. API data are licensed CC BY 4.0; the Open-Meteo source code is AGPLv3 or any later version; commercial API use is governed by https://open-meteo.com/en/terms. Source of Open-Meteo ERA5 and forecast products used by this software. The retained historical GFS rule15 case is retrieved separately from NOAA public S3, as cited below."
+  - type: data
+    title: "NOAA Global Forecast System (GFS), 0.25 degree operational forecast archive"
+    authors:
+      - name: "NOAA National Weather Service, National Centers for Environmental Prediction"
+    url: "https://registry.opendata.aws/noaa-gfs-bdp-pds/"
+    license-url: "https://www.weather.gov/disclaimer"
+    notes: "The retained historical rule15 case uses the 2023-06-30 00 UTC GFS cycle obtained directly from NOAA public S3, not Open-Meteo. GeoAI extracted the containing grid cell and averaged eight 3-hourly instantaneous temperature samples per UTC day. These are modified research inputs, not an official NOAA/NWS product or endorsement; NOAA/NWS material retains its public-domain status under the linked usage conditions."
+  # ---------------------------------------------------------------------------
+  # Gradual-pattern methods (citations requested by so4gp)
+  # ---------------------------------------------------------------------------
+  - type: conference-paper
+    title: "GRAANK: Exploiting Rank Correlations for Extracting Gradual Itemsets"
+    authors:
+      - given-names: Anne
+        family-names: Laurent
+      - given-names: Marie-Jeanne
+        family-names: Lesot
+      - given-names: Maria
+        family-names: Rifqi
+    year: 2009
+    collection-title: "Flexible Query Answering Systems"
+    conference:
+      name: "Flexible Query Answering Systems (FQAS 2009)"
+    volume: 5822
+    start: 382
+    end: 393
+    publisher:
+      name: "Springer Berlin Heidelberg"
+    doi: 10.1007/978-3-642-04957-6_33
+    notes: "Lecture Notes in Computer Science, vol. 5822."
+  - type: conference-paper
+    title: "Mining Fuzzy-Temporal Gradual Patterns"
+    authors:
+      - given-names: Dickson
+        family-names: Owuor
+      - given-names: Anne
+        family-names: Laurent
+      - given-names: Joseph
+        family-names: Orero
+    year: 2019
+    month: 6
+    collection-title: "2019 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)"
+    conference:
+      name: "2019 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)"
+      city: "New Orleans"
+      region: "LA"
+      country: US
+      date-start: "2019-06-23"
+      date-end: "2019-06-26"
+    start: 1
+    end: 6
+    publisher:
+      name: IEEE
+    doi: 10.1109/FUZZ-IEEE.2019.8858883
+  # ---------------------------------------------------------------------------
+  # Data sources
+  # ---------------------------------------------------------------------------
+  - type: data
+    title: "ERA5 hourly data on single levels from 1940 to present"
+    authors:
+      - given-names: H.
+        family-names: Hersbach
+      - given-names: B.
+        family-names: Bell
+      - given-names: P.
+        family-names: Berrisford
+      - given-names: G.
+        family-names: Biavati
+      - given-names: A.
+        family-names: Horányi
+      - given-names: J.
+        family-names: Muñoz Sabater
+      - given-names: J.
+        family-names: Nicolas
+      - given-names: C.
+        family-names: Peubey
+      - given-names: R.
+        family-names: Radu
+      - given-names: I.
+        family-names: Rozum
+      - given-names: D.
+        family-names: Schepers
+      - given-names: A.
+        family-names: Simmons
+      - given-names: C.
+        family-names: Soci
+      - given-names: D.
+        family-names: Dee
+      - given-names: J-N.
+        family-names: Thépaut
+    year: 2023
+    publisher:
+      name: "Copernicus Climate Change Service (C3S) Climate Data Store (CDS)"
+    doi: 10.24381/cds.adbb2d47
+    url: "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+    license: CC-BY-4.0
+    notes: "Retrieved through the Open-Meteo Archive API with models=era5, which aggregates and interpolates it (contains modified Copernicus Climate Change Service information). The CDS also requires citing its catalogue entry: Copernicus Climate Change Service, Climate Data Store, (2023): ERA5 hourly data on single levels from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.adbb2d47."
+  - type: data
+    title: "ECMWF open data: real-time IFS and AIFS forecasts"
+    authors:
+      - name: "European Centre for Medium-Range Weather Forecasts (ECMWF)"
+    url: "https://www.ecmwf.int/en/forecasts/datasets/open-data"
+    license: CC-BY-4.0
+    notes: "AIFS Single and AIFS ENS forecasts, retrieved through Open-Meteo as ecmwf_aifs025_single and ecmwf_aifs025_ensemble. Use is also governed by the ECMWF Terms of Use: https://apps.ecmwf.int/datasets/licences/general/."
+  - type: data
+    title: "Copernicus Sentinel-2 MSI Level-2A (Earth Search collection sentinel-2-l2a)"
+    authors:
+      - name: "European Space Agency (ESA), Copernicus programme"
+    database-provider:
+      name: "Element 84 (Earth Search)"
+    url: "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a"
+    license-url: "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice"
+    notes: "Red (B04) and near-infrared (B08) bands read as COGs to derive NDVI (contains modified Copernicus Sentinel data). Processed by Sinergise and hosted on AWS Open Data. No DOI is given: Earth Search's cite-as DOI resolves to ESA's Collection-1 Level-1C page, and ESA's Collection-1 Level-2A DOI covers sentinel-2-c1-l2a, not the sentinel-2-l2a collection this software queries."
+  - type: data
+    title: "ADMIN EXPRESS COG"
+    authors:
+      - name: "Institut national de l'information géographique et forestière (IGN)"
+    publisher:
+      name: "Institut national de l'information géographique et forestière (IGN)"
+    url: "https://www.data.gouv.fr/datasets/admin-express-admin-express-cog-admin-express-cog-carto-admin-express-cog-carto-pe-admin-express-cog-carto-plus-pe"
+    date-accessed: "2026-07-22"
+    license: etalab-2.0
+    notes: "Commune and EPCI boundaries for the pilot zones fos_sur_mer and montpellier_metropole, from the Géoplateforme WFS layer ADMINEXPRESS-COG.LATEST (data.geopf.fr). The edition behind the LATEST alias on the access date was not recorded."
+  - type: data
+    title: "BD TOPAGE® - Métropole 2026"
+    authors:
+      - name: "Institut national de l'information géographique et forestière (IGN)"
+      - name: "Office français de la biodiversité (OFB)"
+    publisher:
+      name: "Sandre, Système d'Information sur l'Eau"
+    version: "Millésime 2026"
+    date-published: "2026-06-22"
+    date-accessed: "2026-07-22"
+    url: "https://www.data.gouv.fr/datasets/bd-topage-r-metropole-2026"
+    license: etalab-2.0
+    notes: "Topographic catchments (WFS layer sa:BassinVersantTopographique_FXX_Topage2026) forming the pilot zone bassin_du_lez."
+  # ---------------------------------------------------------------------------
+  # Descriptions of the data and forecast models
+  # ---------------------------------------------------------------------------
+  - type: article
+    title: "The ERA5 global reanalysis"
+    authors:
+      - given-names: Hans
+        family-names: Hersbach
+      - given-names: Bill
+        family-names: Bell
+      - given-names: Paul
+        family-names: Berrisford
+      - given-names: Shoji
+        family-names: Hirahara
+      - given-names: András
+        family-names: Horányi
+      - given-names: Joaquín
+        family-names: Muñoz-Sabater
+      - given-names: Julien
+        family-names: Nicolas
+      - given-names: Carole
+        family-names: Peubey
+      - given-names: Raluca
+        family-names: Radu
+      - given-names: Dinand
+        family-names: Schepers
+      - given-names: Adrian
+        family-names: Simmons
+      - given-names: Cornel
+        family-names: Soci
+      - given-names: Saleh
+        family-names: Abdalla
+      - given-names: Xavier
+        family-names: Abellan
+      - given-names: Gianpaolo
+        family-names: Balsamo
+      - given-names: Peter
+        family-names: Bechtold
+      - given-names: Gionata
+        family-names: Biavati
+      - given-names: Jean
+        family-names: Bidlot
+      - given-names: Massimo
+        family-names: Bonavita
+      - given-names: Giovanna
+        family-names: De Chiara
+      - given-names: Per
+        family-names: Dahlgren
+      - given-names: Dick
+        family-names: Dee
+      - given-names: Michail
+        family-names: Diamantakis
+      - given-names: Rossana
+        family-names: Dragani
+      - given-names: Johannes
+        family-names: Flemming
+      - given-names: Richard
+        family-names: Forbes
+      - given-names: Manuel
+        family-names: Fuentes
+      - given-names: Alan
+        family-names: Geer
+      - given-names: Leo
+        family-names: Haimberger
+      - given-names: Sean
+        family-names: Healy
+      - given-names: Robin J.
+        family-names: Hogan
+      - given-names: Elías
+        family-names: Hólm
+      - given-names: Marta
+        family-names: Janisková
+      - given-names: Sarah
+        family-names: Keeley
+      - given-names: Patrick
+        family-names: Laloyaux
+      - given-names: Philippe
+        family-names: Lopez
+      - given-names: Cristina
+        family-names: Lupu
+      - given-names: Gabor
+        family-names: Radnoti
+      - given-names: Patricia
+        family-names: de Rosnay
+      - given-names: Iryna
+        family-names: Rozum
+      - given-names: Freja
+        family-names: Vamborg
+      - given-names: Sebastien
+        family-names: Villaume
+      - given-names: Jean-Noël
+        family-names: Thépaut
+    year: 2020
+    journal: "Quarterly Journal of the Royal Meteorological Society"
+    volume: 146
+    issue: "730"
+    start: 1999
+    end: 2049
+    publisher:
+      name: Wiley
+    doi: 10.1002/qj.3803
+    license: CC-BY-4.0
+  - type: article
+    title: "AIFS -- ECMWF's data-driven forecasting system"
+    authors:
+      - given-names: Simon
+        family-names: Lang
+      - given-names: Mihai
+        family-names: Alexe
+      - given-names: Matthew
+        family-names: Chantry
+      - given-names: Jesper
+        family-names: Dramsch
+      - given-names: Florian
+        family-names: Pinault
+      - given-names: Baudouin
+        family-names: Raoult
+      - given-names: Mariana C. A.
+        family-names: Clare
+      - given-names: Christian
+        family-names: Lessig
+      - given-names: Michael
+        family-names: Maier-Gerber
+      - given-names: Linus
+        family-names: Magnusson
+      - given-names: Zied
+        family-names: Ben Bouallègue
+      - given-names: Ana
+        family-names: Prieto Nemesio
+      - given-names: Peter D.
+        family-names: Dueben
+      - given-names: Andrew
+        family-names: Brown
+      - given-names: Florian
+        family-names: Pappenberger
+      - given-names: Florence
+        family-names: Rabier
+    year: 2024
+    journal: "arXiv"
+    status: preprint
+    doi: 10.48550/arXiv.2406.01465
+    url: "https://arxiv.org/abs/2406.01465"
+    notes: "Scientific description of the AIFS model family (forecast primary, ecmwf_aifs025_single)."
+  - type: article
+    title: "AIFS Single 1.1.0: an update to ECMWF's machine-learned weather forecast model AIFS"
+    authors:
+      - given-names: Gabriel
+        family-names: Moldovan
+      - given-names: Ewan
+        family-names: Pinnington
+      - given-names: Ana
+        family-names: Prieto Nemesio
+      - given-names: Simon
+        family-names: Lang
+      - given-names: Zied
+        family-names: Ben Bouallègue
+      - given-names: Jesper
+        family-names: Dramsch
+      - given-names: Mihai
+        family-names: Alexe
+      - given-names: Mario
+        family-names: Santa Cruz
+      - given-names: Sara
+        family-names: Hahner
+      - given-names: Harrison
+        family-names: Cook
+      - given-names: Helen
+        family-names: Theissen
+      - given-names: Mariana
+        family-names: Clare
+      - given-names: Cathal
+        family-names: O'Brien
+      - given-names: Jan
+        family-names: Polster
+      - given-names: Linus
+        family-names: Magnusson
+      - given-names: Gert
+        family-names: Mertes
+      - given-names: Florian
+        family-names: Pinault
+      - given-names: Baudouin
+        family-names: Raoult
+      - given-names: Patricia
+        family-names: de Rosnay
+      - given-names: Richard
+        family-names: Forbes
+      - given-names: Matthew
+        family-names: Chantry
+    year: 2026
+    journal: "Geoscientific Model Development"
+    volume: 19
+    issue: "10"
+    start: 4703
+    end: 4724
+    publisher:
+      name: "Copernicus GmbH"
+    doi: 10.5194/gmd-19-4703-2026
+    license: CC-BY-4.0
+    notes: "Describes AIFS Single v1.1, the operational model before the upgrade to AIFS Single v2 on 2026-05-12; relevant to forecast evidence dated before that upgrade."
+  - type: article
+    title: "AIFS-CRPS: ensemble forecasting using a model trained with a loss function based on the continuous ranked probability score"
+    authors:
+      - given-names: Simon
+        family-names: Lang
+      - given-names: Mihai
+        family-names: Alexe
+      - given-names: Mariana C. A.
+        family-names: Clare
+      - given-names: Christopher
+        family-names: Roberts
+      - given-names: Rilwan
+        family-names: Adewoyin
+      - given-names: Zied
+        family-names: Ben Bouallègue
+      - given-names: Matthew
+        family-names: Chantry
+      - given-names: Jesper
+        family-names: Dramsch
+      - given-names: Peter D.
+        family-names: Dueben
+      - given-names: Sara
+        family-names: Hahner
+      - given-names: Pedro
+        family-names: Maciel
+      - given-names: Ana
+        family-names: Prieto-Nemesio
+      - given-names: Cathal
+        family-names: O'Brien
+      - given-names: Florian
+        family-names: Pinault
+      - given-names: Jan
+        family-names: Polster
+      - given-names: Baudouin
+        family-names: Raoult
+      - given-names: Steffen
+        family-names: Tietsche
+      - given-names: Martin
+        family-names: Leutbecher
+    year: 2026
+    date-published: "2026-02-02"
+    journal: "npj Artificial Intelligence"
+    volume: 2
+    issue: "1"
+    publisher:
+      name: "Springer Science and Business Media LLC"
+    doi: 10.1038/s44387-026-00073-7
+    license: CC-BY-4.0
+    identifiers:
+      - type: doi
+        value: 10.48550/arXiv.2412.15832
+        description: "arXiv preprint (2024)"
+    notes: "Article 18. AIFS-CRPS became operational as AIFS ENS (ECMWF Newsletter 185), retrieved here as ecmwf_aifs025_ensemble. ECMWF upgraded AIFS ENS from v1 to v2 on 2026-05-12; this paper describes the v1 lineage."
+  # ---------------------------------------------------------------------------
+  # Methods: climate normals, evapotranspiration, NDVI, verification, Koppen
+  # ---------------------------------------------------------------------------
+  - type: report
+    title: "WMO Guidelines on the Calculation of Climate Normals"
+    authors:
+      - name: "World Meteorological Organization (WMO)"
+    year: 2017
+    edition: "2017 edition"
+    number: "WMO-No. 1203"
+    publisher:
+      name: "World Meteorological Organization (WMO)"
+      city: Geneva
+    isbn: "978-92-63-11203-3"
+    url: "https://library.wmo.int/idurl/4/55797"
+    notes: "Basis of the 1991-2020 climate normal window."
+  - type: report
+    title: "Crop evapotranspiration - Guidelines for computing crop water requirements"
+    authors:
+      - given-names: Richard G.
+        family-names: Allen
+      - given-names: Luis S.
+        family-names: Pereira
+      - given-names: Dirk
+        family-names: Raes
+      - given-names: Martin
+        family-names: Smith
+    year: 1998
+    collection-title: "FAO Irrigation and drainage paper"
+    number: "56"
+    publisher:
+      name: "Food and Agriculture Organization of the United Nations (FAO)"
+      city: Rome
+    isbn: "92-5-104219-5"
+    url: "https://www.fao.org/4/x0490e/x0490e00.htm"
+    notes: "FAO-56 Penman-Monteith reference evapotranspiration (the et0_fao_evapotranspiration variable)."
+  - type: conference-paper
+    title: "Monitoring vegetation systems in the Great Plains with ERTS"
+    authors:
+      - given-names: J. W.
+        family-names: Rouse
+        name-suffix: Jr.
+      - given-names: R. H.
+        family-names: Haas
+      - given-names: J. A.
+        family-names: Schell
+      - given-names: D. W.
+        family-names: Deering
+    year: 1974
+    collection-title: "Third ERTS-1 Symposium, Vol. 1, Sect. A"
+    publisher:
+      name: "NASA Goddard Space Flight Center"
+    url: "https://ntrs.nasa.gov/citations/19740022614"
+    notes: "Origin of the Normalized Difference Vegetation Index (NDVI)."
+  - type: article
+    title: "Red and photographic infrared linear combinations for monitoring vegetation"
+    authors:
+      - given-names: Compton J.
+        family-names: Tucker
+    year: 1979
+    journal: "Remote Sensing of Environment"
+    volume: 8
+    issue: "2"
+    start: 127
+    end: 150
+    publisher:
+      name: "Elsevier BV"
+    doi: 10.1016/0034-4257(79)90013-0
+  - type: article
+    title: "Verification of forecasts expressed in terms of probability"
+    authors:
+      - given-names: Glenn W.
+        family-names: Brier
+    year: 1950
+    journal: "Monthly Weather Review"
+    volume: 78
+    issue: "1"
+    start: 1
+    end: 3
+    publisher:
+      name: "American Meteorological Society"
+    url: "https://doi.org/10.1175/1520-0493(1950)078%3C0001:VOFEIT%3E2.0.CO;2"
+    notes: "DOI 10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2, given as a URL because the CFF 1.2.0 DOI pattern rejects '<' and '>'. Brier score used to evaluate precipitation-event probabilities."
+  - type: article
+    title: "Updated world map of the Köppen-Geiger climate classification"
+    authors:
+      - given-names: M. C.
+        family-names: Peel
+      - given-names: B. L.
+        family-names: Finlayson
+      - given-names: T. A.
+        family-names: McMahon
+    year: 2007
+    journal: "Hydrology and Earth System Sciences"
+    volume: 11
+    issue: "5"
+    start: 1633
+    end: 1644
+    publisher:
+      name: "Copernicus GmbH"
+    doi: 10.5194/hess-11-1633-2007
+    license: CC-BY-NC-SA-2.5
+    notes: "Classification criteria used by the Koppen cross-check (method only; no Koppen-Geiger map or raster is used)."
+  - type: article
+    title: "World Map of the Köppen-Geiger climate classification updated"
+    authors:
+      - given-names: Markus
+        family-names: Kottek
+      - given-names: Jürgen
+        family-names: Grieser
+      - given-names: Christoph
+        family-names: Beck
+      - given-names: Bruno
+        family-names: Rudolf
+      - given-names: Franz
+        family-names: Rubel
+    year: 2006
+    journal: "Meteorologische Zeitschrift"
+    volume: 15
+    issue: "3"
+    start: 259
+    end: 263
+    publisher:
+      name: Schweizerbart
+    doi: 10.1127/0941-2948/2006/0130
+    notes: "As/Aw summer/winter dry-season convention used by the Koppen cross-check (method only)."

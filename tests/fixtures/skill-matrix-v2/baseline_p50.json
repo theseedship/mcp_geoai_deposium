@@ -1,0 +1,68 @@
+[
+  {
+    "month": 1,
+    "p50": 2.4,
+    "variable": "precipitation",
+    "zone_id": "zone_a"
+  },
+  {
+    "month": 2,
+    "p50": 2.4,
+    "variable": "precipitation",
+    "zone_id": "zone_a"
+  },
+  {
+    "month": 1,
+    "p50": 6.5,
+    "variable": "temperature_2m",
+    "zone_id": "zone_a"
+  },
+  {
+    "month": 2,
+    "p50": 7.0,
+    "variable": "temperature_2m",
+    "zone_id": "zone_a"
+  },
+  {
+    "month": 1,
+    "p50": 2.4,
+    "variable": "precipitation",
+    "zone_id": "zone_b"
+  },
+  {
+    "month": 1,
+    "p50": 10.5,
+    "variable": "temperature_2m",
+    "zone_id": "zone_b"
+  },
+  {
+    "month": 2,
+    "p50": 11.0,
+    "variable": "temperature_2m",
+    "zone_id": "zone_b"
+  },
+  {
+    "month": 1,
+    "p50": 2.0,
+    "variable": "precipitation",
+    "zone_id": "zone_c"
+  },
+  {
+    "month": 2,
+    "p50": 3.0,
+    "variable": "precipitation",
+    "zone_id": "zone_c"
+  },
+  {
+    "month": 1,
+    "p50": 14.5,
+    "variable": "temperature_2m",
+    "zone_id": "zone_c"
+  },
+  {
+    "month": 2,
+    "p50": null,
+    "variable": "temperature_2m",
+    "zone_id": "zone_c"
+  }
+]

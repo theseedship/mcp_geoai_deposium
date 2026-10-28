@@ -1,0 +1,185 @@
+[project]
+name = "deposium-geoai"
+version = "0.1.0"
+description = "Python MCP Server for Geospatial AI capabilities"
+readme = "README.md"
+requires-python = ">=3.14"
+license = { text = "MIT" }
+authors = [
+    { name = "Deposium Team", email = "dev@deposium.app" }
+]
+keywords = ["mcp", "geoai", "geospatial", "satellite", "stac", "change-detection"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+
+dependencies = [
+    # MCP Server: 3.4.10 fixes post-transform authorization and restores the
+    # HTTP host compatibility that blocked the earlier 3.4.3 upgrade.
+    "fastmcp==3.4.10",
+    # Security floors for the shared HTTP/authentication dependency chain.
+    # Keep these in package metadata as well as uv.lock, including for pip users.
+    "authlib>=1.9.1",
+    "certifi>=2026.10.18",
+    "dnspython>=2.9.0",
+    "mcp>=1.30.0,<2.0.0",
+    "opentelemetry-api>=1.45.1",
+    "urllib3>=2.8.0,<3.0.0",
+
+    # STAC
+    "pystac-client>=0.7.0",
+
+    # Database. Ceiling at <1.5.5: the DuckPGQ community extension we must be able to use has no
+    # build for duckdb >= 1.5.5 (1.5.4 is the newest with duckpgq). Lift this — and the matching
+    # dependabot ignore rule — only when duckpgq publishes for a newer duckdb. See issue #131.
+    "duckdb>=1.5.4,<1.5.5",
+
+    # Raster / NDVI
+    "rasterio>=1.3.0",
+    "numpy>=1.24.0",
+    # has_m and correct M-coordinate handling are required by GAI-3 inspection.
+    "shapely>=2.1.0",
+
+    # Utils
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "structlog>=24.0.0",
+    "httpx>=0.27.0",
+    # Conditional S3 publication is required for immutable ensemble archives.
+    "boto3>=1.40.0,<2.0.0",
+]
+
+[project.optional-dependencies]
+# Gradual pattern mining uses the MIT-consistent public CPU API on Python >=3.14.
+# Keep pandas and Torch explicit: GeoAI imports pandas, and this runtime profile
+# selects the CPU Torch index below rather than its CUDA-bearing PyPI build.
+patterns = [
+    # Pinned exactly: the adapter contract is verified against this upstream API.
+    "so4gp==1.1.2",
+    "pandas~=3.0.5",
+    "torch==2.13.0",
+    # Transitive scientific-runtime dependencies with security fixes.
+    "pillow>=13.0.0",
+    "filelock>=4.2.1",
+    "setuptools>=84.1.0",
+]
+
+ai = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "segment-anything>=1.0",
+    "ultralytics>=8.0.0",
+    "pillow>=13.0.0",
+    "filelock>=4.2.1",
+    "setuptools>=84.1.0",
+    # torchange: not yet on PyPI — install from git when available
+    # "torchange @ git+https://github.com/Z-Zheng/torchange.git"
+]
+
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    # tests/test_contracts.py validates the published/wired JSON Schemas. jsonschema is
+    # otherwise only transitively present (via fastmcp); declare it so the suite never
+    # depends on a transitive that could be dropped.
+    "jsonschema>=4.0.0",
+    # Parse standalone deployment configuration in the hermetic harness tests.
+    "pyyaml>=6.0",
+]
+
+[tool.uv.sources]
+# The supported uv runtime is CPU. Pair Torch/torchvision from the official CPU
+# index on Linux/Windows; macOS 14+ ARM64 uses native CPU wheels from PyPI.
+# Intel macOS cannot install these Torch-backed patterns/ai profiles.
+# GPU builds require a separately configured environment, not this CPU lock.
+torch = [
+    { index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+    { index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[project.urls]
+Homepage = "https://github.com/theseedship/mcp_geoai_deposium"
+Repository = "https://github.com/theseedship/mcp_geoai_deposium"
+Issues = "https://github.com/theseedship/mcp_geoai_deposium/issues"
+Documentation = "https://github.com/theseedship/mcp_geoai_deposium/blob/main/reference/mcp-tools.md"
+
+[project.scripts]
+geoai-server = "src.server:main"
+forecast-backtest = "src.cli.forecast_backtest:main"
+forecast-archive-panel = "src.cli.forecast_archive_panel:main"
+forecast-benchmark-panel = "src.cli.forecast_benchmark_panel:main"
+forecast-forward-archive = "src.cli.forecast_forward_archive:main"
+forecast-ensemble-archive = "src.cli.forecast_ensemble_archive:main"
+forecast-ensemble-ops = "src.cli.forecast_ensemble_ops:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"README.md" = "README.md"
+"NOTICE" = "NOTICE"
+"CITATION.cff" = "CITATION.cff"
+"assets" = "assets"
+"reference" = "reference"
+# Frozen machine-readable transport contracts for package consumers.
+"tests/fixtures/rw2" = "contracts/rw2"
+"zones/zones.geojson" = "zones/zones.geojson"
+
+[tool.hatch.build.targets.sdist]
+# Private documentation may be copied back locally, but must never ship.
+exclude = ["/docs", "/docs/**", "/research-data", "/research-data/**"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+# ruff 0.16 began formatting Python code blocks embedded in Markdown; we do not want the docs
+# reformatted, so keep Markdown out of ruff entirely (ruff only lints/formats .py meaningfully).
+# https://docs.astral.sh/ruff/formatter/#markdown-code-formatting
+extend-exclude = ["*.md"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "B008",  # do not perform function calls in argument defaults
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-v --cov=src --cov-report=term-missing"

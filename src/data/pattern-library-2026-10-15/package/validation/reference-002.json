@@ -1,0 +1,4449 @@
+{
+  "candidates": [
+    {
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "+"
+        ],
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "-"
+        ],
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ],
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "humidity",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ],
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "humidity",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 0,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "+"
+        ],
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "-"
+        ],
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "humidity",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "solar_radiation",
+          "+"
+        ],
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ],
+        [
+          "humidity",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "solar_radiation",
+          "-"
+        ],
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ],
+        [
+          "humidity",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 1,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "wind_speed",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "temperature_2m",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "temperature_2m",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "solar_radiation",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "+"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "+"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]"
+    },
+    {
+      "antecedent_items": [
+        [
+          "evapotranspiration",
+          "-"
+        ]
+      ],
+      "consequent": [
+        "ndvi_mean",
+        "-"
+      ],
+      "lag_steps": 2,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]"
+    }
+  ],
+  "coverage": [
+    {
+      "evaluation_rows": 20,
+      "lag_elapsed_days": {
+        "0": {
+          "evaluation": {
+            "max": 0,
+            "min": 0
+          },
+          "train": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        "1": {
+          "evaluation": {
+            "max": 70,
+            "min": 15
+          },
+          "train": {
+            "max": 55,
+            "min": 10
+          }
+        },
+        "2": {
+          "evaluation": {
+            "max": 100,
+            "min": 35
+          },
+          "train": {
+            "max": 75,
+            "min": 45
+          }
+        }
+      },
+      "lag_windows_removed": {
+        "0": {
+          "evaluation": 0,
+          "train": 0
+        },
+        "1": {
+          "evaluation": 1,
+          "train": 1
+        },
+        "2": {
+          "evaluation": 2,
+          "train": 2
+        }
+      },
+      "train_rows": 21,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "evaluation_rows": 24,
+      "lag_elapsed_days": {
+        "0": {
+          "evaluation": {
+            "max": 0,
+            "min": 0
+          },
+          "train": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        "1": {
+          "evaluation": {
+            "max": 57,
+            "min": 15
+          },
+          "train": {
+            "max": 50,
+            "min": 3
+          }
+        },
+        "2": {
+          "evaluation": {
+            "max": 85,
+            "min": 35
+          },
+          "train": {
+            "max": 75,
+            "min": 42
+          }
+        }
+      },
+      "lag_windows_removed": {
+        "0": {
+          "evaluation": 0,
+          "train": 0
+        },
+        "1": {
+          "evaluation": 1,
+          "train": 1
+        },
+        "2": {
+          "evaluation": 2,
+          "train": 2
+        }
+      },
+      "train_rows": 24,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "evaluation_rows": 20,
+      "lag_elapsed_days": {
+        "0": {
+          "evaluation": {
+            "max": 0,
+            "min": 0
+          },
+          "train": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        "1": {
+          "evaluation": {
+            "max": 70,
+            "min": 15
+          },
+          "train": {
+            "max": 55,
+            "min": 10
+          }
+        },
+        "2": {
+          "evaluation": {
+            "max": 100,
+            "min": 35
+          },
+          "train": {
+            "max": 75,
+            "min": 45
+          }
+        }
+      },
+      "lag_windows_removed": {
+        "0": {
+          "evaluation": 0,
+          "train": 0
+        },
+        "1": {
+          "evaluation": 1,
+          "train": 1
+        },
+        "2": {
+          "evaluation": 2,
+          "train": 2
+        }
+      },
+      "train_rows": 21,
+      "zone_id": "montpellier_metropole"
+    }
+  ],
+  "donor_scores": [
+    {
+      "antecedent": 695,
+      "confidence": 0.5381294964028777,
+      "joint": 374,
+      "pairs": 696,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5373563218390804
+    },
+    {
+      "antecedent": 695,
+      "confidence": 0.5381294964028777,
+      "joint": 374,
+      "pairs": 696,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5373563218390804
+    },
+    {
+      "antecedent": 695,
+      "confidence": 0.6719424460431654,
+      "joint": 467,
+      "pairs": 696,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6709770114942529
+    },
+    {
+      "antecedent": 695,
+      "confidence": 0.6719424460431654,
+      "joint": 467,
+      "pairs": 696,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6709770114942529
+    },
+    {
+      "antecedent": 696,
+      "confidence": 0.6666666666666666,
+      "joint": 464,
+      "pairs": 696,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6666666666666666
+    },
+    {
+      "antecedent": 581,
+      "confidence": 0.7022375215146299,
+      "joint": 408,
+      "pairs": 696,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5862068965517241
+    },
+    {
+      "antecedent": 696,
+      "confidence": 0.6666666666666666,
+      "joint": 464,
+      "pairs": 696,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6666666666666666
+    },
+    {
+      "antecedent": 581,
+      "confidence": 0.7022375215146299,
+      "joint": 408,
+      "pairs": 696,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5862068965517241
+    },
+    {
+      "antecedent": 677,
+      "confidence": 0.6454948301329394,
+      "joint": 437,
+      "pairs": 696,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6278735632183908
+    },
+    {
+      "antecedent": 500,
+      "confidence": 0.712,
+      "joint": 356,
+      "pairs": 696,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5114942528735632
+    },
+    {
+      "antecedent": 677,
+      "confidence": 0.6454948301329394,
+      "joint": 437,
+      "pairs": 696,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6278735632183908
+    },
+    {
+      "antecedent": 500,
+      "confidence": 0.712,
+      "joint": 356,
+      "pairs": 696,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5114942528735632
+    },
+    {
+      "antecedent": 696,
+      "confidence": 0.6795977011494253,
+      "joint": 473,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6795977011494253
+    },
+    {
+      "antecedent": 614,
+      "confidence": 0.6986970684039088,
+      "joint": 429,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6163793103448276
+    },
+    {
+      "antecedent": 635,
+      "confidence": 0.6897637795275591,
+      "joint": 438,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6293103448275862
+    },
+    {
+      "antecedent": 567,
+      "confidence": 0.7054673721340388,
+      "joint": 400,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5747126436781609
+    },
+    {
+      "antecedent": 523,
+      "confidence": 0.7112810707456979,
+      "joint": 372,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5344827586206896
+    },
+    {
+      "antecedent": 696,
+      "confidence": 0.6795977011494253,
+      "joint": 473,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6795977011494253
+    },
+    {
+      "antecedent": 614,
+      "confidence": 0.6986970684039088,
+      "joint": 429,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6163793103448276
+    },
+    {
+      "antecedent": 635,
+      "confidence": 0.6897637795275591,
+      "joint": 438,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6293103448275862
+    },
+    {
+      "antecedent": 567,
+      "confidence": 0.7054673721340388,
+      "joint": 400,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5747126436781609
+    },
+    {
+      "antecedent": 523,
+      "confidence": 0.7112810707456979,
+      "joint": 372,
+      "pairs": 696,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5344827586206896
+    },
+    {
+      "antecedent": 632,
+      "confidence": 0.5379746835443038,
+      "joint": 340,
+      "pairs": 633,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5371248025276462
+    },
+    {
+      "antecedent": 632,
+      "confidence": 0.5379746835443038,
+      "joint": 340,
+      "pairs": 633,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5371248025276462
+    },
+    {
+      "antecedent": 632,
+      "confidence": 0.5585443037974683,
+      "joint": 353,
+      "pairs": 633,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5576619273301737
+    },
+    {
+      "antecedent": 632,
+      "confidence": 0.5585443037974683,
+      "joint": 353,
+      "pairs": 633,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5576619273301737
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.655608214849921,
+      "joint": 415,
+      "pairs": 633,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.655608214849921
+    },
+    {
+      "antecedent": 529,
+      "confidence": 0.6275992438563327,
+      "joint": 332,
+      "pairs": 633,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5244865718799369
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.655608214849921,
+      "joint": 415,
+      "pairs": 633,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.655608214849921
+    },
+    {
+      "antecedent": 529,
+      "confidence": 0.6275992438563327,
+      "joint": 332,
+      "pairs": 633,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5244865718799369
+    },
+    {
+      "antecedent": 614,
+      "confidence": 0.6596091205211726,
+      "joint": 405,
+      "pairs": 633,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6398104265402843
+    },
+    {
+      "antecedent": 449,
+      "confidence": 0.7171492204899778,
+      "joint": 322,
+      "pairs": 633,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5086887835703001
+    },
+    {
+      "antecedent": 614,
+      "confidence": 0.6596091205211726,
+      "joint": 405,
+      "pairs": 633,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6398104265402843
+    },
+    {
+      "antecedent": 449,
+      "confidence": 0.7171492204899778,
+      "joint": 322,
+      "pairs": 633,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5086887835703001
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.6240126382306477,
+      "joint": 395,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6240126382306477
+    },
+    {
+      "antecedent": 561,
+      "confidence": 0.6024955436720143,
+      "joint": 338,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5339652448657188
+    },
+    {
+      "antecedent": 575,
+      "confidence": 0.6539130434782608,
+      "joint": 376,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.593996840442338
+    },
+    {
+      "antecedent": 516,
+      "confidence": 0.6317829457364341,
+      "joint": 326,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5150078988941548
+    },
+    {
+      "antecedent": 471,
+      "confidence": 0.6857749469214437,
+      "joint": 323,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5102685624012638
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.6240126382306477,
+      "joint": 395,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6240126382306477
+    },
+    {
+      "antecedent": 561,
+      "confidence": 0.6024955436720143,
+      "joint": 338,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5339652448657188
+    },
+    {
+      "antecedent": 575,
+      "confidence": 0.6539130434782608,
+      "joint": 376,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.593996840442338
+    },
+    {
+      "antecedent": 516,
+      "confidence": 0.6317829457364341,
+      "joint": 326,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5150078988941548
+    },
+    {
+      "antecedent": 471,
+      "confidence": 0.6857749469214437,
+      "joint": 323,
+      "pairs": 633,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5102685624012638
+    },
+    {
+      "antecedent": 572,
+      "confidence": 0.513986013986014,
+      "joint": 294,
+      "pairs": 573,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.5130890052356021
+    },
+    {
+      "antecedent": 572,
+      "confidence": 0.513986013986014,
+      "joint": 294,
+      "pairs": 573,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.5130890052356021
+    },
+    {
+      "antecedent": 572,
+      "confidence": 0.5594405594405595,
+      "joint": 320,
+      "pairs": 573,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.5584642233856894
+    },
+    {
+      "antecedent": 572,
+      "confidence": 0.5594405594405595,
+      "joint": 320,
+      "pairs": 573,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.5584642233856894
+    },
+    {
+      "antecedent": 573,
+      "confidence": 0.5095986038394416,
+      "joint": 292,
+      "pairs": 573,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.5095986038394416
+    },
+    {
+      "antecedent": 573,
+      "confidence": 0.5095986038394416,
+      "joint": 292,
+      "pairs": 573,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.5095986038394416
+    },
+    {
+      "antecedent": 573,
+      "confidence": 0.5200698080279232,
+      "joint": 298,
+      "pairs": 573,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.5200698080279232
+    },
+    {
+      "antecedent": 573,
+      "confidence": 0.5200698080279232,
+      "joint": 298,
+      "pairs": 573,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.5200698080279232
+    }
+  ],
+  "koppen_scores": [
+    {
+      "antecedent": 656,
+      "confidence": 0.5152439024390244,
+      "joint": 338,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5152439024390244,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 656,
+      "confidence": 0.5152439024390244,
+      "joint": 338,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5152439024390244,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6702290076335878,
+      "joint": 439,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6692073170731707,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6702290076335878,
+      "joint": 439,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6692073170731707,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 656,
+      "confidence": 0.5655487804878049,
+      "joint": 371,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5655487804878049,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 509,
+      "confidence": 0.6522593320235757,
+      "joint": 332,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5060975609756098,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 656,
+      "confidence": 0.5655487804878049,
+      "joint": 371,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5655487804878049,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 509,
+      "confidence": 0.6522593320235757,
+      "joint": 332,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5060975609756098,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.5829383886255924,
+      "joint": 369,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5625,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 470,
+      "confidence": 0.6042553191489362,
+      "joint": 284,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4329268292682927,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.5829383886255924,
+      "joint": 369,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5625,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 470,
+      "confidence": 0.6042553191489362,
+      "joint": 284,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4329268292682927,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6137404580152672,
+      "joint": 402,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6128048780487805,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 557,
+      "confidence": 0.6678635547576302,
+      "joint": 372,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5670731707317073,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 583,
+      "confidence": 0.6003430531732419,
+      "joint": 350,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5335365853658537,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 497,
+      "confidence": 0.6599597585513078,
+      "joint": 328,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 501,
+      "confidence": 0.624750499001996,
+      "joint": 313,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4771341463414634,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6137404580152672,
+      "joint": 402,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6128048780487805,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 557,
+      "confidence": 0.6678635547576302,
+      "joint": 372,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5670731707317073,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 583,
+      "confidence": 0.6003430531732419,
+      "joint": 350,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5335365853658537,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 497,
+      "confidence": 0.6599597585513078,
+      "joint": 328,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 501,
+      "confidence": 0.624750499001996,
+      "joint": 313,
+      "koppen": "Csa",
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4771341463414634,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.5764705882352941,
+      "joint": 343,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5764705882352941,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.5764705882352941,
+      "joint": 343,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5764705882352941,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6734006734006734,
+      "joint": 400,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6722689075630253,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6734006734006734,
+      "joint": 400,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6722689075630253,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.6436974789915967,
+      "joint": 383,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6436974789915967,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 455,
+      "confidence": 0.7076923076923077,
+      "joint": 322,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5411764705882353,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.6436974789915967,
+      "joint": 383,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6436974789915967,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 455,
+      "confidence": 0.7076923076923077,
+      "joint": 322,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5411764705882353,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 575,
+      "confidence": 0.6365217391304347,
+      "joint": 366,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6151260504201681,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 420,
+      "confidence": 0.6904761904761905,
+      "joint": 290,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.48739495798319327,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 575,
+      "confidence": 0.6365217391304347,
+      "joint": 366,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6151260504201681,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 420,
+      "confidence": 0.6904761904761905,
+      "joint": 290,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.48739495798319327,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6683501683501684,
+      "joint": 397,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6672268907563025,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 498,
+      "confidence": 0.7048192771084337,
+      "joint": 351,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5899159663865546,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 527,
+      "confidence": 0.6755218216318786,
+      "joint": 356,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5983193277310924,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 443,
+      "confidence": 0.7110609480812641,
+      "joint": 315,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5294117647058824,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 448,
+      "confidence": 0.6941964285714286,
+      "joint": 311,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5226890756302521,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6683501683501684,
+      "joint": 397,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6672268907563025,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 498,
+      "confidence": 0.7048192771084337,
+      "joint": 351,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5899159663865546,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 527,
+      "confidence": 0.6755218216318786,
+      "joint": 356,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5983193277310924,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 443,
+      "confidence": 0.7110609480812641,
+      "joint": 315,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5294117647058824,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 448,
+      "confidence": 0.6941964285714286,
+      "joint": 311,
+      "koppen": "Csa",
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5226890756302521,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.43947858472998136,
+      "joint": 236,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.43947858472998136,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.43947858472998136,
+      "joint": 236,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.43947858472998136,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 536,
+      "confidence": 0.38619402985074625,
+      "joint": 207,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.3854748603351955,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 536,
+      "confidence": 0.38619402985074625,
+      "joint": 207,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.3854748603351955,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.6759776536312849,
+      "joint": 363,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.6759776536312849,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.6759776536312849,
+      "joint": 363,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.6759776536312849,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.33147113594040967,
+      "joint": 178,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.33147113594040967,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.33147113594040967,
+      "joint": 178,
+      "koppen": "Csa",
+      "pairs": 537,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.33147113594040967,
+      "zone_ids": [
+        "bassin_du_lez",
+        "fos_sur_mer",
+        "montpellier_metropole"
+      ]
+    }
+  ],
+  "periods": {
+    "evaluate": [
+      "2023-01-01",
+      "2024-12-31"
+    ],
+    "train": [
+      "2021-01-01",
+      "2022-12-31"
+    ]
+  },
+  "scores": [
+    {
+      "antecedent": 656,
+      "confidence": 0.5152439024390244,
+      "joint": 338,
+      "pairs": 656,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5152439024390244
+    },
+    {
+      "antecedent": 656,
+      "confidence": 0.5152439024390244,
+      "joint": 338,
+      "pairs": 656,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5152439024390244
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6702290076335878,
+      "joint": 439,
+      "pairs": 656,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6692073170731707
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6702290076335878,
+      "joint": 439,
+      "pairs": 656,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6692073170731707
+    },
+    {
+      "antecedent": 656,
+      "confidence": 0.5655487804878049,
+      "joint": 371,
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5655487804878049
+    },
+    {
+      "antecedent": 509,
+      "confidence": 0.6522593320235757,
+      "joint": 332,
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5060975609756098
+    },
+    {
+      "antecedent": 656,
+      "confidence": 0.5655487804878049,
+      "joint": 371,
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5655487804878049
+    },
+    {
+      "antecedent": 509,
+      "confidence": 0.6522593320235757,
+      "joint": 332,
+      "pairs": 656,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5060975609756098
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.5829383886255924,
+      "joint": 369,
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5625
+    },
+    {
+      "antecedent": 470,
+      "confidence": 0.6042553191489362,
+      "joint": 284,
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4329268292682927
+    },
+    {
+      "antecedent": 633,
+      "confidence": 0.5829383886255924,
+      "joint": 369,
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5625
+    },
+    {
+      "antecedent": 470,
+      "confidence": 0.6042553191489362,
+      "joint": 284,
+      "pairs": 656,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4329268292682927
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6137404580152672,
+      "joint": 402,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6128048780487805
+    },
+    {
+      "antecedent": 557,
+      "confidence": 0.6678635547576302,
+      "joint": 372,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5670731707317073
+    },
+    {
+      "antecedent": 583,
+      "confidence": 0.6003430531732419,
+      "joint": 350,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5335365853658537
+    },
+    {
+      "antecedent": 497,
+      "confidence": 0.6599597585513078,
+      "joint": 328,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5
+    },
+    {
+      "antecedent": 501,
+      "confidence": 0.624750499001996,
+      "joint": 313,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4771341463414634
+    },
+    {
+      "antecedent": 655,
+      "confidence": 0.6137404580152672,
+      "joint": 402,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6128048780487805
+    },
+    {
+      "antecedent": 557,
+      "confidence": 0.6678635547576302,
+      "joint": 372,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5670731707317073
+    },
+    {
+      "antecedent": 583,
+      "confidence": 0.6003430531732419,
+      "joint": 350,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5335365853658537
+    },
+    {
+      "antecedent": 497,
+      "confidence": 0.6599597585513078,
+      "joint": 328,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5
+    },
+    {
+      "antecedent": 501,
+      "confidence": 0.624750499001996,
+      "joint": 313,
+      "pairs": 656,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4771341463414634
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.5764705882352941,
+      "joint": 343,
+      "pairs": 595,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5764705882352941
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.5764705882352941,
+      "joint": 343,
+      "pairs": 595,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5764705882352941
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6734006734006734,
+      "joint": 400,
+      "pairs": 595,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6722689075630253
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6734006734006734,
+      "joint": 400,
+      "pairs": 595,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6722689075630253
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.6436974789915967,
+      "joint": 383,
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6436974789915967
+    },
+    {
+      "antecedent": 455,
+      "confidence": 0.7076923076923077,
+      "joint": 322,
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5411764705882353
+    },
+    {
+      "antecedent": 595,
+      "confidence": 0.6436974789915967,
+      "joint": 383,
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6436974789915967
+    },
+    {
+      "antecedent": 455,
+      "confidence": 0.7076923076923077,
+      "joint": 322,
+      "pairs": 595,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5411764705882353
+    },
+    {
+      "antecedent": 575,
+      "confidence": 0.6365217391304347,
+      "joint": 366,
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6151260504201681
+    },
+    {
+      "antecedent": 420,
+      "confidence": 0.6904761904761905,
+      "joint": 290,
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.48739495798319327
+    },
+    {
+      "antecedent": 575,
+      "confidence": 0.6365217391304347,
+      "joint": 366,
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6151260504201681
+    },
+    {
+      "antecedent": 420,
+      "confidence": 0.6904761904761905,
+      "joint": 290,
+      "pairs": 595,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.48739495798319327
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6683501683501684,
+      "joint": 397,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6672268907563025
+    },
+    {
+      "antecedent": 498,
+      "confidence": 0.7048192771084337,
+      "joint": 351,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5899159663865546
+    },
+    {
+      "antecedent": 527,
+      "confidence": 0.6755218216318786,
+      "joint": 356,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5983193277310924
+    },
+    {
+      "antecedent": 443,
+      "confidence": 0.7110609480812641,
+      "joint": 315,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5294117647058824
+    },
+    {
+      "antecedent": 448,
+      "confidence": 0.6941964285714286,
+      "joint": 311,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5226890756302521
+    },
+    {
+      "antecedent": 594,
+      "confidence": 0.6683501683501684,
+      "joint": 397,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6672268907563025
+    },
+    {
+      "antecedent": 498,
+      "confidence": 0.7048192771084337,
+      "joint": 351,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5899159663865546
+    },
+    {
+      "antecedent": 527,
+      "confidence": 0.6755218216318786,
+      "joint": 356,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5983193277310924
+    },
+    {
+      "antecedent": 443,
+      "confidence": 0.7110609480812641,
+      "joint": 315,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5294117647058824
+    },
+    {
+      "antecedent": 448,
+      "confidence": 0.6941964285714286,
+      "joint": 311,
+      "pairs": 595,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5226890756302521
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.43947858472998136,
+      "joint": 236,
+      "pairs": 537,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.43947858472998136
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.43947858472998136,
+      "joint": 236,
+      "pairs": 537,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.43947858472998136
+    },
+    {
+      "antecedent": 536,
+      "confidence": 0.38619402985074625,
+      "joint": 207,
+      "pairs": 537,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.3854748603351955
+    },
+    {
+      "antecedent": 536,
+      "confidence": 0.38619402985074625,
+      "joint": 207,
+      "pairs": 537,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.3854748603351955
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.6759776536312849,
+      "joint": 363,
+      "pairs": 537,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.6759776536312849
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.6759776536312849,
+      "joint": 363,
+      "pairs": 537,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.6759776536312849
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.33147113594040967,
+      "joint": 178,
+      "pairs": 537,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.33147113594040967
+    },
+    {
+      "antecedent": 537,
+      "confidence": 0.33147113594040967,
+      "joint": 178,
+      "pairs": 537,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.33147113594040967
+    }
+  ],
+  "zone_scores": [
+    {
+      "antecedent": 190,
+      "confidence": 0.5947368421052631,
+      "joint": 113,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5947368421052631,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 276,
+      "confidence": 0.4311594202898551,
+      "joint": 119,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.4311594202898551,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.5578947368421052,
+      "joint": 106,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5578947368421052,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.5947368421052631,
+      "joint": 113,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5947368421052631,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 276,
+      "confidence": 0.4311594202898551,
+      "joint": 119,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.4311594202898551,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.5578947368421052,
+      "joint": 106,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5578947368421052,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.7473684210526316,
+      "joint": 142,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7473684210526316,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 276,
+      "confidence": 0.5905797101449275,
+      "joint": 163,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5905797101449275,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 189,
+      "confidence": 0.708994708994709,
+      "joint": 134,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.7052631578947368,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.7473684210526316,
+      "joint": 142,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7473684210526316,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 276,
+      "confidence": 0.5905797101449275,
+      "joint": 163,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5905797101449275,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 189,
+      "confidence": 0.708994708994709,
+      "joint": 134,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.7052631578947368,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.6,
+      "joint": 114,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 276,
+      "confidence": 0.5543478260869565,
+      "joint": 153,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5543478260869565,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.5473684210526316,
+      "joint": 104,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5473684210526316,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 148,
+      "confidence": 0.722972972972973,
+      "joint": 107,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5631578947368421,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 220,
+      "confidence": 0.5909090909090909,
+      "joint": 130,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.47101449275362317,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 141,
+      "confidence": 0.6737588652482269,
+      "joint": 95,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.6,
+      "joint": 114,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 276,
+      "confidence": 0.5543478260869565,
+      "joint": 153,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5543478260869565,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.5473684210526316,
+      "joint": 104,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5473684210526316,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 148,
+      "confidence": 0.722972972972973,
+      "joint": 107,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5631578947368421,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 220,
+      "confidence": 0.5909090909090909,
+      "joint": 130,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.47101449275362317,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 141,
+      "confidence": 0.6737588652482269,
+      "joint": 95,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 185,
+      "confidence": 0.6702702702702703,
+      "joint": 124,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6526315789473685,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 264,
+      "confidence": 0.5265151515151515,
+      "joint": 139,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5036231884057971,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 184,
+      "confidence": 0.5760869565217391,
+      "joint": 106,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5578947368421052,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 138,
+      "confidence": 0.6811594202898551,
+      "joint": 94,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.49473684210526314,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 195,
+      "confidence": 0.5641025641025641,
+      "joint": 110,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.39855072463768115,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 137,
+      "confidence": 0.583941605839416,
+      "joint": 80,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.42105263157894735,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 185,
+      "confidence": 0.6702702702702703,
+      "joint": 124,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6526315789473685,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 264,
+      "confidence": 0.5265151515151515,
+      "joint": 139,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5036231884057971,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 184,
+      "confidence": 0.5760869565217391,
+      "joint": 106,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5578947368421052,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 138,
+      "confidence": 0.6811594202898551,
+      "joint": 94,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.49473684210526314,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 195,
+      "confidence": 0.5641025641025641,
+      "joint": 110,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.39855072463768115,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 137,
+      "confidence": 0.583941605839416,
+      "joint": 80,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.42105263157894735,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.6736842105263158,
+      "joint": 128,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6736842105263158,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 275,
+      "confidence": 0.5745454545454546,
+      "joint": 158,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.572463768115942,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.6105263157894737,
+      "joint": 116,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.6105263157894737,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 162,
+      "confidence": 0.7469135802469136,
+      "joint": 121,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.6368421052631579,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 238,
+      "confidence": 0.5966386554621849,
+      "joint": 142,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5144927536231884,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 157,
+      "confidence": 0.6942675159235668,
+      "joint": 109,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5736842105263158,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 170,
+      "confidence": 0.6529411764705882,
+      "joint": 111,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5842105263157895,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 243,
+      "confidence": 0.5720164609053497,
+      "joint": 139,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5036231884057971,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 170,
+      "confidence": 0.5882352941176471,
+      "joint": 100,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.5263157894736842,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 145,
+      "confidence": 0.7310344827586207,
+      "joint": 106,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5578947368421052,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 213,
+      "confidence": 0.6009389671361502,
+      "joint": 128,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.463768115942029,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 139,
+      "confidence": 0.6762589928057554,
+      "joint": 94,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.49473684210526314,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 145,
+      "confidence": 0.7172413793103448,
+      "joint": 104,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "pass",
+      "support": 0.5473684210526316,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 213,
+      "confidence": 0.5633802816901409,
+      "joint": 120,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.43478260869565216,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 143,
+      "confidence": 0.6223776223776224,
+      "joint": 89,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],0]",
+      "status": "fail",
+      "support": 0.46842105263157896,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.6736842105263158,
+      "joint": 128,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6736842105263158,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 275,
+      "confidence": 0.5745454545454546,
+      "joint": 158,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.572463768115942,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 190,
+      "confidence": 0.6105263157894737,
+      "joint": 116,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.6105263157894737,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 162,
+      "confidence": 0.7469135802469136,
+      "joint": 121,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.6368421052631579,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 238,
+      "confidence": 0.5966386554621849,
+      "joint": 142,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5144927536231884,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 157,
+      "confidence": 0.6942675159235668,
+      "joint": 109,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5736842105263158,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 170,
+      "confidence": 0.6529411764705882,
+      "joint": 111,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5842105263157895,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 243,
+      "confidence": 0.5720164609053497,
+      "joint": 139,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5036231884057971,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 170,
+      "confidence": 0.5882352941176471,
+      "joint": 100,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.5263157894736842,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 145,
+      "confidence": 0.7310344827586207,
+      "joint": 106,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5578947368421052,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 213,
+      "confidence": 0.6009389671361502,
+      "joint": 128,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.463768115942029,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 139,
+      "confidence": 0.6762589928057554,
+      "joint": 94,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.49473684210526314,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 145,
+      "confidence": 0.7172413793103448,
+      "joint": 104,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "pass",
+      "support": 0.5473684210526316,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 213,
+      "confidence": 0.5633802816901409,
+      "joint": 120,
+      "koppen": "Csa",
+      "pairs": 276,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.43478260869565216,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 143,
+      "confidence": 0.6223776223776224,
+      "joint": 89,
+      "koppen": "Csa",
+      "pairs": 190,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],0]",
+      "status": "fail",
+      "support": 0.46842105263157896,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.6783625730994152,
+      "joint": 116,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6783625730994152,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.466403162055336,
+      "joint": 118,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.466403162055336,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.6374269005847953,
+      "joint": 109,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6374269005847953,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.6783625730994152,
+      "joint": 116,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6783625730994152,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.466403162055336,
+      "joint": 118,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.466403162055336,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.6374269005847953,
+      "joint": 109,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6374269005847953,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7192982456140351,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.7192982456140351,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.6007905138339921,
+      "joint": 152,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6007905138339921,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 170,
+      "confidence": 0.7352941176470589,
+      "joint": 125,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.7309941520467836,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7192982456140351,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.7192982456140351,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.6007905138339921,
+      "joint": 152,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6007905138339921,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 170,
+      "confidence": 0.7352941176470589,
+      "joint": 125,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.7309941520467836,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7192982456140351,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.7192982456140351,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.5810276679841897,
+      "joint": 147,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5810276679841897,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.6608187134502924,
+      "joint": 113,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.6608187134502924,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 131,
+      "confidence": 0.7862595419847328,
+      "joint": 103,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.6023391812865497,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 200,
+      "confidence": 0.615,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.48616600790513836,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 124,
+      "confidence": 0.7741935483870968,
+      "joint": 96,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5614035087719298,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7192982456140351,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.7192982456140351,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 253,
+      "confidence": 0.5810276679841897,
+      "joint": 147,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5810276679841897,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.6608187134502924,
+      "joint": 113,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.6608187134502924,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 131,
+      "confidence": 0.7862595419847328,
+      "joint": 103,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.6023391812865497,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 200,
+      "confidence": 0.615,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.48616600790513836,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 124,
+      "confidence": 0.7741935483870968,
+      "joint": 96,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5614035087719298,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 167,
+      "confidence": 0.7365269461077845,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.7192982456140351,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 241,
+      "confidence": 0.5933609958506224,
+      "joint": 143,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5652173913043478,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 167,
+      "confidence": 0.5988023952095808,
+      "joint": 100,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5847953216374269,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 123,
+      "confidence": 0.8048780487804879,
+      "joint": 99,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5789473684210527,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 175,
+      "confidence": 0.6228571428571429,
+      "joint": 109,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.4308300395256917,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 122,
+      "confidence": 0.6721311475409836,
+      "joint": 82,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"+\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.47953216374269003,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 167,
+      "confidence": 0.7365269461077845,
+      "joint": 123,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.7192982456140351,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 241,
+      "confidence": 0.5933609958506224,
+      "joint": 143,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5652173913043478,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 167,
+      "confidence": 0.5988023952095808,
+      "joint": 100,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5847953216374269,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 123,
+      "confidence": 0.8048780487804879,
+      "joint": 99,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5789473684210527,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 175,
+      "confidence": 0.6228571428571429,
+      "joint": 109,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.4308300395256917,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 122,
+      "confidence": 0.6721311475409836,
+      "joint": 82,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"humidity\",\"-\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.47953216374269003,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7543859649122807,
+      "joint": 129,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.7543859649122807,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 252,
+      "confidence": 0.5833333333333334,
+      "joint": 147,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5810276679841897,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7076023391812866,
+      "joint": 121,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.7076023391812866,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 143,
+      "confidence": 0.7832167832167832,
+      "joint": 112,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.6549707602339181,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 217,
+      "confidence": 0.6082949308755761,
+      "joint": 132,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5217391304347826,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 138,
+      "confidence": 0.7753623188405797,
+      "joint": 107,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.6257309941520468,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7647058823529411,
+      "joint": 117,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.6842105263157895,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 221,
+      "confidence": 0.5927601809954751,
+      "joint": 131,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.5177865612648221,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7058823529411765,
+      "joint": 108,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.631578947368421,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 128,
+      "confidence": 0.796875,
+      "joint": 102,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5964912280701754,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 193,
+      "confidence": 0.616580310880829,
+      "joint": 119,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.47035573122529645,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 122,
+      "confidence": 0.7704918032786885,
+      "joint": 94,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"solar_radiation\",\"+\"],[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.5497076023391813,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 128,
+      "confidence": 0.8203125,
+      "joint": 105,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "pass",
+      "support": 0.6140350877192983,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 192,
+      "confidence": 0.609375,
+      "joint": 117,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.4624505928853755,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 128,
+      "confidence": 0.6953125,
+      "joint": 89,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"],[\"humidity\",\"-\"]],[\"ndvi_mean\",\"-\"],1]",
+      "status": "fail",
+      "support": 0.52046783625731,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7543859649122807,
+      "joint": 129,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.7543859649122807,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 252,
+      "confidence": 0.5833333333333334,
+      "joint": 147,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5810276679841897,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 171,
+      "confidence": 0.7076023391812866,
+      "joint": 121,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.7076023391812866,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 143,
+      "confidence": 0.7832167832167832,
+      "joint": 112,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.6549707602339181,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 217,
+      "confidence": 0.6082949308755761,
+      "joint": 132,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5217391304347826,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 138,
+      "confidence": 0.7753623188405797,
+      "joint": 107,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.6257309941520468,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7647058823529411,
+      "joint": 117,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.6842105263157895,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 221,
+      "confidence": 0.5927601809954751,
+      "joint": 131,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.5177865612648221,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7058823529411765,
+      "joint": 108,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.631578947368421,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 128,
+      "confidence": 0.796875,
+      "joint": 102,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5964912280701754,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 193,
+      "confidence": 0.616580310880829,
+      "joint": 119,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.47035573122529645,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 122,
+      "confidence": 0.7704918032786885,
+      "joint": 94,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"solar_radiation\",\"-\"],[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.5497076023391813,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 128,
+      "confidence": 0.8203125,
+      "joint": 105,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "pass",
+      "support": 0.6140350877192983,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 192,
+      "confidence": 0.609375,
+      "joint": 117,
+      "koppen": "Csa",
+      "pairs": 253,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.4624505928853755,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 128,
+      "confidence": 0.6953125,
+      "joint": 89,
+      "koppen": "Csa",
+      "pairs": 171,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"],[\"humidity\",\"+\"]],[\"ndvi_mean\",\"+\"],1]",
+      "status": "fail",
+      "support": 0.52046783625731,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.39215686274509803,
+      "joint": 60,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.39215686274509803,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.5281385281385281,
+      "joint": 122,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.5281385281385281,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.35294117647058826,
+      "joint": 54,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"wind_speed\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.35294117647058826,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.39215686274509803,
+      "joint": 60,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.39215686274509803,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.5281385281385281,
+      "joint": 122,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.5281385281385281,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.35294117647058826,
+      "joint": 54,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"wind_speed\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.35294117647058826,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.4117647058823529,
+      "joint": 63,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.4117647058823529,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.41125541125541126,
+      "joint": 95,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.41125541125541126,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 152,
+      "confidence": 0.3223684210526316,
+      "joint": 49,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"temperature_2m\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.3202614379084967,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.4117647058823529,
+      "joint": 63,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.4117647058823529,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.41125541125541126,
+      "joint": 95,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.41125541125541126,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 152,
+      "confidence": 0.3223684210526316,
+      "joint": 49,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"temperature_2m\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.3202614379084967,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7189542483660131,
+      "joint": 110,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "pass",
+      "support": 0.7189542483660131,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.6147186147186147,
+      "joint": 142,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.6147186147186147,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7254901960784313,
+      "joint": 111,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"solar_radiation\",\"+\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "pass",
+      "support": 0.7254901960784313,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7189542483660131,
+      "joint": 110,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "pass",
+      "support": 0.7189542483660131,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.6147186147186147,
+      "joint": 142,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.6147186147186147,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.7254901960784313,
+      "joint": 111,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"solar_radiation\",\"-\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "pass",
+      "support": 0.7254901960784313,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.32679738562091504,
+      "joint": 50,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.32679738562091504,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.37662337662337664,
+      "joint": 87,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.37662337662337664,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.2679738562091503,
+      "joint": 41,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"evapotranspiration\",\"+\"]],[\"ndvi_mean\",\"+\"],2]",
+      "status": "fail",
+      "support": 0.2679738562091503,
+      "zone_id": "montpellier_metropole"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.32679738562091504,
+      "joint": 50,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.32679738562091504,
+      "zone_id": "bassin_du_lez"
+    },
+    {
+      "antecedent": 231,
+      "confidence": 0.37662337662337664,
+      "joint": 87,
+      "koppen": "Csa",
+      "pairs": 231,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.37662337662337664,
+      "zone_id": "fos_sur_mer"
+    },
+    {
+      "antecedent": 153,
+      "confidence": 0.2679738562091503,
+      "joint": 41,
+      "koppen": "Csa",
+      "pairs": 153,
+      "rule_id": "[[[\"evapotranspiration\",\"-\"]],[\"ndvi_mean\",\"-\"],2]",
+      "status": "fail",
+      "support": 0.2679738562091503,
+      "zone_id": "montpellier_metropole"
+    }
+  ]
+}

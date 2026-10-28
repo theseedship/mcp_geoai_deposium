@@ -1,0 +1,4 @@
+site_id,latitude,longitude,scenario_id,tilt,azimuth
+demo_fos,43.45455,4.89795,south_30,30,0
+demo_fos,43.45455,4.89795,east_30,30,-90
+demo_montpellier,43.605,3.865,south_30,30,0

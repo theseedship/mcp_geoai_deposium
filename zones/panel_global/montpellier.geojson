@@ -1,0 +1,22 @@
+{
+  "type": "Feature",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "properties": {
+    "zone_id": "montpellier",
+    "name": "Montpellier",
+    "koppen": "Csa",
+    "bbox": [
+      3.0,
+      43.1,
+      4.0,
+      44.1
+    ],
+    "role": "panel"
+  },
+  "geometry": {"type":"Polygon","coordinates":[[[4.0,43.1],[4.0,44.1],[3.0,44.1],[3.0,43.1],[4.0,43.1]]]}
+}

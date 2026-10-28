@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deposium.ai/schemas/geoai-rw2/catalog-ack-request/v1",
+  "title": "GeoAI catalog acknowledgement request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "registration_id",
+    "dataset_id",
+    "artifact_version",
+    "manifest_key",
+    "manifest_sha256",
+    "published_at"
+  ],
+  "properties": {
+    "schema_version": { "const": "geoai-rw2/v1" },
+    "registration_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "dataset_id": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "artifact_version": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "manifest_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2048,
+      "$comment": "Canonical RustFS manifest key mirroring the worker's valid_relative_object_key — same shape rule as registration source.key: non-empty segments, no '//', no trailing '/', no '.' or '..' segments, no URI scheme.",
+      "pattern": "^[A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*$",
+      "not": { "pattern": "(^|/)\\.\\.?(/|$)" }
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "published_at": { "type": "string", "format": "date-time" }
+  }
+}

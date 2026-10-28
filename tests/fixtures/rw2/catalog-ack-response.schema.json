@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deposium.ai/schemas/geoai-rw2/catalog-ack-response/v1",
+  "title": "GeoAI catalog acknowledgement response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "registration_id",
+    "dataset_id",
+    "artifact_version",
+    "manifest_sha256",
+    "status",
+    "catalog_revision",
+    "idempotent_replay",
+    "acknowledged_at"
+  ],
+  "properties": {
+    "schema_version": { "const": "geoai-rw2/v1" },
+    "registration_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "dataset_id": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "artifact_version": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "status": { "const": "acknowledged" },
+    "catalog_revision": { "type": "integer", "minimum": 1 },
+    "idempotent_replay": { "type": "boolean" },
+    "acknowledged_at": { "type": "string", "format": "date-time" }
+  }
+}

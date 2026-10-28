@@ -1,0 +1,430 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deposium.dev/contracts/watch-input.v1.schema.json",
+  "title": "watch-input/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "provider",
+    "place",
+    "retrieved_at",
+    "model_run_at",
+    "day_grain",
+    "horizon_days_requested",
+    "horizon_days_served",
+    "confidence",
+    "reference",
+    "series",
+    "caveats",
+    "evidence_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "watch-input/v1"
+    },
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "tools",
+        "model",
+        "provider_chain",
+        "licence",
+        "attribution"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "tool_aliases": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grid_resolution_deg": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "provider_chain": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "licence": {
+          "type": "string"
+        },
+        "attribution": {
+          "type": "string"
+        }
+      }
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "sampling"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string",
+          "pattern": "^zone:[a-z0-9_]+$"
+        },
+        "label": {
+          "type": "string"
+        },
+        "sampling": {
+          "enum": [
+            "bbox_midpoint"
+          ]
+        }
+      }
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "model_run_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "day_grain": {
+      "const": "utc_day"
+    },
+    "horizon_days_requested": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16
+    },
+    "horizon_days_served": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16
+    },
+    "confidence": {
+      "type": "null"
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "window",
+        "grain",
+        "source",
+        "evidence_id"
+      ],
+      "properties": {
+        "kind": {
+          "const": "climatological_percentiles"
+        },
+        "window": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{4}$"
+        },
+        "grain": {
+          "const": "daily_values_by_calendar_month"
+        },
+        "source": {
+          "const": "climate_normals"
+        },
+        "evidence_id": {
+          "type": "string",
+          "pattern": "^geoai_ev_[0-9a-f]{64}$"
+        }
+      }
+    },
+    "series": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "caveats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^geoai_ev_[0-9a-f]{64}$"
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "variable",
+        "provider_variable",
+        "unit",
+        "day",
+        "status",
+        "n",
+        "reference_thin"
+      ],
+      "properties": {
+        "variable": {
+          "enum": [
+            "precipitation",
+            "wind_speed"
+          ]
+        },
+        "provider_variable": {
+          "enum": [
+            "precipitation_sum",
+            "wind_speed_10m_max"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "mm",
+            "m/s"
+          ]
+        },
+        "day": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "enum": [
+            "available",
+            "missing",
+            "dry"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "p10": {
+          "type": "number"
+        },
+        "p50": {
+          "type": "number"
+        },
+        "p90": {
+          "type": "number"
+        },
+        "n": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reference_thin": {
+          "type": "boolean"
+        },
+        "p10_wet": {
+          "type": "number"
+        },
+        "p50_wet": {
+          "type": "number"
+        },
+        "p90_wet": {
+          "type": "number"
+        },
+        "n_wet": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wet_day_threshold_mm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "percentile_band": {
+          "enum": [
+            "<p10",
+            "p10_p50",
+            "p50_p90",
+            ">p90"
+          ]
+        },
+        "category": {
+          "enum": [
+            "extreme_low",
+            "below_normal",
+            "above_normal",
+            "extreme_high"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "available"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value",
+              "p10",
+              "p50",
+              "p90",
+              "percentile_band",
+              "category"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "missing"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "value"
+                  ]
+                },
+                {
+                  "required": [
+                    "percentile_band"
+                  ]
+                },
+                {
+                  "required": [
+                    "category"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "dry"
+              }
+            }
+          },
+          "then": {
+            "allOf": [
+              {
+                "required": [
+                  "value",
+                  "wet_day_threshold_mm"
+                ]
+              },
+              {
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "percentile_band"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "category"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "properties": {
+                  "variable": {
+                    "const": "precipitation"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "variable": {
+                "const": "precipitation"
+              },
+              "status": {
+                "const": "available"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "p10_wet",
+              "p50_wet",
+              "p90_wet",
+              "n_wet",
+              "wet_day_threshold_mm"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "variable": {
+                "const": "wind_speed"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "p10_wet"
+                  ]
+                },
+                {
+                  "required": [
+                    "p50_wet"
+                  ]
+                },
+                {
+                  "required": [
+                    "p90_wet"
+                  ]
+                },
+                {
+                  "required": [
+                    "n_wet"
+                  ]
+                },
+                {
+                  "required": [
+                    "wet_day_threshold_mm"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

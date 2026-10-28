@@ -1,0 +1,22 @@
+{
+  "type": "Feature",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "properties": {
+    "zone_id": "manaus",
+    "name": "Manaus",
+    "koppen": "Am",
+    "bbox": [
+      -60.5,
+      -3.6,
+      -59.5,
+      -2.6
+    ],
+    "role": "panel"
+  },
+  "geometry": {"type":"Polygon","coordinates":[[[-59.5,-3.6],[-59.5,-2.6],[-60.5,-2.6],[-60.5,-3.6],[-59.5,-3.6]]]}
+}

@@ -1,0 +1,16 @@
+# Authenticated fixtures and packaged research data retain exact bytes on Windows.
+examples/so4gp_parquet/geoai-o3-q3-2023-handoff/** -text
+src/data/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/contracts_data/watch/** -text
+
+tests/fixtures/heldout-validation-2026-10-13/** -text
+tests/fixtures/ndvi-predictive-ablation-2026-10-25/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/fixtures/pattern-library-2026-10-15/capture/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/fixtures/pattern-library-2026-10-15/verification.json -text
+tests/fixtures/pattern-library-2026-10-15/capture_native.py text eol=lf
+tests/fixtures/pattern-qualification-2026-10-16/** -text
+tests/fixtures/db-comparison-preparation-2026-10-21/** -text
+tests/fixtures/b5a-replacement-20261005/** -text
+
+# This mathematical reference has an authenticated exact-source fingerprint.
+benchmarks/copernicus_pair_reference.py text eol=lf

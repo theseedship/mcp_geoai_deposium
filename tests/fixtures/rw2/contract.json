@@ -1,0 +1,78 @@
+{
+  "contract_version": "geoai-rw2-contract/v1",
+  "transport_schema_version": "geoai-rw2/v1",
+  "schemas": {
+    "dataset_locator": "dataset-locator.schema.json",
+    "registration_request": "registration-request.schema.json",
+    "registration_status": "registration-status.schema.json",
+    "catalog_ack_request": "catalog-ack-request.schema.json",
+    "catalog_ack_response": "catalog-ack-response.schema.json"
+  },
+  "registration_states": [
+    "queued",
+    "validating",
+    "validated",
+    "manifest_published",
+    "catalog_pending",
+    "registered",
+    "failed",
+    "cancelled"
+  ],
+  "successful_progression": [
+    "queued",
+    "validating",
+    "validated",
+    "manifest_published",
+    "catalog_pending",
+    "registered"
+  ],
+  "terminal_states": ["registered", "failed", "cancelled"],
+  "registered_definition": "The canonical manifest is durably published and MCPs catalog acknowledgement has confirmed the validated catalog row.",
+  "idempotency": {
+    "registration_key": "idempotency_key",
+    "catalog_ack_tuple": ["dataset_id", "artifact_version", "manifest_sha256"],
+    "same_dataset_same_digest": "successful_noop",
+    "same_dataset_different_digest": "immutable_new_version_or_explicit_conflict",
+    "manifest_published_ack_lost": "resume_from_catalog_pending"
+  },
+  "ownership": {
+    "mcps": [
+      "authentication",
+      "space_and_file_authorization",
+      "logical_locator_resolution",
+      "durable_catalog",
+      "catalog_rebuild",
+      "catalog_acknowledgement"
+    ],
+    "rust_worker": [
+      "bounded_artifact_fetch",
+      "geoparquet_validation",
+      "artifact_digest",
+      "canonical_manifest_publication",
+      "registration_state",
+      "catalog_ack_retry"
+    ],
+    "geoai": ["manifest_vocabulary", "spatial_and_scientific_semantics"],
+    "rustfs": ["artifact_bytes", "canonical_manifests"]
+  },
+  "implementation_decisions": {
+    "catalog_backend": "MCPs-owned durable PostgreSQL/Supabase tables; the catalog remains rebuildable from RustFS manifests.",
+    "internal_auth": "MCP_ADMIN_SECRET over the private service network; endpoints fail closed when the secret is absent.",
+    "ack_direction": "The worker POSTs an idempotent acknowledgement request to MCPs and retries while catalog_pending.",
+    "version_policy": "Artifact versions are immutable sha256 digests; current-version selection is an explicit catalog pointer update.",
+    "source_resolution": "MCPs resolves uploaded_files storage metadata. The worker never derives tenant scope or accepts a public path."
+  },
+  "semantic_rules": [
+    "Public locators never contain tenant, space, bucket, key, path, URI, URL, or output fields.",
+    "MCPs derives tenant and space scope from authenticated context and authoritative membership relations.",
+    "The worker acknowledges its queue only after durable registration state exists.",
+    "MCPs supplies a strong source ETag and the worker rejects missing or mismatched source identity before publication.",
+    "A registration is not registered until catalog acknowledgement succeeds.",
+    "Caller-visible authorization failures do not disclose whether a foreign dataset exists.",
+    "Manifest identity and provenance must match the server-owned registration request before catalog acknowledgement."
+  ],
+  "fixtures": {
+    "positive": "positive-cases.json",
+    "negative": "cross-tenant-negative-cases.json"
+  }
+}

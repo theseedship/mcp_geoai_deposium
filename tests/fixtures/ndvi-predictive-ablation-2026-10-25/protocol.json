@@ -1,0 +1,44 @@
+{
+  "schema_version": "ndvi-predictive-ablation/1.0.0",
+  "experiment_status": "exploratory_retrospective_pre_execution",
+  "primary_site": "fos_sur_mer",
+  "secondary_sites": ["bassin_du_lez", "montpellier_metropole"],
+  "train_target_years": [2021, 2022],
+  "evaluation_target_years": [2023, 2024],
+  "origin": "utc_calendar_month_end",
+  "target": "retained_ndvi_in_next_calendar_month",
+  "climate_lags_months": [0, 1],
+  "monthly_aggregations": {
+    "temperature_2m": "mean",
+    "precipitation": "sum",
+    "humidity": "mean",
+    "evapotranspiration": "sum",
+    "wind_speed": "max",
+    "solar_radiation": "mean"
+  },
+  "native_algorithm": "graank",
+  "native_version": "1.1.2",
+  "native_min_support": 0.5,
+  "encode_equal": false,
+  "native_timeout_seconds": 60,
+  "minimum_antecedent_size": 2,
+  "maximum_mined_features": 8,
+  "support_recount_tolerance": 0.001,
+  "ridge_alpha": 10.0,
+  "scale_all_features_train_only": true,
+  "drop_constant_features_train_only": true,
+  "generic_interaction_seed": 20261025,
+  "bootstrap_block_months": 3,
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 42,
+  "ndvi_prediction_bounds": [-1.0, 1.0],
+  "expected_eligibility": {
+    "fos_sur_mer": {"train": 22, "evaluation": 24},
+    "bassin_du_lez": {"train": 20, "evaluation": 16},
+    "montpellier_metropole": {"train": 20, "evaluation": 16}
+  },
+  "input_archives": {
+    "ndvi": {"name": "geoai-b3-ndvi-pilot-3zones-20260822.zip", "sha256": "0cd6dd981bb78916026fc1585cd856ba81e89deeaea24158973513bf6ad5526c"},
+    "era5": {"name": "geoai-era5-holdout-2021-2025-handoff.zip", "sha256": "3a03059e6a0f75e77fb355b68e2535b0e841e2bb460ac0d2574a0104c7f5937d"}
+  }
+}

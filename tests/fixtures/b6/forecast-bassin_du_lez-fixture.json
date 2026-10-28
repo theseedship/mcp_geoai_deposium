@@ -1,0 +1,175 @@
+{
+  "zone_id": "bassin_du_lez",
+  "forecast": [
+    {
+      "date": "2026-10-16",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 18.0,
+      "precipitation": 0.0,
+      "evapotranspiration": 2.4,
+      "humidity": 70.0,
+      "wind_speed": 12.0,
+      "solar_radiation": 150.0
+    },
+    {
+      "date": "2026-10-17",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 17.75,
+      "precipitation": 0.5,
+      "evapotranspiration": 2.35,
+      "humidity": 70.5,
+      "wind_speed": 12.1,
+      "solar_radiation": 148.0
+    },
+    {
+      "date": "2026-10-18",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 17.5,
+      "precipitation": 1.0,
+      "evapotranspiration": 2.3,
+      "humidity": 71.0,
+      "wind_speed": 12.2,
+      "solar_radiation": 146.0
+    },
+    {
+      "date": "2026-10-19",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 17.25,
+      "precipitation": 1.5,
+      "evapotranspiration": 2.25,
+      "humidity": 71.5,
+      "wind_speed": 12.3,
+      "solar_radiation": 144.0
+    },
+    {
+      "date": "2026-10-20",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 17.0,
+      "precipitation": 0.0,
+      "evapotranspiration": 2.2,
+      "humidity": 72.0,
+      "wind_speed": 12.4,
+      "solar_radiation": 142.0
+    },
+    {
+      "date": "2026-10-21",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 16.75,
+      "precipitation": 0.5,
+      "evapotranspiration": 2.15,
+      "humidity": 72.5,
+      "wind_speed": 12.5,
+      "solar_radiation": 140.0
+    },
+    {
+      "date": "2026-10-22",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 16.5,
+      "precipitation": 1.0,
+      "evapotranspiration": 2.1,
+      "humidity": 73.0,
+      "wind_speed": 12.6,
+      "solar_radiation": 138.0
+    },
+    {
+      "date": "2026-10-23",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 16.25,
+      "precipitation": 1.5,
+      "evapotranspiration": 2.05,
+      "humidity": 73.5,
+      "wind_speed": 12.7,
+      "solar_radiation": 136.0
+    },
+    {
+      "date": "2026-10-24",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 16.0,
+      "precipitation": 0.0,
+      "evapotranspiration": 2.0,
+      "humidity": 74.0,
+      "wind_speed": 12.8,
+      "solar_radiation": 134.0
+    },
+    {
+      "date": "2026-10-25",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 15.75,
+      "precipitation": 0.5,
+      "evapotranspiration": 1.95,
+      "humidity": 74.5,
+      "wind_speed": 12.9,
+      "solar_radiation": 132.0
+    },
+    {
+      "date": "2026-10-26",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 15.5,
+      "precipitation": 1.0,
+      "evapotranspiration": 1.9,
+      "humidity": 75.0,
+      "wind_speed": 13.0,
+      "solar_radiation": 130.0
+    },
+    {
+      "date": "2026-10-27",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 15.25,
+      "precipitation": 1.5,
+      "evapotranspiration": 1.85,
+      "humidity": 75.5,
+      "wind_speed": 13.1,
+      "solar_radiation": 128.0
+    },
+    {
+      "date": "2026-10-28",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 15.0,
+      "precipitation": 0.0,
+      "evapotranspiration": 1.8,
+      "humidity": 76.0,
+      "wind_speed": 13.2,
+      "solar_radiation": 126.0
+    },
+    {
+      "date": "2026-10-29",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 14.75,
+      "precipitation": 0.5,
+      "evapotranspiration": 1.75,
+      "humidity": 76.5,
+      "wind_speed": 13.3,
+      "solar_radiation": 124.0
+    },
+    {
+      "date": "2026-10-30",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 14.5,
+      "precipitation": 1.0,
+      "evapotranspiration": 1.7,
+      "humidity": 77.0,
+      "wind_speed": 13.4,
+      "solar_radiation": 122.0
+    },
+    {
+      "date": "2026-10-31",
+      "zone_id": "bassin_du_lez",
+      "temperature_2m": 14.25,
+      "precipitation": 1.5,
+      "evapotranspiration": 1.65,
+      "humidity": 77.5,
+      "wind_speed": 13.5,
+      "solar_radiation": 120.0
+    }
+  ],
+  "metadata": {
+    "source": "fixture_not_a_real_forecast",
+    "provider_chain": [
+      "fixture"
+    ],
+    "horizon_days": 16,
+    "requested_days": 16,
+    "issued_at": "2026-10-16T00:00:00+00:00",
+    "note": "Synthetic forecast_query-shaped fixture for offline B6 runs; no provider called."
+  }
+}

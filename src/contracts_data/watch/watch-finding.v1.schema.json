@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deposium.dev/contracts/watch-finding.v1.schema.json",
+  "title": "watch-finding/v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "registre",
+    "rule",
+    "place",
+    "day",
+    "day_grain",
+    "variable",
+    "provider_variable",
+    "value",
+    "p90",
+    "percentile_band",
+    "category",
+    "watch_level",
+    "confidence",
+    "finding_key",
+    "input_hash",
+    "retrieved_at",
+    "model_run_at",
+    "horizon_days_served",
+    "revisions",
+    "delivery",
+    "consent"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "watch-finding/v1"
+    },
+    "registre": {
+      "const": "raw_forecast_classification"
+    },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "predicate"
+      ],
+      "properties": {
+        "id": {
+          "const": "out_of_normal"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^v[0-9]+$"
+        },
+        "predicate": {
+          "const": "watch_level != none"
+        }
+      }
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string",
+          "pattern": "^zone:[a-z0-9_]+$"
+        }
+      }
+    },
+    "day": {
+      "type": "string",
+      "format": "date"
+    },
+    "day_grain": {
+      "const": "utc_day"
+    },
+    "variable": {
+      "enum": [
+        "precipitation",
+        "wind_speed"
+      ]
+    },
+    "provider_variable": {
+      "enum": [
+        "precipitation_sum",
+        "wind_speed_10m_max"
+      ]
+    },
+    "value": {
+      "type": "number"
+    },
+    "p90": {
+      "type": "number"
+    },
+    "percentile_band": {
+      "enum": [
+        "<p10",
+        "p10_p50",
+        "p50_p90",
+        ">p90"
+      ]
+    },
+    "category": {
+      "enum": [
+        "extreme_low",
+        "below_normal",
+        "above_normal",
+        "extreme_high"
+      ]
+    },
+    "watch_level": {
+      "enum": [
+        "watch",
+        "notify"
+      ]
+    },
+    "confidence": {
+      "type": "null"
+    },
+    "finding_key": {
+      "type": "string",
+      "minLength": 8
+    },
+    "input_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "model_run_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "horizon_days_served": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16
+    },
+    "revisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "input_hash",
+          "retrieved_at",
+          "value",
+          "watch_level"
+        ],
+        "properties": {
+          "input_hash": {
+            "type": "string",
+            "pattern": "^sha256:[0-9a-f]{64}$"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "value": {
+            "type": "number"
+          },
+          "watch_level": {
+            "enum": [
+              "none",
+              "watch",
+              "notify"
+            ]
+          }
+        }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "chat",
+        "mail"
+      ],
+      "properties": {
+        "chat": {
+          "$ref": "#/$defs/dest"
+        },
+        "mail": {
+          "$ref": "#/$defs/dest"
+        }
+      }
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "logged_as"
+      ],
+      "properties": {
+        "kind": {
+          "const": "owner_mail_config"
+        },
+        "logged_as": {
+          "type": "string",
+          "pattern": "^hitl_events:"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "at",
+        "ref"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "pending",
+            "delivered",
+            "failed"
+          ]
+        },
+        "at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

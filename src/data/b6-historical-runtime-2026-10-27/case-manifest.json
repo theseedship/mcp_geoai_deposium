@@ -1,0 +1,11 @@
+{
+  "case_id": "q3-2023-fos-native-recurrence",
+  "case_version": "2026.10.27.1",
+  "files": {
+    "extraction-manifest.json": "181adc5231084a819ba2372d8baba3269b8c9104d573cd01efd0d2dba1c6dcd4",
+    "forecast.json": "e954ee3b33b3f5cefe90c6041ad6fdaef79389f767307b33f0bcd801a986a6fd"
+  },
+  "forecast_profile": "rule15-temperature",
+  "preparation_manifest_sha256": "d7b1ae672c6033046f9449908ffa093328c7d8ff4845ad73bc93ef1c8e924e5c",
+  "schema_version": "geoai-b6-historical-runtime-case/v1"
+}

@@ -1,0 +1,48 @@
+{
+  "fixture_version": "gai3-invalid-manifest-cases/v1",
+  "base_fixture": "formal-wkb.expected.json",
+  "cases": [
+    {
+      "id": "missing-schema-version",
+      "remove": ["schema_version"],
+      "schema_valid": false,
+      "semantic_error_contains": "Field required"
+    },
+    {
+      "id": "app-kind-with-plain-parquet",
+      "set": {"artifact.format": "parquet"},
+      "schema_valid": false,
+      "semantic_error_contains": "app_geoparquet"
+    },
+    {
+      "id": "empty-spatial-table",
+      "set": {"table.row_count": 0},
+      "schema_valid": false,
+      "semantic_error_contains": "greater than 0"
+    },
+    {
+      "id": "unnamespaced-contract-drift",
+      "set": {"dataset_typo": "silent-drift"},
+      "schema_valid": false,
+      "semantic_error_contains": "namespace:field"
+    },
+    {
+      "id": "missing-geometry-column",
+      "set": {"spatial.geometry_column": "missing"},
+      "schema_valid": true,
+      "semantic_error_contains": "must exist"
+    },
+    {
+      "id": "exact-duplicate-table-column",
+      "append": {"table.columns": {"name": "id", "type": "INTEGER"}},
+      "schema_valid": false,
+      "semantic_error_contains": "unique names"
+    },
+    {
+      "id": "duplicate-table-column-name",
+      "append": {"table.columns": {"name": "id", "type": "BIGINT"}},
+      "schema_valid": true,
+      "semantic_error_contains": "unique names"
+    }
+  ]
+}

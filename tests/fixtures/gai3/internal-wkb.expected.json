@@ -1,0 +1,96 @@
+{
+  "fixture_version": "gai3-fixture/v1",
+  "compatibility": {
+    "geometry_column": "geometry",
+    "crs": "EPSG:4326"
+  },
+  "inspection": {
+    "source_kind": "internal_wkb",
+    "artifact_format": "parquet",
+    "geoparquet_version": null,
+    "table": {
+      "row_count": 3,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "geometry",
+          "type": "BLOB"
+        }
+      ]
+    },
+    "spatial": {
+      "geometry_column": "geometry",
+      "encoding": "WKB",
+      "crs": "EPSG:4326",
+      "bbox": [
+        3.8767,
+        -1.2921,
+        36.8219,
+        43.6108
+      ]
+    },
+    "geometry_types": [
+      "Point"
+    ],
+    "geometry_count": 2,
+    "null_geometry_count": 1,
+    "empty_geometry_count": 0,
+    "metadata_bbox_verified": null,
+    "caveats": [
+      "GeoParquet geo metadata is absent; geometry encoding and CRS come from the explicit internal compatibility contract."
+    ]
+  },
+  "manifest": {
+    "schema_version": "dataset-manifest/v1",
+    "dataset_id": "fixture-internal-wkb",
+    "dataset_kind": "science_dataset",
+    "artifact": {
+      "format": "parquet",
+      "key": "fixtures/gai3/internal-wkb.parquet",
+      "version": "sha256:c7c019dd43fc9b636acb7874a02b2c04e94b7533f095ea0207f0ab21379dff50"
+    },
+    "table": {
+      "row_count": 3,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "geometry",
+          "type": "BLOB"
+        }
+      ]
+    },
+    "spatial": {
+      "geometry_column": "geometry",
+      "encoding": "WKB",
+      "crs": "EPSG:4326",
+      "bbox": [
+        3.8767,
+        -1.2921,
+        36.8219,
+        43.6108
+      ]
+    },
+    "provenance": {
+      "tenant_id": "fixture-tenant",
+      "folder_id": "fixture-space",
+      "file_id": 4202,
+      "document_id": "00000000-0000-4000-8000-000000004202",
+      "producer": "gai3-fixture-generator",
+      "created_at": "2026-07-11T00:00:00Z"
+    }
+  }
+}

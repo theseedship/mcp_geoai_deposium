@@ -1,0 +1,91 @@
+{
+  "fixture_version": "gai3-fixture/v1",
+  "compatibility": null,
+  "inspection": {
+    "source_kind": "formal_geoparquet",
+    "artifact_format": "geoparquet",
+    "geoparquet_version": "1.1.0",
+    "table": {
+      "row_count": 3,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "geometry",
+          "type": "BLOB"
+        }
+      ]
+    },
+    "spatial": {
+      "geometry_column": "geometry",
+      "encoding": "WKB",
+      "crs": "EPSG:4326",
+      "bbox": [
+        3.8767,
+        -1.2921,
+        36.8219,
+        43.6108
+      ]
+    },
+    "geometry_types": [
+      "Point"
+    ],
+    "geometry_count": 2,
+    "null_geometry_count": 1,
+    "empty_geometry_count": 0,
+    "metadata_bbox_verified": true,
+    "caveats": []
+  },
+  "manifest": {
+    "schema_version": "dataset-manifest/v1",
+    "dataset_id": "fixture-formal-wkb",
+    "dataset_kind": "app_geoparquet",
+    "artifact": {
+      "format": "geoparquet",
+      "key": "fixtures/gai3/formal-wkb.parquet",
+      "version": "sha256:d0f5a92774be767cc8cb5bf9956968c9e26822f9f86851d437cddc5d376d75d1"
+    },
+    "table": {
+      "row_count": 3,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "geometry",
+          "type": "BLOB"
+        }
+      ]
+    },
+    "spatial": {
+      "geometry_column": "geometry",
+      "encoding": "WKB",
+      "crs": "EPSG:4326",
+      "bbox": [
+        3.8767,
+        -1.2921,
+        36.8219,
+        43.6108
+      ]
+    },
+    "provenance": {
+      "tenant_id": "fixture-tenant",
+      "folder_id": "fixture-space",
+      "file_id": 4201,
+      "document_id": "00000000-0000-4000-8000-000000004201",
+      "producer": "gai3-fixture-generator",
+      "created_at": "2026-07-11T00:00:00Z"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "base_implementation_commit": "8e08700",
+  "files": {
+    "EXECUTION_AMENDMENT.md": "dcbbe7f00d8d2daa6013bf0ad56fbf74e04ef1578ceac8ef155656e20c39c8b8",
+    "execution-amendment.json": "b80ae2f7b6788c11b1173412766374c17b0e4a7f1642031f5efd8a95d00cd2ab"
+  },
+  "frozen_at_utc": "2026-10-24T22:29:17.277304+00:00",
+  "original_native_mining_attempt_failed": true,
+  "predictive_model_fitting_or_scoring_started": false
+}

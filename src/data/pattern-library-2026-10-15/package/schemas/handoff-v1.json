@@ -1,0 +1,334 @@
+{
+  "$defs": {
+    "AreaStatus": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "title": "Algorithm",
+          "type": "string"
+        },
+        "rule_count": {
+          "minimum": 0,
+          "title": "Rule Count",
+          "type": "integer"
+        },
+        "status": {
+          "enum": [
+            "unqualified",
+            "empty",
+            "absent"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "zone_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+          "title": "Zone Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "zone_id",
+        "algorithm",
+        "rule_count",
+        "status"
+      ],
+      "title": "AreaStatus",
+      "type": "object"
+    },
+    "FileIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {
+          "maximum": 67108864,
+          "minimum": 0,
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sha256",
+        "bytes"
+      ],
+      "title": "FileIdentity",
+      "type": "object"
+    },
+    "InputIdentity": {
+      "additionalProperties": false,
+      "properties": {
+        "input_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+          "title": "Input Id",
+          "type": "string"
+        },
+        "period_end": {
+          "format": "date",
+          "title": "Period End",
+          "type": "string"
+        },
+        "period_start": {
+          "format": "date",
+          "title": "Period Start",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "source_uri": {
+          "minLength": 1,
+          "title": "Source Uri",
+          "type": "string"
+        },
+        "zone_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+          "title": "Zone Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "input_id",
+        "source_uri",
+        "sha256",
+        "zone_id",
+        "period_start",
+        "period_end"
+      ],
+      "title": "InputIdentity",
+      "type": "object"
+    },
+    "LibraryEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "title": "Algorithm",
+          "type": "string"
+        },
+        "confidence_method": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Confidence Method"
+        },
+        "exclusions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Exclusions",
+          "type": "array"
+        },
+        "input_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Input Ids",
+          "type": "array"
+        },
+        "json_path": {
+          "title": "Json Path",
+          "type": "string"
+        },
+        "parquet_path": {
+          "title": "Parquet Path",
+          "type": "string"
+        },
+        "qualification": {
+          "enum": [
+            "unqualified",
+            "empty"
+          ],
+          "title": "Qualification",
+          "type": "string"
+        },
+        "rule_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rule Ids",
+          "type": "array"
+        },
+        "source_sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "zone_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+          "title": "Zone Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "zone_id",
+        "algorithm",
+        "source_sha256",
+        "json_path",
+        "parquet_path",
+        "input_ids",
+        "rule_ids",
+        "qualification",
+        "exclusions",
+        "confidence_method"
+      ],
+      "title": "LibraryEntry",
+      "type": "object"
+    },
+    "PackagedEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "package_path": {
+          "title": "Package Path",
+          "type": "string"
+        },
+        "relationship": {
+          "const": "reference_only",
+          "title": "Relationship",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "source_uri": {
+          "minLength": 1,
+          "title": "Source Uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_uri",
+        "sha256",
+        "relationship",
+        "package_path"
+      ],
+      "title": "PackagedEvidence",
+      "type": "object"
+    },
+    "Producer": {
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "minLength": 1,
+          "title": "Command",
+          "type": "string"
+        },
+        "commit": {
+          "pattern": "^[a-f0-9]{40}$",
+          "title": "Commit",
+          "type": "string"
+        },
+        "name": {
+          "const": "so4gp",
+          "title": "Name",
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "commit",
+        "command"
+      ],
+      "title": "Producer",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "areas": {
+      "items": {
+        "$ref": "#/$defs/AreaStatus"
+      },
+      "minItems": 1,
+      "title": "Areas",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/PackagedEvidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "files": {
+      "additionalProperties": {
+        "$ref": "#/$defs/FileIdentity"
+      },
+      "title": "Files",
+      "type": "object"
+    },
+    "inputs": {
+      "items": {
+        "$ref": "#/$defs/InputIdentity"
+      },
+      "minItems": 1,
+      "title": "Inputs",
+      "type": "array"
+    },
+    "libraries": {
+      "items": {
+        "$ref": "#/$defs/LibraryEntry"
+      },
+      "minItems": 1,
+      "title": "Libraries",
+      "type": "array"
+    },
+    "library_schema_version": {
+      "const": "1.0.0",
+      "title": "Library Schema Version",
+      "type": "string"
+    },
+    "library_version": {
+      "minLength": 1,
+      "title": "Library Version",
+      "type": "string"
+    },
+    "producer": {
+      "$ref": "#/$defs/Producer"
+    },
+    "schema_version": {
+      "const": "geoai-pattern-library-handoff/v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_config_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Source Config Sha256",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "library_schema_version",
+    "library_version",
+    "source_config_sha256",
+    "producer",
+    "inputs",
+    "libraries",
+    "evidence",
+    "areas",
+    "files"
+  ],
+  "title": "HandoffManifest",
+  "type": "object"
+}
