@@ -66,7 +66,7 @@ are recorded in [CITATION.cff](CITATION.cff).
 | Configure providers and storage | [Configuration](#configuration) |
 | Understand the scientific scope | [Research and evidence](#research-and-evidence) |
 | Develop, test or contribute | [Development](#development) |
-| Cite the work or check reuse conditions | [Citations](CITATION.cff), [licence](#licence) and [data attribution](NOTICE) |
+| Cite the work or check reuse conditions | [Copy a citation or BibTeX](#citation), [licence](#licence) and [data attribution](NOTICE) |
 
 ## Why GeoAI?
 
@@ -226,3 +226,33 @@ The existing MIT licence is preserved in `LICENSE`. Third-party libraries
 and data keep their own licences and attribution; see `NOTICE` and `CITATION.cff` for
 scientific references. Optional `ai` dependencies are outside the default CPU
 image and have separate upstream requirements.
+
+## Citation
+
+If you use GeoAI in research, a report or another project, you can copy this
+software citation:
+
+```text
+Geysse, N. & Owuor, D. (2026). Deposium GeoAI (version 0.1.0) [Computer software].
+https://github.com/theseedship/mcp_geoai_deposium
+Funded by FIERCE through its Financial Support Programme: https://project-fierce.eu/
+```
+
+**BibTeX**
+
+```bibtex
+@software{deposium_geoai_2026,
+  author  = {Geysse, Nicolas and Owuor, Dickson},
+  title   = {Deposium GeoAI},
+  year    = {2026},
+  version = {0.1.0},
+  url     = {https://github.com/theseedship/mcp_geoai_deposium},
+  note    = {Funded by FIERCE through its Financial Support Programme.
+             FIERCE receives European Union funding under Horizon Europe,
+             Grant Agreement 101177496.}
+}
+```
+
+For reproducibility, also record the commit SHA or release tag you used.
+Machine-readable citation metadata and references for the methods and data
+are available in [CITATION.cff](CITATION.cff).
