@@ -12,7 +12,8 @@ GeoAI is a **self-hosted Python MCP server**. The
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) lets compatible
 AI applications call its tools. Install it with `uv` or build its Docker image,
 then configure your MCP client to launch it locally or connect to your running
-instance over HTTP. See [installation](#run-locally),
+instance over HTTP. It works with compatible MCP clients independently of the
+DEPOSIUM application. See [installation options](#install-geoai),
 [Docker deployment](#optional-docker-deployment) and
 [hosting and data flow](#hosting-and-data-flow).
 
@@ -61,6 +62,7 @@ are recorded in [CITATION.cff](CITATION.cff).
 | Meet the project team | [Team and contributions](#team-and-contributions) |
 | See what I can do with it | [Capabilities](#capabilities) |
 | Choose a tool or try a first request | [MCP tools: 16 tools, inputs and examples](reference/mcp-tools.md) |
+| Choose how to install or host GeoAI | [Installation options](#install-geoai) |
 | Connect my MCP client | [Run locally](#run-locally) |
 | Understand where the server runs and which data it receives | [Hosting and data flow](#hosting-and-data-flow) |
 | Run the server in a container | [Optional Docker deployment](#optional-docker-deployment) |
@@ -70,7 +72,7 @@ are recorded in [CITATION.cff](CITATION.cff).
 | Compare delivered scope and next objectives | [Roadmap](docs/roadmap.md) |
 | Review FIERCE objectives, implementation and proofs | [Evidence index](docs/evidence/README.md), [English report](docs/evidence/fierce-kpi-evidence.en.md) and [Word edition](docs/evidence/fierce-kpi-evidence.en.docx) |
 | Develop, test or contribute | [Development](#development) |
-| Cite the work or check reuse conditions | [Copy a citation or BibTeX](#citation), [licence](#licence) and [data attribution](NOTICE) |
+| Cite the work or check reuse conditions | [Copy a citation or BibTeX](#citation), [sources and methods](#data-sources-and-attribution), [licence](#licence) and [full notices](NOTICE) |
 
 ## Why GeoAI?
 
@@ -108,22 +110,37 @@ client can read `geoai://capabilities/tools` for the authoritative inventory and
 `geoai://guide/agent` for workflow guidance. See the
 [plain-language tool reference and first calls](reference/mcp-tools.md#first-calls).
 
-## Architecture at a glance
+## From data sources to usable results
+
+Each tool uses the relevant path below. Solid arrows show data and results;
+dashed arrows show supported storage operations.
 
 ```mermaid
 flowchart LR
-    Client["MCP client / application"] --> Auth["HTTP bearer / stdio process access"]
-    Auth --> GeoAI["GeoAI tools and contracts"]
-    GeoAI --> Providers["STAC / Open-Meteo"]
-    GeoAI --> Compute["Rasterio / DuckDB / optional so4gp"]
-    S3[("Configured S3 inputs and artifacts")] --> Compute
-    Compute -->|"explicit supported writes"| S3
-    Compute -->|"results"| Client
-    CLI["Archive CLIs"] -->|"explicit S3 mode"| S3
+    SatelliteSource["Satellite sources<br/>Sentinel-2 / STAC"]
+    WeatherSource["Weather sources<br/>Open-Meteo<br/>ERA5 / IFS / AIFS"]
+    Storage[("Your optional S3 store<br/>GeoParquet / artifacts")]
+
+    subgraph Server["Your GeoAI MCP server — local process, Docker or remote service"]
+        Satellite["Satellite / vegetation<br/>Rasterio / NDVI"]
+        Climate["Weather / climate<br/>Forecasts / normals"]
+        Analysis["Spatial queries / patterns<br/>DuckDB / optional so4gp"]
+    end
+
+    Client["Your MCP client<br/>Structured results<br/>Sources and limits"]
+    SatelliteSource --> Satellite --> Client
+    WeatherSource --> Climate --> Client
+    Storage --> Analysis --> Client
+    Storage -. "read climate series" .-> Climate
+    Satellite -. "ingestion writes" .-> Storage
+    Climate -. "explicit persistence" .-> Storage
+    Analysis -. "derived outputs" .-> Storage
 ```
 
 Storage is optional for storage-free tools. Supported writes and archive commands
 persist explicitly; every MCP response is not automatically written to S3.
+Permitted local Parquet inputs are also supported when explicitly enabled.
+Archive CLIs provide separate local/S3 workflows.
 The consuming application supplies UI, document retrieval, scheduling and
 notification delivery. See [the architecture](docs/architecture.md) for source
 links and [the objective/evidence index](docs/evidence/README.md) for dated proof.
@@ -176,18 +193,43 @@ These foundations can support further work in agriculture, environmental
 monitoring and renewable energy. New indicators and missing-data estimation need
 a suitable dataset, an explicit method and their own validation protocol.
 
-## Run locally
+## Install GeoAI
 
-Python 3.14 and [uv](https://docs.astral.sh/uv/) are required by the locked CPU
-pattern runtime. From this directory:
+You can install and operate your own instance; a DEPOSIUM account is not required.
+Choose the setup that fits your MCP client:
+
+| Setup | What runs where | What you need |
+| --- | --- | --- |
+| [Local Python / stdio](#run-locally) | Your MCP client launches GeoAI on your computer. | Git, Python 3.14 and `uv`; a client that supports stdio. |
+| [Local Docker / HTTP](#optional-docker-deployment) | GeoAI runs in a local container; your client connects to `http://127.0.0.1:5001/mcp`. | Git, Docker Engine with Compose; a client that supports HTTP. |
+| [Remote HTTP service](#remote-http-deployment) | An operator runs GeoAI on their infrastructure; clients connect to its HTTPS URL. | The operator installs Python or Docker; client users need the URL and credentials. |
+
+For either self-hosted installation, first clone this repository:
 
 ```sh
-uv sync --locked --extra patterns
-MCP_TRANSPORT=stdio uv run --no-sync geoai-server
+git clone https://github.com/theseedship/mcp_geoai_deposium.git
+cd mcp_geoai_deposium
 ```
 
-An MCP client can spawn the same process. Replace the directory below with the
-absolute path to this checkout:
+Continue with one of the setup sections below. The repository supplies the
+server and configuration examples; your chosen MCP application supplies the chat
+interface. Queries to external data providers need internet access and remain
+subject to those providers' access conditions.
+
+## Run locally
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run
+the following from the cloned directory. This installs Python 3.14 and the locked
+CPU pattern runtime:
+
+```sh
+uv python install 3.14
+uv sync --locked --extra patterns
+```
+
+Configure your MCP client to launch the server process. The following common
+`mcpServers` configuration uses stdio; adapt its location/format to your client
+and replace the directory with the absolute path to your checkout:
 
 ```json
 {
@@ -200,6 +242,10 @@ absolute path to this checkout:
   }
 }
 ```
+
+The optional pattern profile includes so4gp and CPU PyTorch. It supports Linux,
+Windows and macOS 14+ on ARM64; the Torch-backed extras do not support Intel
+macOS. The dependency and platform policy is recorded in [pyproject.toml](pyproject.toml).
 
 For HTTP, choose a bearer secret of at least 32 characters and pass it to the
 server and client:
@@ -217,16 +263,55 @@ requires this token. Stdio uses the parent process boundary instead.
 ## Optional Docker deployment
 
 The supplied Compose file starts only the GeoAI server. It binds to loopback,
-uses the locked CPU pattern dependencies and creates one data volume:
+uses the locked CPU pattern dependencies and creates one data volume. From the
+cloned directory (the example uses Python 3 to generate a random bearer secret):
 
 ```sh
 export GEOAI_MESH_AUTH_TOKEN="$(python3 -c 'import secrets; print(secrets.token_urlsafe(32))')"
 docker compose up --build -d
+curl http://127.0.0.1:5001/health
 ```
+
+Compose builds the image from this checkout. After `/health` returns `OK`,
+configure an HTTP-capable MCP client with `http://127.0.0.1:5001/mcp` and an
+`Authorization: Bearer ...` header containing the same secret. The `/mcp` endpoint
+speaks MCP; use your MCP application to call its tools.
 
 No GPU, database or object-store service is launched. To use S3-backed tools,
 provide your own endpoint and credentials. To change the published port, set
 `GEOAI_HOST_PORT` in your shell, for example `5051`.
+
+## Remote HTTP deployment
+
+The operator installs the same Python service or builds the Docker image on
+their own server or cloud platform, configures the provider/storage access they
+need, and exposes `/mcp` through an authenticated HTTPS endpoint. The supplied
+Compose file binds to loopback; remote access requires the operator to configure
+HTTPS ingress or a reverse proxy for their deployment.
+
+Client users then configure that instance's URL and bearer credentials. They do
+not need a local Python or Docker installation. The public repository supplies
+the server code; it does not supply a shared hosted endpoint or service account.
+The operator must manage user access and decide which datasets the instance can
+read. See [hosting and data flow](#hosting-and-data-flow) and
+[configuration](#configuration).
+
+## Try a first request
+
+Once connected, list the available tools and ask your MCP client to call
+`forecast_query` with:
+
+```json
+{"latitude": 43.6, "longitude": 3.88, "forecast_days": 3, "provider": "auto", "write_output": false}
+```
+
+This requests a three-day forecast at the supplied Montpellier coordinates
+without saving it to S3. The returned coordinates, provider/model, units,
+collection timestamp and missing-data metadata should remain visible in the
+client's answer. See [first tool calls](reference/mcp-tools.md#first-calls) for
+satellite and NDVI examples. Stored-data tools additionally require your own
+configured datasets/storage; installing the server does not populate a climate
+archive or qualify patterns automatically.
 
 ## Configuration
 
@@ -275,10 +360,43 @@ Only these selected public documentation paths are included. Other local project
 documents, `docs-private/`, `research-data/` and `outputs/` remain excluded;
 adding local documents does not expose them as MCP resources.
 
+## Data sources and attribution
+
+GeoAI builds on the work of data producers, distributors and researchers.
+Please credit the sources actually used in your outputs, including the underlying
+weather model when a provider fallback occurs.
+
+| Data or method | Source and credit |
+| --- | --- |
+| Weather and climate API access | [Open-Meteo](https://open-meteo.com/); [API data licence and attribution](https://open-meteo.com/en/licence). |
+| ERA5 reanalysis | Copernicus Climate Change Service / ECMWF; [dataset and DOI](https://doi.org/10.24381/cds.adbb2d47), accessed through Open-Meteo. |
+| IFS/AIFS forecasts | [ECMWF open data](https://www.ecmwf.int/en/forecasts/datasets/open-data), accessed through Open-Meteo; [ECMWF terms](https://apps.ecmwf.int/datasets/licences/general/). |
+| Sentinel-2 imagery and derived NDVI | ESA / Copernicus; [Earth Search by Element 84](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a). The catalogue also credits Sinergise processing and AWS hosting. |
+| Montpellier and Fos administrative boundaries | IGN, [ADMIN EXPRESS COG](https://geoservices.ign.fr/adminexpress); source and retrieval metadata in [CITATION.cff](CITATION.cff). |
+| Lez catchment boundaries | IGN / OFB, distributed by Sandre: [BD TOPAGE® Métropole 2026](https://www.data.gouv.fr/datasets/bd-topage-r-metropole-2026). |
+| Retained historical GFS example | NOAA / NCEP, obtained directly from the [NOAA public archive](https://registry.opendata.aws/noaa-gfs-bdp-pds/), separately from Open-Meteo; [usage conditions](https://www.weather.gov/disclaimer). |
+
+Gradual-pattern mining uses **[so4gp](https://pypi.org/project/so4gp/1.1.2/)** by
+**Dickson Owuor and Anne Laurent**. Cite the methods used: GRAANK by
+[Laurent, Lesot and Rifqi (2009)](https://doi.org/10.1007/978-3-642-04957-6_33),
+and fuzzy-temporal gradual patterns by
+[Owuor, Laurent and Orero (2019)](https://doi.org/10.1109/FUZZ-IEEE.2019.8858883).
+Core engineering libraries include [FastMCP](https://pypi.org/project/fastmcp/),
+[Rasterio](https://rasterio.readthedocs.io/) and [DuckDB](https://duckdb.org/).
+
+GeoAI aggregates weather series, derives NDVI and performs spatial/temporal
+transformations. Third-party data retain their own licences; the software's MIT
+licence does not relicense those data. [NOTICE](NOTICE) records attribution,
+modification notices and source-specific conditions;
+[CITATION.cff](CITATION.cff) contains bibliographic references. Preserve the
+applicable notices when displaying or redistributing results, and use the years
+and sources of the data you actually processed. API-access and commercial-use
+conditions are separate from the data licence.
+
 ## Licence
 
-The existing MIT licence is preserved in `LICENSE`. Third-party libraries
-and data keep their own licences and attribution; see `NOTICE` and `CITATION.cff` for
+The existing MIT licence is preserved in [LICENSE](LICENSE). Third-party libraries
+and data keep their own licences and attribution; see [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff) for
 scientific references. Optional `ai` dependencies are outside the default CPU
 image and have separate upstream requirements.
 
@@ -292,6 +410,8 @@ Nicolas Geysse, Jonathan Labéjof, Dickson Owuor & Amandine Raynaud (2026).
 Deposium GeoAI (version 0.1.0) [Computer software].
 https://deposium.ai/
 Funded by FIERCE through its Financial Support Programme.
+FIERCE receives European Union funding under Horizon Europe,
+Grant Agreement 101177496.
 ```
 
 **BibTeX**
