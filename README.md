@@ -65,6 +65,9 @@ are recorded in [CITATION.cff](CITATION.cff).
 | Run the server in a container | [Optional Docker deployment](#optional-docker-deployment) |
 | Configure providers and storage | [Configuration](#configuration) |
 | Understand the scientific scope | [Research and evidence](#research-and-evidence) |
+| Understand computation, providers and S3 storage | [Architecture and data flow](docs/architecture.md) |
+| Compare delivered scope and next objectives | [Roadmap](docs/roadmap.md) |
+| Review FIERCE objectives, implementation and proofs | [Evidence index](docs/evidence/README.md), [English report](docs/evidence/fierce-kpi-evidence.en.md) and [Word edition](docs/evidence/fierce-kpi-evidence.en.docx) |
 | Develop, test or contribute | [Development](#development) |
 | Cite the work or check reuse conditions | [Copy a citation or BibTeX](#citation), [licence](#licence) and [data attribution](NOTICE) |
 
@@ -103,6 +106,26 @@ The server advertises **16 tools** with structured input/output contracts. An MC
 client can read `geoai://capabilities/tools` for the authoritative inventory and
 `geoai://guide/agent` for workflow guidance. See the
 [plain-language tool reference and first calls](reference/mcp-tools.md#first-calls).
+
+## Architecture at a glance
+
+```mermaid
+flowchart LR
+    Client["MCP client / application"] --> Auth["HTTP bearer / stdio process access"]
+    Auth --> GeoAI["GeoAI tools and contracts"]
+    GeoAI --> Providers["STAC / Open-Meteo"]
+    GeoAI --> Compute["Rasterio / DuckDB / optional so4gp"]
+    S3[("Configured S3 inputs and artifacts")] --> Compute
+    Compute -->|"explicit supported writes"| S3
+    Compute -->|"results"| Client
+    CLI["Archive CLIs"] -->|"explicit S3 mode"| S3
+```
+
+Storage is optional for storage-free tools. Supported writes and archive commands
+persist explicitly; every MCP response is not automatically written to S3.
+The consuming application supplies UI, document retrieval, scheduling and
+notification delivery. See [the architecture](docs/architecture.md) for source
+links and [the objective/evidence index](docs/evidence/README.md) for dated proof.
 
 ## Research and evidence
 
@@ -214,11 +237,12 @@ server and configured test storage. The normal test suite runs offline with
 synthetic or frozen fixtures. Packaged runtime examples retain their scientific
 scope and provenance; they are not a certification of operational forecasts.
 
-Public documentation is maintained in [this README](README.md) and the
-[MCP tools reference](reference/mcp-tools.md). Private project documentation and
-local research outputs remain excluded: `docs/`, `docs-private/`, `research-data/`
-and `outputs/` are ignored; adding local documents does not expose them as MCP
-resources.
+Public documentation is maintained in this README, the
+[MCP tools reference](reference/mcp-tools.md), [architecture](docs/architecture.md),
+[roadmap](docs/roadmap.md) and [curated evidence collection](docs/evidence/README.md).
+Only these selected public documentation paths are included. Other local project
+documents, `docs-private/`, `research-data/` and `outputs/` remain excluded;
+adding local documents does not expose them as MCP resources.
 
 ## Licence
 
