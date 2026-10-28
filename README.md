@@ -233,20 +233,21 @@ If you use GeoAI in research, a report or another project, you can copy this
 software citation:
 
 ```text
-Geysse, N. & Owuor, D. (2026). Deposium GeoAI (version 0.1.0) [Computer software].
-https://github.com/theseedship/mcp_geoai_deposium
-Funded by FIERCE through its Financial Support Programme: https://project-fierce.eu/
+Nicolas Geysse, Jonathan Labéjof, Dickson Owuor & Amandine Raynaud (2026).
+Deposium GeoAI (version 0.1.0) [Computer software].
+https://deposium.ai/
+Funded by FIERCE through its Financial Support Programme.
 ```
 
 **BibTeX**
 
 ```bibtex
 @software{deposium_geoai_2026,
-  author  = {Geysse, Nicolas and Owuor, Dickson},
+  author  = {Geysse, Nicolas and Labéjof, Jonathan and Owuor, Dickson and Raynaud, Amandine},
   title   = {Deposium GeoAI},
   year    = {2026},
   version = {0.1.0},
-  url     = {https://github.com/theseedship/mcp_geoai_deposium},
+  url     = {https://deposium.ai/},
   note    = {Funded by FIERCE through its Financial Support Programme.
              FIERCE receives European Union funding under Horizon Europe,
              Grant Agreement 101177496.}
