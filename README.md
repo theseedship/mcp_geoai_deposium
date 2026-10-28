@@ -8,13 +8,13 @@ vegetation over an area, or look for relationships in environmental time series.
 The server retrieves data and runs the calculations. Tools expose explicit
 inputs and structured results, with source and limit metadata where available.
 
-It is a standalone Python server implementing the
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/): a common interface
-that lets compatible AI applications call tools. Use it with your own MCP client,
-over stdio, streamable HTTP or legacy SSE.
-
-The maintained source and issue tracker are hosted in
-[this repository](https://github.com/theseedship/mcp_geoai_deposium).
+GeoAI is a **self-hosted Python MCP server**. The
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/) lets compatible
+AI applications call its tools. Install it with `uv` or build its Docker image,
+then configure your MCP client to launch it locally or connect to your running
+instance over HTTP. See [installation](#run-locally),
+[Docker deployment](#optional-docker-deployment) and
+[hosting and data flow](#hosting-and-data-flow).
 
 ## Funded by FIERCE
 
@@ -62,6 +62,7 @@ are recorded in [CITATION.cff](CITATION.cff).
 | See what I can do with it | [Capabilities](#capabilities) |
 | Choose a tool or try a first request | [MCP tools: 16 tools, inputs and examples](reference/mcp-tools.md) |
 | Connect my MCP client | [Run locally](#run-locally) |
+| Understand where the server runs and which data it receives | [Hosting and data flow](#hosting-and-data-flow) |
 | Run the server in a container | [Optional Docker deployment](#optional-docker-deployment) |
 | Configure providers and storage | [Configuration](#configuration) |
 | Understand the scientific scope | [Research and evidence](#research-and-evidence) |
@@ -126,6 +127,36 @@ persist explicitly; every MCP response is not automatically written to S3.
 The consuming application supplies UI, document retrieval, scheduling and
 notification delivery. See [the architecture](docs/architecture.md) for source
 links and [the objective/evidence index](docs/evidence/README.md) for dated proof.
+
+## Hosting and data flow
+
+GeoAI must be running for a client to call its tools. Choose how to run it:
+
+- **Local process (stdio):** install the Python dependencies with `uv` and
+  configure the MCP client to launch GeoAI on your computer. The client exchanges
+  requests and results directly with that process.
+- **HTTP service:** deploy GeoAI with Python or Docker, on your computer or on
+  infrastructure you control. Configure the client with the instance's `/mcp`
+  URL and bearer credentials. The operator of that instance controls its hosting,
+  access and storage. Legacy SSE is also supported.
+
+MCP defines how a client communicates with a server; it does not provide hosting
+or require a central GeoAI collector. Packages distributed through npm may also
+launch local MCP server programs. This project's installation uses Python/`uv`
+or Docker.
+
+The selected GeoAI instance receives the arguments of tool calls, such as
+coordinates, dates, variables or dataset references. Depending on the tool and
+configuration, it contacts satellite/weather providers, reads permitted local or
+S3 data, and performs supported storage writes. A local deployment can therefore
+still make outbound provider requests. Local file paths always refer to the
+server's filesystem, including when the server is hosted remotely.
+
+The consuming application decides which conversation or document data it sends
+in tool calls and which returned results it passes to a language model. It must
+also enforce user and tenant permissions; a shared HTTP bearer credential only
+controls access to the GeoAI service. See [the architecture](docs/architecture.md)
+for these boundaries and the optional S3 data flow.
 
 ## Research and evidence
 
