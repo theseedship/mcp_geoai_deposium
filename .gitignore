@@ -109,7 +109,10 @@ zones/zones.parquet
 
 
 # Private local material never belongs in this standalone source repository.
-/docs/
+/docs/*
+!/docs/evidence/
+!/docs/architecture.md
+!/docs/roadmap.md
 /docs-private/
 /private-docs-main/
 /private-root-material/
