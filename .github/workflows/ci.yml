@@ -1,5 +1,9 @@
 name: CI
 
+# Restrict the workflow token; contributors cannot approve or write repository changes.
+permissions:
+  contents: read
+
 on:
   push:
     branches: [main]

@@ -1,5 +1,9 @@
 name: so4gp CPU compatibility probe
 
+# Restrict the workflow token; contributors cannot approve or write repository changes.
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
     inputs:
