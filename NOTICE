@@ -2,6 +2,66 @@ Original GeoAI software copyright (c) 2026 Deposium (TheSeedShip).
 Distributed under the MIT terms in LICENSE; third-party data and identity assets
 retain their separate conditions below.
 
+Provider attribution and reuse
+==============================
+
+Credit the providers and models actually used by each tool result. Live forecasts,
+historical reanalysis, satellite observations and third-party geographic layers
+have separate provenance and conditions. The fixed-year notices for retained
+examples below do not replace attribution for a new acquisition's actual years
+and sources. API service access and subscription conditions are separate from
+the data licence. Custom datasets or additional providers may require further
+notices supplied by their owners.
+
+When displaying Open-Meteo data, retain an adjacent source link, for example:
+<a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+Also preserve the actual underlying model/provider credit. Source guidance:
+https://open-meteo.com/en/licence
+Requested software citation: Zippenfenig, P. (2023). Open-Meteo.com Weather API
+[Computer software]. Zenodo. https://doi.org/10.5281/zenodo.7970649
+
+ECMWF forecasts
+================
+
+GeoAI can query ECMWF IFS/AIFS products through Open-Meteo. ECMWF open forecast
+data are licensed CC BY 4.0 and subject to the applicable ECMWF Terms of Use:
+https://www.ecmwf.int/en/forecasts/datasets/open-data
+https://apps.ecmwf.int/datasets/licences/general/
+https://creativecommons.org/licenses/by/4.0/
+
+This service is based on data and products of the European Centre for
+Medium-Range Weather Forecasts (ECMWF).
+
+Attribute ECMWF prominently when its data are used, identify modifications and
+retain the applicable source year. ECMWF retains its rights and disclaims
+liability for errors, omissions, availability and losses arising from use. The
+linked terms govern the complete conditions; no endorsement is implied. GeoAI
+may aggregate daily values and transform units. A provider fallback must retain
+the identity and conditions of the provider actually used.
+
+French pilot boundaries
+======================
+
+The administrative source geometries for Fos-sur-Mer and Montpellier Metropole
+are derived from IGN ADMIN EXPRESS COG, retrieved from the Geoplateforme WFS
+ADMINEXPRESS-COG.LATEST layer on 22 July 2026. The edition/update date behind that
+alias was not recorded in the retained citation metadata; the retrieval date
+must not be represented as that edition/update date.
+https://geoservices.ign.fr/adminexpress
+https://www.data.gouv.fr/datasets/admin-express-admin-express-cog-admin-express-cog-carto-admin-express-cog-carto-pe-admin-express-cog-carto-plus-pe
+
+Lez catchment source geometries are derived from BD TOPAGE(R) Metropole,
+edition 2026, IGN / Office francais de la biodiversite (OFB), distributed by
+Sandre. Source publication: 22 June 2026; retrieved 22 July 2026.
+https://www.data.gouv.fr/datasets/bd-topage-r-metropole-2026
+
+These source datasets use Licence Ouverte / Open Licence 2.0 (Etalab):
+https://github.com/etalab/licence-ouverte/blob/master/LO.md
+Retain the source and available update-date attribution when reusing the data.
+GeoAI stores selected source geometries and uses transformed, merged or
+simplified pilot representations; see zones/sources/, the generated zone files
+and CITATION.cff. No endorsement by IGN, OFB or Sandre is implied.
+
 Data attribution for retained scientific examples
 ================================================
 
