@@ -38,6 +38,21 @@ FIERCE receives European Union support through Horizon Europe, Grant Agreement
 The authors are responsible for this repository's content; it does not represent
 an endorsement by the European Union or HADEA.
 
+## Team and contributions
+
+The project combines complementary research, engineering and market expertise.
+
+| Contributor | Role in the project |
+| --- | --- |
+| **[Nicolas Geysse](https://github.com/nicolas-geysse)** — [DEPOSIUM / TSS](https://deposium.ai/) | Project lead and coordination; architecture and implementation of the MCP layer, product direction, integration into DEPOSIUM and qualification of user workflows. |
+| **[Jonathan Labéjof, PhD](https://github.com/b3j0f)** — [BEJOF](https://www.bejof.org/) | Geospatial data pipelines, reproducible processing, forecast integration and evaluation infrastructure. |
+| **[Dickson Owuor, PhD](https://github.com/owuordickson)** — [so4gp](https://pypi.org/project/so4gp/) | Scientific methods for gradual-pattern mining; library development, experimental comparisons and research validation. |
+| **[Amandine Raynaud](https://www.linkedin.com/in/amandine-raynaud/)** — [CLELYA](https://clelya.fr/vision/) | Market study and innovation strategy: identify relevant sectors, practical problems and conditions for adoption. |
+
+The scientific foundations include Dickson Owuor and Anne Laurent's work on
+gradual-pattern mining and related collaborations. Method and software credits
+are recorded in [CITATION.cff](CITATION.cff).
+
 ## Start here
 
 | I want to… | Read |
@@ -73,21 +88,6 @@ Within DEPOSIUM, these tools provide a foundation for connecting environmental
 observations to documents and conversational workflows. This repository delivers
 the independent GeoAI server; the consuming application supplies its interface,
 document retrieval, scheduling and notification delivery.
-
-## Team and contributions
-
-The project combines complementary research, engineering and market expertise.
-
-| Contributor | Role in the project |
-| --- | --- |
-| **[Nicolas Geysse](https://github.com/nicolas-geysse)** — [DEPOSIUM / TSS](https://deposium.ai/) | Project lead and coordination; architecture and implementation of the MCP layer, product direction, integration into DEPOSIUM and qualification of user workflows. |
-| **[Jonathan Labéjof, PhD](https://github.com/b3j0f)** — [BEJOF](https://www.bejof.org/) | Geospatial data pipelines, reproducible processing, forecast integration and evaluation infrastructure. |
-| **[Dickson Owuor, PhD](https://github.com/owuordickson)** — [so4gp](https://pypi.org/project/so4gp/) | Scientific methods for gradual-pattern mining; library development, experimental comparisons and research validation. |
-| **[Amandine Raynaud](https://www.linkedin.com/in/amandine-raynaud/)** — [CLELYA](https://clelya.fr/vision/) | Market study and innovation strategy: identify relevant sectors, practical problems and conditions for adoption. |
-
-The scientific foundations include Dickson Owuor and Anne Laurent's work on
-gradual-pattern mining and related collaborations. Method and software credits
-are recorded in [CITATION.cff](CITATION.cff).
 
 ## Capabilities
 
