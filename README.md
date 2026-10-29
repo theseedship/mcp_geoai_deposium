@@ -70,7 +70,7 @@ are recorded in [CITATION.cff](CITATION.cff).
 | Understand the scientific scope | [Research and evidence](#research-and-evidence) |
 | Understand computation, providers and S3 storage | [Architecture and data flow](docs/architecture.md) |
 | Compare delivered scope and next objectives | [Roadmap](docs/roadmap.md) |
-| Review FIERCE objectives, implementation and proofs | [Evidence index](docs/evidence/README.md), [English report](docs/evidence/fierce-kpi-evidence.en.md) and [Word edition](docs/evidence/fierce-kpi-evidence.en.docx) |
+| Review FIERCE technical evidence and reported KPI status | [Public evidence index](docs/evidence/README.md), [technical KPI annex](docs/evidence/fierce-kpi-evidence.en.md) and [Word edition](docs/evidence/fierce-kpi-evidence.en.docx) |
 | Develop, test or contribute | [Development](#development) |
 | Cite the work or check reuse conditions | [Copy a citation or BibTeX](#citation), [sources and methods](#data-sources-and-attribution), [licence](#licence) and [full notices](NOTICE) |
 
