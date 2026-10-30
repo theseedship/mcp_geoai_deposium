@@ -1,16 +1,18 @@
-# FIERCE — Evidence Report for DEPOSIUM GeoAI Deliveries
+# FIERCE — Public Technical KPI Annex for DEPOSIUM GeoAI
 
 **Project:** DEPOSIUM SPACE / The Seed Ship — FIERCE_1OC_22
 
 **Funding:** Funded by FIERCE through its Financial Support Programme. FIERCE receives European Union funding under Horizon Europe, Grant Agreement 101177496. The authors are responsible for the content; no EU or HADEA endorsement is implied.
 
-**Document status as of:** 28 October 2026
+**Technical evidence cutoff:** 28 October 2026
 
-**Purpose:** link each KPI in the Transformation Plan to verifiable deliverables, results and supporting evidence.
+**KPI 1 reporting clarification:** 30 October 2026, using the Milestone 2 project report dated 29 October 2026.
+
+**Purpose:** provide the public technical evidence supporting the Milestone 2 project report, with an explicitly scoped summary of reported KPI 1 completion.
 
 ## 1. Provenance and how to read this public report
 
-This is a public adaptation of the English FIERCE evidence report dated
+The technical part of this annex adapts the English FIERCE evidence report dated
 28 October 2026. The original report file was recorded at source-report commit
 `fe21e58b8ee5baaa800e41601248563310825fa5`, with SHA-256
 `ee95442027f62e056c6f84a8a451a4d87747494cc7503cc6818973dc2a014492`.
@@ -24,6 +26,12 @@ deliverables and KPIs on pages 8–9, impact contributions on page 11, and matur
 targets on page 2. The contractual originals and commercial materials are not
 published here. This report does not certify the adapted scope's conformity with
 the original plan.
+
+The confidential **Milestone 2 project report** is the overall project account.
+This **public technical annex** explains the KPI mapping and links to selected
+technical proofs. The individual **evidence excerpts and records** document
+those cited results and decisions. These are complementary documents; the public
+annex is not the full milestone report or its commercial evidence package.
 
 The [evidence index](README.md) and [source map](https://github.com/theseedship/mcp_geoai_deposium/blob/66252f53960d6ac7c9cb6c92587dcb4f8ee8a05a/docs/evidence/source-map.json) identify the
 curated technical excerpts and bounded acceptance/integration records supporting
@@ -46,7 +54,7 @@ statement that all original stronger objectives were met.
 
 | KPI | Stated target | Implementation and available evidence | Supporting material or limitation to retain in the assessment |
 | --- | --- | --- | --- |
-| **1 — Commercial validation / D1** | 5/5 service components | The market-study outputs are not audited in these technical repositories. | Attach the CLELYA/Amandine deliverables; do not infer commercial results from code. |
+| **1 — Commercial validation / D1** | 5/5 service components | **5/5 reported completed** in the 29 October 2026 Milestone 2 report. | 0/5 is the baseline. Confidential D1 materials are referenced separately; fundraising preparation is not capital raised. See section 3. |
 | **2 — Pattern mining / D2** | 5/5 work packages delivered and integrated | Five documented areas: a real-data comparison, integrated native extraction, evaluation, temporal/spatial extensions and packaging. | Acceptance is within adopted scopes; negative results and the absence of calibrated confidence remain explicit. |
 | **3 — Geospatial pipeline / D3** | 6/6 modules delivered and operational | B1 through B6 delivered and accepted: zones, ERA5, NDVI, unified data, forecasts with fallback, and a two-level engine. | Explain the FourCastNet/AIFS and explanatory-index/confidence adaptations; attach the requested video on the `.ai` SaaS platform. |
 | **4 — Indicators across the pilots** | At least 3 indicators across all 3 pilots, analysed together | NDVI, temperature and precipitation in 130 joined historical observations; a qualified conversational access path and reproducible joint analyses. | This does not prove continuous production monitoring. The combined-use video remains a separate piece of evidence. |
@@ -59,9 +67,34 @@ KPIs 5 and 6 do not appear in the supplied plan; no additional objective is crea
 
 ## 3. KPI 1 / D1 — Market study and commercial readiness
 
-**Responsibility for documentation: CLELYA Conseil, Amandine and Deposium coordination.** The five sets of supporting materials to attach are: the market study; a synthesis of the 15 announced interviews; pricing and revenue-model recommendations; the go-to-market strategy; and fundraising preparation.
+**Responsibility for documentation: CLELYA Conseil, Amandine and Deposium coordination.**
 
-Interviews and potential pilot opportunities can explain the intended uses. They do not establish delivery of these five sets of materials. **This report assigns neither 0/5 nor 5/5 to this KPI**: it identifies the required business evidence, outside the repository audit.
+**Metric and reported result.** The Milestone 2 project report dated
+29 October 2026, section 2.2 (KPI table), records a **baseline of 0/5 service
+components**, a **target of 5/5** and an **achieved result of 5/5**. The metric is
+completion of five commercial-validation service components:
+
+- Market analysis.
+- Field research and interview synthesis: **15 qualitative interviews with
+  13 organisations**, as reported in the milestone report.
+- Revenue-model and pricing recommendations.
+- Go-to-market strategy and a 24-month roadmap.
+- Fundraising preparation: financing plan, investor targeting, investor Q&A and
+  data-room preparation.
+
+**Fundraising boundary.** This fifth component measures preparation for
+fundraising. It does not measure capital raised or a completed investment round.
+The milestone report identifies investor meetings as a next step. Similarly, the
+interview count is not a count of paying customers, signed pilots or purchase
+commitments.
+
+**Evidence boundary.** The confidential D1 business materials are referenced in
+the milestone report's sections 2.1 (D1 deliverable) and 2.2 (KPI 1). This public
+annex records the project's **reported completion**; it does not independently
+audit those materials or establish external FIERCE acceptance. Private links,
+interview reports and commercial documents are not reproduced here. Their absence
+from the public repository is not a result of zero interviews or zero delivered
+service components.
 
 ## 4. KPI 2 / D2 — The five scientific and software work packages
 
@@ -222,11 +255,11 @@ Confidence remains moderate: the campaigns are bounded, the owner acts as the pi
 
 Conformity of the adapted scope with the initial plan and external FIERCE appraisal remain separate from this technical assessment. **IRL/SRL** require the corresponding commercial, user and business evidence; their final levels are not inferred from the number of pull requests or accepted lots.
 
-## 10. Materials to assemble for submission
+## 10. Submission materials and evidence locations
 
-| Material | Consolidation responsibility | Expected content |
+| Material | Consolidation responsibility | Content and evidence location |
 | --- | --- | --- |
-| D1 commercial study and readiness | CLELYA / Amandine / Nicolas | The five sets of materials for KPI 1, including the list and synthesis of interviews actually conducted. |
+| D1 commercial study and readiness | CLELYA / Amandine / Nicolas | Five service components reported completed (5/5) in the 29 October milestone report. The confidential supporting materials are referenced there, in sections 2.1 and 2.2; they are outside this public annex. |
 | D2 scientific evidence package | Nicolas, drawing on Dickson’s deliveries | Reproduced WP0, package/catalogue, validation report, negative results, O1–O5 acceptances and limitations. This report links to those existing materials. |
 | D3 pipeline evidence package | Nicolas, drawing on Jonathan’s deliveries and Deposium integration | B1–B6 evidence, versions, acceptances, model adaptations and the interpretation of the score. |
 | KPI 3 / KPI 4 video | Nicolas / coordination | Show the SaaS platform specified in the plan, the three pilots, the three indicators and their analysis; retain the URL/date/version and the environment actually used. This audit produces no video and does not claim one has been submitted. |

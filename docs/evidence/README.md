@@ -1,8 +1,29 @@
-# FIERCE objectives, implementation and evidence
+# FIERCE — Public evidence index
 
-Read the [English evidence report](fierce-kpi-evidence.en.md) or download the
-[Word edition](fierce-kpi-evidence.en.docx). Both retain the dated quantitative
-findings, adapted scopes, negative results and maturity limits.
+This is the public technical evidence annex supporting the DEPOSIUM SPACE
+Milestone 2 project report. The full milestone report and its confidential
+commercial supporting materials are separate documents, not published here.
+
+Use the pages in this order:
+
+1. Read the [technical KPI annex](fierce-kpi-evidence.en.md) for the explanation of
+   each KPI, reported status, supporting links and limits. The
+   [Word edition](fierce-kpi-evidence.en.docx) contains the same public content.
+2. Use [the objective table below](#choose-an-objective) to go directly to an
+   implementation or a cited proof.
+3. Open an individual excerpt in [the public file index](#public-file-index), or
+   [the source map](source-map.json) for its provenance and hashes.
+
+**KPI 1 clarification — 30 October 2026:** the milestone report dated
+29 October records **5/5 commercial-validation service components completed**.
+**0/5 is the starting baseline, not the reported achieved result.** This public
+annex summarizes that declaration; it does not independently audit the
+confidential business materials. The five components include the interview
+study and **fundraising preparation**, not a completed investment round. See
+[KPI 1: metric, reported result and evidence boundary](fierce-kpi-evidence.en.md#3-kpi-1--d1--market-study-and-commercial-readiness).
+
+The technical annex retains the dated quantitative findings, adapted scopes,
+negative results and maturity limits.
 [Architecture](../architecture.md) explains the independent server;
 [the roadmap](../roadmap.md) separates delivered capabilities and remaining work.
 
@@ -18,7 +39,7 @@ independently reproduce its experiments or certify its acceptance.
 
 | Objective | Implementation | Public evidence and assessment boundary |
 | --- | --- | --- |
-| KPI 1 / D1: commercial validation | Business-study materials outside this technical repository. | Unassessed here; neither 0/5 nor 5/5 is assigned. |
+| KPI 1 / D1: commercial validation | Five commercial-validation service components; confidential business materials referenced in the milestone report. | **5/5 reported completed** in the 29 October milestone report; 0/5 is the baseline. [Metric and evidence boundary](fierce-kpi-evidence.en.md#3-kpi-1--d1--market-study-and-commercial-readiness). |
 | KPI 2 / WP0: real-data comparison | [CPU so4gp adapter](../../src/patterns/so4gp_adapter.py). | [Comparison and reproduction](proofs/proof-26.md); 20 shared identities, explained differences; no general superiority claim. |
 | KPI 2 / WP1: native extraction and integration | [Pattern tools](../../src/tools/patterns.py), [packaged libraries](../../src/data/pattern-library-2026-10-15/package). | [Three-pilot capture](proofs/proof-23.md): 418 records, all unqualified. |
 | KPI 2 / WP2: robustness and confidence | [Held-out evaluation](../../src/patterns/heldout_validation.py). | [Negative evaluation](proofs/proof-22.md), [scope amendment](proofs/proof-15.md), [NDVI ablation](proofs/proof-21.md); no calibrated confidence or positive primary predictive gain. |
