@@ -15,7 +15,8 @@ Use the pages in this order:
    [the source map](source-map.json) for its provenance and hashes.
 
 For a new technical recording in DEPOSIUM, use the
-[French chat demonstration guide](fierce-chat-demo.fr.md): copyable messages,
+[English chat demonstration guide](fierce-chat-demo.en.md) or its
+[French edition](fierce-chat-demo.fr.md): copyable messages,
 expected outputs, three-pilot coverage and the distinction between recorded
 application behavior and scientific evidence. This guide prepares a recording;
 it is not itself proof that a new recording or qualification has taken place.

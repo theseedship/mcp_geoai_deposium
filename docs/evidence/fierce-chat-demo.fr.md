@@ -1,5 +1,7 @@
 # FIERCE — conducteur de démonstration technique dans DEPOSIUM
 
+[English version](fierce-chat-demo.en.md).
+
 Préparé le **31 octobre 2026**. Public : évaluateurs techniques et scientifiques.
 Périmètre : **capacités géospatiales, intégration, résultats et limites**.
 
