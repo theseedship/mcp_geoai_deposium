@@ -14,6 +14,12 @@ Use the pages in this order:
 3. Open an individual excerpt in [the public file index](#public-file-index), or
    [the source map](source-map.json) for its provenance and hashes.
 
+For a new technical recording in DEPOSIUM, use the
+[French chat demonstration guide](fierce-chat-demo.fr.md): copyable messages,
+expected outputs, three-pilot coverage and the distinction between recorded
+application behavior and scientific evidence. This guide prepares a recording;
+it is not itself proof that a new recording or qualification has taken place.
+
 **KPI 1 clarification — 30 October 2026:** the milestone report dated
 29 October records **5/5 commercial-validation service components completed**.
 **0/5 is the starting baseline, not the reported achieved result.** This public
