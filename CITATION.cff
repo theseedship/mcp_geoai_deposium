@@ -7,20 +7,23 @@ message: >-
 type: software
 title: "Deposium GeoAI"
 abstract: >-
-  Python MCP Server for Geospatial AI capabilities. Funded by FIERCE through
-  its Financial Support Programme. FIERCE receives European Union funding
+  Python MCP Server for Geospatial AI capabilities, developed within
+  Deposium® Space, a geospatial analysis project led by The Seed Ship
+  (Montpellier, France). Funded by FIERCE through its Financial Support
+  Programme. FIERCE receives European Union funding
   under Horizon Europe, Grant Agreement 101177496.
 repository-code: "https://github.com/theseedship/mcp_geoai_deposium"
 url: "https://deposium.ai/"
 authors:
   - given-names: Nicolas
     family-names: Geysse
-    affiliation: "The Seed Ship"
+    affiliation: "Deposium, The Seed Ship"
   - given-names: Jonathan
     family-names: Labéjof
     affiliation: "BEJOF"
   - given-names: Dickson
     family-names: Owuor
+    affiliation: "Strathmore University"
   - given-names: Amandine
     family-names: Raynaud
     affiliation: "CLELYA"
